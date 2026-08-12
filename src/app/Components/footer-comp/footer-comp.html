@@ -1,0 +1,113 @@
+<footer class="footer">
+  <div class="footer__inner">
+
+    <!-- Company address block -->
+    <div class="footer__address">
+      <p class="footer__company">{{ companyName }}</p>
+      <p class="footer__address-line">
+        {{ address }}
+        <span class="footer__sep">|</span> {{ regNo }}
+        <span class="footer__sep">|</span> {{ email }}
+        <span class="footer__sep">|</span> {{ fax }}
+        <span class="footer__sep">|</span> {{ contact }}
+      </p>
+    </div>
+
+    <!-- Socials + app download -->
+    <div class="footer__top-bar">
+      <div class="footer__socials">
+        <a *ngFor="let social of socialLinks"
+           [href]="social.href"
+           class="footer__social-icon"
+           [attr.aria-label]="social.icon">
+          <ng-container [ngSwitch]="social.icon">
+            <svg *ngSwitchCase="'facebook'" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8.5h2.85l.43-3.3h-3.28V7.05c0-.96.27-1.61 1.64-1.61h1.75V2.14C16.6 2.1 15.62 2 14.46 2c-2.42 0-4.08 1.48-4.08 4.19v2.01H7.5v3.3h2.88V21h3.12z"/></svg>
+            <svg *ngSwitchCase="'instagram'" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.25A3.25 3.25 0 1 1 12 6.75a3.25 3.25 0 0 1 0 6.5zM17.25 3.5a1.17 1.17 0 1 0 0 2.34 1.17 1.17 0 0 0 0-2.34z"/></svg>
+            <svg *ngSwitchCase="'twitter'" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.7 22H1.6l8.1-9.3L1 2h7.1l4.9 6.1L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/></svg>
+            <svg *ngSwitchCase="'youtube'" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.4-.4-5a3 3 0 0 0-2.1-2.1C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.5.4A3 3 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a3 3 0 0 0 2.1 2.1c1.6.4 8.5.4 8.5.4s6.9 0 8.5-.4a3 3 0 0 0 2.1-2.1c.4-1.6.4-5 .4-5zM9.8 15.5v-7l6 3.5-6 3.5z"/></svg>
+            <svg *ngSwitchCase="'linkedin'" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9.5 9H13v1.64h.05c.5-.9 1.7-1.85 3.5-1.85 3.75 0 4.45 2.34 4.45 5.38V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.4-2.13 2.9V21h-4z"/></svg>
+          </ng-container>
+        </a>
+      </div>
+
+      <div class="footer__app">
+        <span class="footer__app-label">IL TakeCare App</span>
+        <a href="#" class="footer__badge">
+          <span class="footer__badge-text">Get it on Google Play</span>
+        </a>
+        <a href="#" class="footer__badge">
+          <span class="footer__badge-text">Download on the App Store</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <div class="footer__columns">
+      <div class="footer__column" *ngFor="let column of footerColumns">
+        <button
+          type="button"
+          class="footer__column-title"
+          (click)="toggleColumn(column.title)"
+          [class.footer__column-title--open]="isColumnOpen[column.title]">
+          {{ column.title }}
+          <span class="footer__chevron" [class.footer__chevron--up]="isColumnOpen[column.title]">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </span>
+        </button>
+        <ul class="footer__link-list" [class.footer__link-list--open]="isColumnOpen[column.title]">
+          <li *ngFor="let link of column.links">
+            <a [href]="link.href">{{ link.label }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom accordion rows -->
+    <div class="footer__bottom-row">
+      <button *ngFor="let item of bottomAccordions"
+              type="button"
+              class="footer__bottom-pill"
+              (click)="toggleColumn(item.title)">
+        {{ item.title }}
+      </button>
+    </div>
+
+    <div class="footer__bottom-row">
+      <button *ngFor="let item of bottomAccordions2"
+              type="button"
+              class="footer__bottom-pill"
+              (click)="toggleColumn(item.title)">
+        {{ item.title }}
+      </button>
+    </div>
+
+    <hr class="footer__divider" />
+
+    <!-- Disclaimer -->
+    <div class="footer__disclaimer">
+      <p *ngFor="let para of disclaimerParagraphs">{{ para }}</p>
+    </div>
+
+    <!-- Bottom bar: badges + CIN + group companies -->
+    <div class="footer__base">
+      <div class="footer__trust-badges">
+        <span class="footer__trust-badge">Entrust</span>
+        <span class="footer__trust-badge">DigiCert</span>
+        <span class="footer__trust-badge">BIMA BHAROSA</span>
+      </div>
+
+      <select class="footer__group-select" aria-label="Group Companies">
+        <option>Group Companies</option>
+      </select>
+    </div>
+
+    <p class="footer__cin">{{ cin }}</p>
+  </div>
+
+  <!-- Floating chat button -->
+  <button type="button" class="footer__chat-fab" aria-label="Ask Ria Live Chat">
+    <span class="footer__chat-fab-label">ASK RIA<br />LIVE CHAT</span>
+  </button>
+</footer>
