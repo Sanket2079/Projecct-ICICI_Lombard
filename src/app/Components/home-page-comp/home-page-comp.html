@@ -1,0 +1,328 @@
+<!-- ============================================================= -->
+<!-- HERO + QUOTE WIDGET                                            -->
+<!-- ============================================================= -->
+<section class="hero">
+  <img
+    class="hero__image"
+    src="/service-assure-home-banner.webp"
+    alt="Person standing next to their car"
+  />
+
+  <div class="hero__headline container">
+    <div class="hero__logo">
+      <span class="hero__logo-service">Service</span>
+      <span class="hero__logo-assure">Assure</span>
+    </div>
+    <h1 class="hero__title">Car troubles? Not on our watch</h1>
+    <p class="hero__subtitle">
+      Our car insurance now comes with Service Assure &ndash; 30 min roadside assistance promise<sup>P</sup>
+    </p>
+  </div>
+
+  <div class="hero__cards container">
+    <!-- Tab based quote widget -->
+    <div class="quote-card">
+      <div class="quote-card__tabs" role="tablist">
+        <button
+          *ngFor="let tab of tabs"
+          type="button"
+          role="tab"
+          class="quote-tab"
+          [class.quote-tab--active]="tab.id === activeTabId()"
+          [attr.aria-selected]="tab.id === activeTabId()"
+          (click)="selectTab(tab.id)"
+        >
+          <span class="quote-tab__icon" [ngSwitch]="tab.icon">
+            <svg *ngSwitchCase="'car'" viewBox="0 0 24 24"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11m-14 0h14m-14 0a2 2 0 0 0-2 2v4h2m14-6a2 2 0 0 1 2 2v4h-2M7 17a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm10 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg>
+            <svg *ngSwitchCase="'bike'" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M5.5 17.5 9 10h5l3.5 7.5M9 10 8 6H6m3 4 4 4h3.5"/></svg>
+            <svg *ngSwitchCase="'health'" viewBox="0 0 24 24"><path d="M12 20s-7-4.35-9.5-8.5C.8 8 2.3 4.5 5.8 4a4.7 4.7 0 0 1 6.2 2 4.7 4.7 0 0 1 6.2-2c3.5.5 5 4 3.3 7.5C19 15.65 12 20 12 20Z"/></svg>
+            <svg *ngSwitchCase="'travel'" viewBox="0  24 24"><path d="M4 20V8l6-4v16M4 20h16M14 8l6 3v9M10 8h0M10 12h0M10 16h0"/></svg>
+            <svg *ngSwitchCase="'corporate'" viewBox="0 0 24 24"><rect x="4" y="3" width="9" height="18"/><rect x="13" y="9" width="7" height="12"/></svg>
+            <svg *ngSwitchDefault viewBox="0 0 240 24 24"><path d="m2 16 20-7-6 14-2-6-6-1Z"/></svg>
+            <svg *ngSwitchCase="'home'" viewBox="0 0 24 24"><path d="M4 11.5 12 4l8 7.5M6 10v9h12v-9"/></svg>
+            <svg *ngSwitchCase="'sme'" viewBox="0 0 24"><path d="M4 4v6h6M20 20v-6h-6M5.5 15A7 7 0 0 0 19 12M18.5 9A7 7 0 0 0 5 12"/></svg>
+          </span>
+          <span class="quote-tab__label">{{ tab.label }}</span>
+        </button>
+      </div>
+
+      <form class="quote-form" (ngSubmit)="getQuote()">
+        <div class="quote-form__row">
+          <div class="quote-form__field">
+            <label [for]="'primaryValue'">{{ activeTab().primaryLabel }}</label>
+            <input
+              id="primaryValue"
+              type="text"
+              name="primaryValue"
+              [placeholder]="activeTab().primaryPlaceholder"
+              [(ngModel)]="form.primaryValue"
+            />
+          </div>
+
+          <div class="quote-form__field">
+            <label for="mobile">Mobile number*</label>
+            <input
+              id="mobile"
+              type="tel"
+              name="mobile"
+              placeholder="Enter mobile no."
+              [(ngModel)]="form.mobile"
+            />
+          </div>
+
+          <div class="quote-form__field">
+            <label for="email">Email*</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              [(ngModel)]="form.email"
+            />
+          </div>
+
+          <button type="submit" class="btn btn--primary quote-form__submit">Get quote</button>
+          <a href="javascript:void(0)" class="link quote-form__recent">Recent Quote</a>
+        </div>
+
+        <a href="javascript:void(0)" class="link quote-form__new-vehicle" *ngIf="activeTab().showNewVehicleLink">Got a new vehicle</a>
+      </form>
+    </div>
+
+    <!-- Policy renewal promo card -->
+    <div class="promo-card">
+      <p class="promo-card__title">{{ renewalPromo.title }}</p>
+      <button type="button" class="promo-card__cta">{{ renewalPromo.ctaLabel }}</button>
+      <img class="promo-card__illustration" src="assets/images/renew-illustration.png" alt="" />
+      <div class="promo-card__dots" aria-hidden="true">
+        <span
+          *ngFor="let dot of promoDots; let i = index"
+          class="promo-card__dot"
+          [class.promo-card__dot--active]="i === activePromoDot"
+        ></span>
+      </div>
+    </div>
+
+    <!-- Consent checkboxes, sit below the quote card only -->
+    <div class="hero__consent">
+      <label class="checkbox">
+        <input type="checkbox" name="agreedToTerms" [(ngModel)]="agreedToTerms" />
+        <span>I agree to the <a href="javascript:void(0)">terms &amp; conditions</a></span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="wantsWhatsappUpdates" [(ngModel)]="wantsWhatsappUpdates" />
+        <span>I want to get my quote and policy details on WhatsApp</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Trust stats strip -->
+  <div class="stats-strip container">
+    <div class="stats-strip__item" *ngFor="let stat of stats">
+      <a href="javascript:void(0)" class="stats-strip__cta" *ngIf="stat.discoverLinkLabel">{{ stat.discoverLinkLabel }} &gt;</a>
+      <p class="stats-strip__value">{{ stat.value }}</p>
+      <p class="stats-strip__label">{{ stat.label }}</p>
+      <p class="stats-strip__note">{{ stat.note }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- WHY CHOOSE ICICI LOMBARD                                       -->
+<!-- ============================================================= -->
+<section class="why-us container">
+  <h2 class="section-title section-title--center">Why choose ICICI Lombard?</h2>
+
+  <div class="why-us__row">
+    <div class="why-us__copy">
+      <h3>Dependable</h3>
+      <p class="why-us__lede">You can rely on us at all times.</p>
+      <p>
+        Be it during large calamities like Odisha cyclone or minor accidents like a broken
+        tail-light, we have always stood by our customers in time of need. We have repeatedly
+        introduced industry-leading practices for nearly two decades. So, in times of trouble,
+        be assured, we've got your back. We stand by our motto: &ldquo;Nibhaye Vaade&rdquo;.
+      </p>
+    </div>
+    <img class="why-us__image" src="/dependable8c0007ff45fd68ff8a0df00560218b8b.avif" alt="Father cycling alongside his child" />
+  </div>
+
+  <div class="why-us__row why-us__row--reverse">
+    <img class="why-us__image" src="/approachable8c0007ff45fd68ff8a0df00560218b2f.avif" alt="Father comforting his child on a bench" />
+    <div class="why-us__copy">
+      <h3>Approachable</h3>
+      <p class="why-us__lede">You've got a friend in us.</p>
+      <p>
+        Value of insurance is realised when you make a claim. In your hour of need, be it a
+        major surgery or a broken car, you need more than just claim support. Our team comprises
+        highly trained professionals and functional experts to guide you through the right
+        course of action during emergencies. So, don't hesitate.
+      </p>
+    </div>
+  </div>
+
+  <div class="why-us__contact">
+    <p>Any questions you have or any help you need &ndash; just reach out to us.</p>
+    <p class="why-us__contact-lede">We are available where you are.</p>
+    <div class="why-us__contact-links">
+      <a href="javascript:void(0)">&gt; Call centre</a>
+      <a href="javascript:void(0)">&gt; Chat</a>
+      <a href="javascript:void(0)">&gt; 340+ branches</a>
+    </div>
+    <p class="why-us__contact-note">(As on Mar 31, 2026)</p>
+  </div>
+
+  <div class="why-us__row">
+    <div class="why-us__copy">
+      <h3>Transparent</h3>
+      <p class="why-us__lede">We give you the power of clarity.</p>
+      <p>
+        Insurance products are designed and priced through complicated mathematical models. But
+        we strive to explain the extent of coverage to you in a simple manner. From policy
+        issuance to claims, you can count on us for keeping it simple. We have always gone the
+        extra mile to make things clear, right from pre-sales to claims support.
+      </p>
+    </div>
+    <img class="why-us__image" src="transparent8c0007ff45fd68ff8a0df00560218a80.avif" alt="Mother reading to her child" />
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- OUR PRODUCTS                                                   -->
+<!-- ============================================================= -->
+<section class="products">
+  <div class="container">
+    <h2 class="section-title section-title--center section-title--light">Our products</h2>
+
+    <div class="products__grid">
+      <article class="product-card" *ngFor="let product of products">
+        <header class="product-card__header">
+          <h3>{{ product.name }}</h3>
+          <span class="product-card__icon" [ngSwitch]="product.icon">
+            <svg *ngSwitchCase="'car'" viewBox="0 0 24 24"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11m-14 0h14m-14 0a2 2 0 0 0-2 2v4h2m14-6a2 2 0 0 1 2 2v4h-2M7 17a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm10 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg>
+            <svg *ngSwitchCase="'bike'" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M5.5 17.5 9 10h5l3.5 7.5M9 10 8 6H6m3 4 4 4h3.5"/></svg>
+            <svg *ngSwitchCase="'health'" viewBox="0 0 24 24"><path d="M12 20s-7-4.35-9.5-8.5C.8 8 2.3 4.5 5.8 4a4.7 4.7 0 0 1 6.2 2 4.7 4.7 0 0 1 6.2-2c3.5.5 5 4 3.3 7.5C19 15.65 12 20 12 20Z"/></svg>
+            <svg *ngSwitchCase="'travel'" viewBox="0 0 24 24"><path d="m2 16 20-7-6 14-2-6-6-1Z"/></svg>
+          </span>
+        </header>
+
+        <ul class="product-card__features">
+          <li *ngFor="let feature of product.features">{{ feature }}</li>
+        </ul>
+
+        <a href="javascript:void(0)" class="product-card__price-link">Check price</a>
+        <a href="javascript:void(0)" class="product-card__explore-link">Explore &gt;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- IL TAKECARE APP                                                -->
+<!-- ============================================================= -->
+<section class="app-promo">
+  <div class="container app-promo__inner">
+    <div class="app-promo__copy">
+      <h2>Experience insurance on the go with IL TakeCare app</h2>
+      <p>
+        Buy policies, renew them, file claims or complete mobile self-inspections &ndash; all
+        from your phone.
+      </p>
+
+      <h4>Benefits Beyond Insurance</h4>
+      <ul class="app-promo__benefits">
+        <li>Health vitals via face scan</li>
+        <li>Driving insights and pattern</li>
+        <li>Fitness tracking and challenges</li>
+      </ul>
+      <p class="app-promo__and-more">and more&hellip;</p>
+
+      <a href="javascript:void(0)" class="btn btn--primary">Learn more</a>
+
+      <p class="app-promo__download-label">Download the IL TakeCare app</p>
+      <div class="app-promo__store-badges">
+        <img src="assets/images/qr-code.png" alt="Scan to download the IL TakeCare app" class="app-promo__qr" />
+        <img src="assets/images/google-play-badge.png" alt="Get it on Google Play" />
+        <img src="assets/images/app-store-badge.png" alt="Download on the App Store" />
+      </div>
+    </div>
+
+    <img class="app-promo__phone" src="iphone8c0007ff45fd68ff8a0df00560218a83.avif" alt="IL TakeCare app screen" />
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- CPR AWARENESS VIDEO                                            -->
+<!-- ============================================================= -->
+<section class="cpr container">
+  <h2 class="section-title section-title--center">#LearnCPRSaveALife</h2>
+  <p class="cpr__subtitle">
+    Did you know? Effective CPR can double the chance of a person surviving a cardiac arrest.
+  </p>
+
+  <button type="button" class="cpr__video" aria-label="Play CPR awareness video">
+    <iframe width="750" height="480" src="https://www.youtube.com/embed/wM6oEqHEDzM" title="ICICI Lombard #WorldHeartDay - Emraan Hashami - Kiss the CPR Myth goodbye!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  </button>
+</section>
+
+<!-- ============================================================= -->
+<!-- PMFBY + FRAUD AWARENESS                                        -->
+<!-- ============================================================= -->
+<section class="info-strip container">
+  <div class="info-strip__item">
+    <h3>PMFBY</h3>
+    <p>
+      The PMFBY was launched in 2016 and replaces all the prevailing yield insurance schemes in
+      India. The scheme has extended coverage under localized risks, post-harvest losses etc.
+      and aims at adoption of technology for the purpose of yield estimation. Through increased
+      farmer awareness and low farmer premium rates the scheme aims at increasing the crop
+      insurance penetration in India.
+    </p>
+  </div>
+
+  <div class="info-strip__item">
+    <h3>Fraud awareness</h3>
+    <p>Dear Policyholders,</p>
+    <p>
+      All claims are processed as per the respective policy terms &amp; conditions. If anyone
+      demands money for processing claim please do not pay, report it on
+      <a href="mailto:fraudinfo@icicilombard.com">fraudinfo&#64;icicilombard.com</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- TESTIMONIALS + AWARDS                                          -->
+<!-- ============================================================= -->
+<section class="social-proof container">
+  <h2 class="section-title section-title--center">A happy you, makes a happy us.</h2>
+
+  <div class="social-proof__grid">
+    <div class="testimonial-card">
+      <div class="testimonial-card__header">
+        <span class="testimonial-card__avatar" aria-hidden="true"></span>
+        <div>
+          <p class="testimonial-card__name">{{ testimonial.name }}</p>
+          <p class="testimonial-card__rating" aria-label="Rated {{ testimonial.rating }} out of 5 stars">
+            <ng-container *ngFor="let star of [1,2,3,4,5]">&#9733;</ng-container>
+          </p>
+        </div>
+      </div>
+      <p class="testimonial-card__quote">{{ testimonial.quote }}</p>
+    </div>
+
+    <div class="awards">
+      <h2 class="section-title">Awards &amp; recognition</h2>
+      <article class="award-card" *ngFor="let award of awards">
+        <span class="award-card__icon" aria-hidden="true"></span>
+        <div>
+          <h4>{{ award.title }}</h4>
+          <p>{{ award.description }}</p>
+        </div>
+      </article>
+      <a href="javascript:void(0)" class="link">More awards</a>
+    </div>
+  </div>
+</section>
