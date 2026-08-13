@@ -1,0 +1,87 @@
+/* section one */
+
+.property-img{
+    box-flex-group: #f4f4f4;
+}
+
+.property-img img{
+    border-radius:12px ;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+.property-img h2{
+    font-size: 45px;
+    color: #ec6625;;
+}
+/* section one end */
+
+
+/* section two */
+
+
+/* img */
+
+.industry-section .industry-img {
+   
+        /* margin-top: 41px; */
+    object-fit: contain;
+    display: block;
+         height: 342px;
+    width: 340px;
+    justify-self: anchor-center
+    
+}
+
+.manual-btn {
+    background: linear-gradient(209.71deg, #EC6625 27.12%, #831B1D 148.15%);
+    border: none;
+    padding: 11px 24px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-Mulish-regular);
+    color: #FFFFFF;
+    font-size: var(--fs-20);
+    line-height: var(--lh-26);
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+}
+
+.manual-btn:hover,
+.manual-btn:focus,
+.manual-btn.show {
+    background: linear-gradient(209.71deg, #EC6625 27.12%, #831B1D 148.15%);
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.manual-btn i {
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+}
+
+.manual-btn.show i {
+    transform: rotate(180deg);
+}
+
+/* manual button */
+.manual-btn {
+    background-color: linear-gradient(209.71deg, #EC6625 27.12%, #831B1D 148.15%);
+}
+
+.dropdown-design a {
+    border-left: 4px solid gray;
+    margin-bottom: 6px;
+
+}
+
+.dropdown-design a:hover {
+    background: #ec6625;
+    color: white;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #EC6625 !important;
+}
+.bg-color{
+        background-color: #f4f4f4;
+}

@@ -1,0 +1,644 @@
+.color-fix {
+    color: #EC6625
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.image-text {
+    position: absolute;
+    top: 68px;
+    left: 44px;
+    width: 480px;
+    height: 280px;
+    /* Fixed height */
+    color: #fff;
+}
+
+.image-text h5 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.image-text p {
+    font-size: 16px;
+    line-height: 26px;
+    min-height: 70px;
+    /* Reserve space even if empty */
+}
+
+.know-more-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* Always stays at bottom */
+    background: #ec6625;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 8px;
+}
+
+.know-more-btn:hover {
+    background: #d85b20;
+    color: #fff;
+}
+
+/* Carousel Indicators */
+
+.custom-indicators {
+
+    justify-content: flex-start;
+
+    left: 45px;
+
+    right: auto;
+
+    bottom: 25px;
+
+    margin: 0;
+}
+
+.custom-indicators button {
+
+    width: 35px;
+
+    height: 4px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #fff;
+
+    opacity: .5;
+
+    margin-right: 8px;
+}
+
+.custom-indicators .active {
+
+    opacity: 1;
+
+    background: #EC6625 !important;
+}
+
+/* Hide arrows */
+
+.carousel-control-prev,
+.carousel-control-next {
+
+    display: none;
+}
+
+/* cards css */
+.counter-numbers {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: nowrap;
+
+
+}
+
+.counter-numbers h1 {
+    color: #ec6625;
+    font-size: 50px;
+}
+
+.box-text {
+    display: flex;
+    gap: 1rem;
+    border-right: inset
+}
+
+.box-text p {
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+.textlight {
+    color: grey;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.customers-help {
+    margin-top: 1rem;
+    background: #F4F4F4;
+    padding-top: 2rem;
+    border-radius: 24px 24px 0px 0px;
+    /* padding-bottom: 56px; */
+}
+
+.custom-services p {
+    margin-top: 20px;
+
+}
+
+.ranking {
+    background: linear-gradient(0deg, #BB4322, #E66326);
+    margin: 0px !important;
+    color: rgb(255, 255, 255);
+}
+
+.arrow-buttons {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 10px;
+    right: 20px;
+}
+
+.arrow-buttons button {
+    color: #EC6625;
+    border: 1px solid;
+    border-color: #EC6625;
+    background: white;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.custom-accordion .accordion-item {
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+}
+
+.custom-accordion .accordion-button {
+
+    background: #fff;
+
+    color: #EC6625;
+
+    font-weight: 600;
+
+    padding: 12px 0;
+
+    box-shadow: none;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+
+    background: #fff;
+
+    color: #EC6625;
+
+    box-shadow: none;
+}
+
+.custom-accordion .accordion-button::after {
+
+    background-image: none;
+
+    content: "⌄";
+
+    font-size: 16px;
+
+    color: #EC6625;
+
+    transform: none;
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.custom-accordion .accordion-body {
+
+    padding: 20px 0 35px;
+
+}
+
+.custom-accordion h5 {
+
+    margin-bottom: 10px;
+
+}
+
+.custom-accordion p {
+
+    line-height: 1.8;
+
+    color: #333;
+
+}
+
+.testimonial-text {
+
+    font-style: italic;
+
+
+    line-height: 1.7;
+
+}
+
+.custom-accordion ul {
+
+    padding-left: 20px;
+
+}
+
+.custom-accordion li {
+
+    margin-bottom: 12px;
+
+}
+
+.line-h p {
+    line-height: 1.3;
+}
+
+.line-h-2 {
+    line-height: 2 !important;
+}
+
+.manual-btn {
+    background: linear-gradient(209.71deg, #EC6625 27.12%, #831B1D 148.15%);
+    border: none;
+    padding: 11px 24px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-Mulish-regular);
+    color: #FFFFFF;
+    font-size: var(--fs-20);
+    line-height: var(--lh-26);
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #EC6625 !important;
+}
+
+.manual-btn:hover,
+.manual-btn:focus,
+.manual-btn.show {
+    background: linear-gradient(209.71deg, #EC6625 27.12%, #831B1D 148.15%);
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.manual-btn i {
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+}
+
+.manual-btn.show i {
+    transform: rotate(180deg);
+}
+
+.industry-section .carousel-item .row {
+    align-items: flex-start !important;
+}
+
+.industry-section .carousel-item .col-lg-5 {
+    align-self: flex-start;
+}
+
+.industry-section .industry-img {
+    max-height: 460px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.circle-button {
+    border: 1px solid #EC6625;
+    padding: 1px 4px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.move-right {
+    justify-self: flex-end;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* you can use global css font-size-12px */
+
+.title-curve {
+    overflow: hidden;
+}
+
+.title-curve .image-card,
+.title-curve .image-card img {
+    border-radius: 0 0 0 0;
+}
+
+.title-curve .image-card {
+    overflow: hidden;
+}
+
+/* Only left and right corners rounded */
+.title-curve .image-card img {
+    border-radius: 0 0 0 0;
+}
+
+.title-curve .image-card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.line-small {
+    line-height: 14px !important;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+/* manual button */
+.manual-btn {
+    background-color: linear-gradient(209.71deg, #EC6625 27.12%, #831B1D 148.15%);
+}
+
+.dropdown-design a {
+    border-left: 4px solid gray;
+    margin-bottom: 6px;
+
+}
+
+.dropdown-design a:hover {
+    background: #ec6625;
+    color: white;
+}
+
+/* section fourth */
+
+.image-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.title-curve {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.image-card:hover img {
+    transform: scale(1.08);
+}
+
+.card-content {
+    position: absolute;
+    left: 45px;
+    right: 45px;
+    bottom: 60px;
+    color: #fff;
+    z-index: 2;
+}
+
+.category {
+    display: inline-block;
+    background: #d9ecff;
+    color: #222;
+    padding: 6px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-content a {
+    color: #ff8a00;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    color: #ffa733;
+}
+
+@media (max-width: 992px) {
+    .image-card {
+        height: 550px;
+    }
+
+    .card-content {
+        left: 25px;
+        right: 25px;
+        bottom: 30px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .category {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-card {
+        height: 450px;
+        margin-bottom: 20px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+    }
+}
+
+/* section inside section help menu */
+.help-section {
+    background: linear-gradient(90deg, #bf4720, #ff6418);
+    padding: 30px 0;
+}
+
+.help-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon-box {
+    width: 74px;
+    height: 74px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon-box i {
+    font-size: 42px;
+    color: #ff6517;
+}
+
+.text-content h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.text-content h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #fff;
+    color: #ff6517;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact-btn:hover {
+    background: #f2f2f2;
+    color: #ff6517;
+}
+
+/* section five */
+.award-img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.card {
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-title {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .award-img {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* section seven */
+/* Background */
+
+.map-bg {
+    background-image: url("/assets/cor-products-sec4-img/map-bg.jpg");
+    padding: 90px 0;
+    height: 282px;
+    border-radius: 24px 24px 0px 0px;
+    position: relative;
+    top: -14px;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.3s;
+}
+
+/* Card */
+
+.contact-card {
+    background: rgba(5, 44, 92, .90);
+    border-radius: 25px;
+    padding: 20px 32px;
+    color: #fff;
+    transition: .3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon */
+
+.contact-icon {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+/* Heading */
+
+.contact-card h2 {
+    font-size: 16px;
+}
+
+/* Text */
+
+.contact-card p {
+    color: #cfd8e3;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Button */
+
+/* section eight */
+.faqs-collapse {
+    font-size: 14px;
+}
+
+/* section nine */
+.section-n-img {
+    background: #f4f4f4;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.footer-img{
+    text-align: center;
+    padding: 35px;
+    position: relative;
+   
+}
+.img-text{
+position: absolute;      /* Places the text over the image */
+top: 50%;                /* Moves it halfway down the image */
+left: 50%;               /* Moves it halfway across the image */
+transform: translate(-50%, -50%); 
+color: white;
+font-size: 40px;
+}
