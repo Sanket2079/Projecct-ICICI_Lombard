@@ -1,0 +1,25 @@
+.goldmultitrip-container {
+  min-height: 100vh;
+  padding: 24px;
+  background: linear-gradient(135deg, #fff8ec 0%, #f6f6f6 100%);
+  box-sizing: border-box;
+}
+
+.goldmultitrip-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+@media (max-width: 960px) {
+  .goldmultitrip-container {
+    padding: 20px;
+  }
+
+  .goldmultitrip-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

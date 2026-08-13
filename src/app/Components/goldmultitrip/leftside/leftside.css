@@ -1,0 +1,145 @@
+.leftside-panel {
+  flex: 1.1;
+  max-width: 800px;
+  padding-top: 6px;
+}
+
+.feature{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 32px;
+  
+}
+.title h1 {
+  margin: 0 0 28px;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  color: #171717;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.feature-list {
+ display: flex;
+    /* gap: 20px; */
+    width: 260px;
+    height: 82px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    padding: 10px;
+}
+
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 140px;
+ width: 250px;
+  height: 40px;
+   border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  background: #fff4e8;
+  color: #ff7a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 36px;
+}
+
+.feature-text {
+  font-size: 20px;
+  font-weight: 200px;
+  color: #2f2f2f;
+  text-align:center;
+}
+
+.travel-illustration {
+  margin-top: 16px;
+}
+
+.travel-icons {
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
+  border-radius: 24px;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.06));
+}
+
+.feature-icon{
+  height: 30px;
+  width: 30px;  
+  padding: 10px;
+}
+
+
+/* 
+.travel-icons i {
+  font-size: 48px;
+  color: #ff7a00;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.travel-icons i:hover {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .travel-icons {
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .travel-icons i {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .feature-list {
+    gap: 16px;
+  }
+
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .feature-icon svg {
+    width: 64px;
+    height: 64px;
+  }
+
+  .feature-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .feature-card {
+    padding: 12px 14px;
+  }
+
+  .feature-text {
+    font-size: 15px;
+  }
+} */

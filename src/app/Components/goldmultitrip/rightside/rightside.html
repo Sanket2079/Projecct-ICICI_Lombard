@@ -1,0 +1,193 @@
+<section class="rightside-panel">
+  <form class="quotation-card" >
+    <div class="nav nav-tabs trip-tabs">
+      <button
+        type="button"
+        class="nav-link trip-tab"
+        [class.active]="tripType === 'single'"
+        (click)="tripType = 'single'"
+      >
+        <span class="tab-title">Single Trip</span>
+        <span class="tab-subtitle">One policy, one trip</span>
+      </button>
+      <button
+        type="button"
+        class="nav-link trip-tab"
+        [class.active]="tripType === 'multi'"
+        (click)="tripType = 'multi'"
+      >
+        <span class="tab-title">Multi Trip</span>
+        <span class="tab-subtitle">One policy, multiple trips</span>
+      </button>
+    </div>
+
+    <!-- SINGLE TRIP FORM -->
+    <div *ngIf="tripType === 'single'">
+      <div class="mode-selector">
+        <label class="mode-option" [class.active]="geographyMode === 'geography'">
+          <input type="radio" name="geographyMode" value="geography" [(ngModel)]="geographyMode" />
+          <span>Select geography</span>
+        </label>
+        <label class="mode-option" [class.active]="geographyMode === 'country'">
+          <input type="radio" name="geographyMode" value="country" [(ngModel)]="geographyMode" />
+          <span>Select country</span>
+        </label>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="geo-options" *ngIf="geographyMode === 'geography'">
+        <label class="geo-option" [class.selected]="selectedGeography === 'usa'">
+          <input type="radio" name="selectedGeography" value="usa" [(ngModel)]="selectedGeography" />
+          <!-- <span class="geo-icon" aria-hidden="true" ></span> -->
+          <img src=".\assets\ngoldmultitrip\m1.png">
+          <span class="geo-label">USA or Canada</span>
+        </label>
+        <label class="geo-option" [class.selected]="selectedGeography === 'asia'">
+          <input type="radio" name="selectedGeography" value="asia" [(ngModel)]="selectedGeography" />
+          <!-- <span class="geo-icon" aria-hidden="true">🏯</span> -->
+                     <img src=".\assets\ngoldmultitrip\m2.png">
+
+          <span class="geo-label">Asia</span>
+        </label>
+        <label class="geo-option" [class.selected]="selectedGeography === 'schengen'">
+          <input type="radio" name="selectedGeography" value="schengen" [(ngModel)]="selectedGeography" />
+          <!-- <span class="geo-icon" aria-hidden="true">🗼</span> -->
+                     <img src=".\assets\ngoldmultitrip\m3.png">
+
+          <span class="geo-label">Schengen</span>
+        </label>
+        <label class="geo-option" [class.selected]="selectedGeography === 'world'">
+          <input type="radio" name="selectedGeography" value="world" [(ngModel)]="selectedGeography" />
+          <!-- <span class="geo-icon" aria-hidden="true">🍁</span> -->
+                     <img src=".\assets\ngoldmultitrip\m4.png">
+
+          <span class="geo-label">Rest of the world</span>
+        </label>
+      </div>
+
+      <p class="geo-note">Know more about <a href="#" class="geo-link">geographical scope</a></p>
+
+      <div class="country-note" *ngIf="geographyMode === 'country'">
+        <p>Choose the destination country and we will tailor the quote to your trip.</p>
+      </div>
+
+      <div class="date-grid">
+        <label class="date-field">
+          <span></span>
+          <div class="field-with-icon">
+            <input type="date" name="departureDate" [(ngModel)]="departureDate" placeholder="Travel date" />
+            <span class="field-placeholder" *ngIf="!departureDate">Travel date</span>
+            <span class="field-icon" aria-hidden="true">📅</span>
+          </div>
+        </label>
+
+        <label class="date-field">
+          <span></span>
+          <div class="field-with-icon">
+            <input type="date" name="returnDate" [(ngModel)]="returnDate" placeholder="Return date" />
+            <span class="field-placeholder" *ngIf="!returnDate">Return date</span>
+            <span class="field-icon" aria-hidden="true">📅</span>
+          </div>
+        </label>
+      </div>
+
+      <div class="checkbox-stack">
+        <label class="checkbox-row">
+          <input type="checkbox" name="termsAccepted" [(ngModel)]="termsAccepted" />
+          <span>I agree to the <a href="#" class="link-terms">terms and conditions</a></span>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="visaAccepted" [(ngModel)]="visaAccepted" />
+          <span>All the travellers have a non-immigrant visa</span>
+        </label>
+
+        <p class="helper-text">All the travelling members are Indian residents and will be travelling from India</p>
+      </div>
+    </div>
+
+    <!-- MULTI TRIP FORM  -->
+    <div *ngIf="tripType === 'multi'" class="multi-trip-form">
+      <h3 class="form-section-title">Select geography</h3>
+
+      <div class="geo-cards">
+        <label class="geo-card" [class.selected]="selectedMultiGeography === 'worldwide-with-usa'">
+          <input type="radio" name="selectedMultiGeography" value="worldwide-with-usa" [(ngModel)]="selectedMultiGeography" />
+          <!-- <span class="geo-card-icon">🌉</span> -->
+          <span class="geo-card-label">Worldwide including USA-Canada</span>
+        </label>
+        <label class="geo-card" [class.selected]="selectedMultiGeography === 'worldwide-without-usa'">
+          <input type="radio" name="selectedMultiGeography" value="worldwide-without-usa" [(ngModel)]="selectedMultiGeography" />
+          <!-- <span class="geo-card-icon">🗼</span> -->
+          <span class="geo-card-label">Worldwide excluding USA-Canada</span>
+        </label>
+      </div>
+
+      <div class="form-section">
+        <label class="form-label">What is the longest trip duration?</label>
+        <select name="tripDuration" class="form-select" [(ngModel)]="tripDuration">
+          <option value="">No. of days</option>
+          <option value="7">Up to 7 days</option>
+          <option value="15">Up to 15 days</option>
+          <option value="30">Up to 30 days</option>
+          <option value="45">Up to 45 days</option>
+          <option value="60">Up to 60 days</option>
+          <option value="90">Up to 90 days</option>
+        </select>
+      </div>
+
+      <div class="form-section">
+        <label class="form-label">Trip start date</label>
+        <div class="field-with-icon">
+          <input type="date" name="multiStartDate" [(ngModel)]="multiStartDate" class="form-input" />
+          <span class="field-icon" aria-hidden="true">📅</span>
+        </div>
+      </div>
+
+      <div class="checkbox-stack">
+        <label class="checkbox-row">
+          <input type="checkbox" name="termsAccepted" [(ngModel)]="termsAccepted" />
+          <span>I agree to the <a href="#" class="link-terms">terms and conditions</a></span>
+        </label>
+
+        <p class="helper-text">All the travelling members are Indian residents and will be travelling from India</p>
+      </div>
+    </div>
+
+    <button type="button" class="continue-btn" [disabled]="isContinueDisabled" (click)="continue()">
+      Continue
+    </button>
+
+    <p class="success-text" *ngIf="submitted">Your travel quote is ready to review.</p>
+
+    <div class="link-grid">
+      <a href="#" class="inline-link">Retrieve quote</a>
+      <a href="#" class="inline-link">Extend existing policy</a>
+    </div>
+
+    <div class="link-grid secondary-links">
+      <a href="#" class="inline-link">Cancel Policy</a>
+      <a href="#" class="inline-link">Manage Policy</a>
+      <a href="#" class="inline-link">Register claim</a>
+    </div> 
+  </form> 
+</section> 
