@@ -1,0 +1,2881 @@
+/* =========================================================
+   EMPLOYEE COMPENSATION - HERO SECTION
+   ========================================================= */
+
+.employee-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 780px;
+
+  padding: 25px 7.5% 0;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.employee-hero-left {
+  position: relative;
+
+  width: 56%;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.employee-hero-left h1 {
+  margin: 0;
+
+  color: #222222;
+
+  font-size: 50px;
+
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  letter-spacing: -1.2px;
+}
+
+.employee-hero-left h1 span {
+  color: #d95d28;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.employee-subtitle {
+  margin: 8px 0 28px;
+
+  color: #171717;
+
+  font-size: 22px;
+
+  line-height: 1.4;
+
+  font-weight: 600;
+}
+
+.employee-subtitle span {
+  background: #f1f9e9;
+
+  padding: 3px 8px;
+
+  border-radius: 4px;
+}
+
+
+/* =========================================================
+   POLICY ROW
+   ========================================================= */
+
+.employee-policy-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+
+  margin-bottom: 22px;
+}
+
+
+/* Policy count */
+
+.policy-count {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.policy-count strong {
+  color: #d95d28;
+
+  font-size: 29px;
+
+  line-height: 1.1;
+
+  font-weight: 700;
+}
+
+.policy-count span {
+  color: #222222;
+
+  margin-top: 4px;
+
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   MARKET LEADER BADGE
+   ========================================================= */
+
+.market-badge {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  min-height: 53px;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #f4c37e;
+
+  border-radius: 28px;
+
+  background: #fffaf1;
+
+  color: #26384b;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.badge-icon {
+  font-size: 22px;
+}
+
+.market-badge sup {
+  align-self: flex-start;
+
+  margin-top: 7px;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   FEATURE GRID
+   ========================================================= */
+
+.employee-features {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+   ========================================================= */
+
+.employee-feature-card {
+  min-height: 74px;
+
+  padding: 10px 16px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  border: 1px solid #f4cfc1;
+
+  border-radius: 10px;
+
+  background: #fff4ef;
+}
+
+.employee-feature-card img {
+  width: 42px;
+
+  height: 42px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.employee-feature-card span {
+  color: #202b38;
+
+  font-size: 16px;
+
+  line-height: 1.3;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   QUOTE CARD
+   ========================================================= */
+
+.employee-quote-card {
+  position: absolute;
+
+  top: 25px;
+
+  right: 7.5%;
+
+  z-index: 5;
+
+  width: 31%;
+
+  min-height: 455px;
+
+  padding: 36px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #d7d7d7;
+
+  border-radius: 18px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   QUOTE HEADER
+   ========================================================= */
+
+.quote-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.quote-header h2 {
+  margin: 0;
+
+  color: #26384b;
+
+  font-size: 22px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+}
+
+.step-badge {
+  flex-shrink: 0;
+
+  padding: 8px 13px;
+
+  border-radius: 20px;
+
+  background: #eaf6ff;
+
+  color: #26384b;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   FORM LABEL
+   ========================================================= */
+
+.employee-quote-card > label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #26384b;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   MOBILE INPUT
+   ========================================================= */
+
+.employee-quote-card input[type="tel"] {
+  width: 100%;
+
+  height: 54px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #a9a9a9;
+
+  border-radius: 5px;
+
+  outline: none;
+
+  font-size: 17px;
+
+  color: #222222;
+}
+
+.employee-quote-card input[type="tel"]:focus {
+  border-color: #d95d28;
+}
+
+
+/* =========================================================
+   PROCEED BUTTON
+   ========================================================= */
+
+.proceed-btn {
+  width: 100%;
+
+  height: 56px;
+
+  margin-top: 20px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #d95d28;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.proceed-btn:hover {
+  background: #c95221;
+}
+
+
+/* =========================================================
+   RETRIEVE QUOTE
+   ========================================================= */
+
+.retrieve-quote {
+  margin-top: 26px;
+
+  margin-bottom: 15px;
+
+  color: #d95d28;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.info-circle {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 18px;
+
+  height: 18px;
+
+  margin-left: 5px;
+
+  border: 1px solid #777777;
+
+  border-radius: 50%;
+
+  color: #666666;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   CHECKBOX ROW
+   ========================================================= */
+
+.checkbox-row {
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px !important;
+
+  color: #26384b !important;
+
+  font-size: 16px !important;
+
+  font-weight: 400 !important;
+
+  cursor: pointer;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 22px;
+
+  height: 22px;
+
+  margin: 0;
+
+  accent-color: #d95d28;
+
+  flex-shrink: 0;
+}
+
+.checkbox-row span {
+  line-height: 1.4;
+}
+
+.checkbox-row strong {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.employee-hero-image {
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  height: 330px;
+
+  z-index: 1;
+
+  overflow: hidden;
+}
+
+.employee-hero-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center bottom;
+}
+
+
+/* =========================================================
+   RESPONSIVE - LAPTOP
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .employee-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .employee-hero-left {
+    width: 55%;
+  }
+
+  .employee-quote-card {
+    right: 5%;
+    width: 34%;
+  }
+
+  .employee-hero-left h1 {
+    font-size: 42px;
+  }
+
+  .employee-subtitle {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .employee-hero {
+    min-height: auto;
+
+    padding: 35px 25px 0;
+
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .employee-hero-left {
+    width: 100%;
+  }
+
+  .employee-hero-left h1 {
+    font-size: 38px;
+  }
+
+  .employee-quote-card {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: 100%;
+
+    margin-top: 30px;
+  }
+
+  .employee-hero-image {
+    position: relative;
+
+    bottom: auto;
+
+    height: 300px;
+
+    margin-top: 30px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .employee-hero {
+    padding: 25px 16px 0;
+  }
+
+  .employee-hero-left h1 {
+    font-size: 31px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .employee-subtitle {
+    font-size: 17px;
+
+    margin-bottom: 22px;
+  }
+
+  .employee-policy-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .employee-features {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .employee-quote-card {
+    padding: 25px 20px;
+  }
+
+  .quote-header h2 {
+    font-size: 19px;
+  }
+
+  .employee-hero-image {
+    height: 220px;
+  }
+}
+
+.employee-nav {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 7px 52px;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  overflow-x: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.employee-nav-btn {
+  flex-shrink: 0;
+  height: 44px;
+  padding: 0 38px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: white;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.employee-nav-btn.active {
+  background: #d65b27;
+  border-color: #d65b27;
+  color: white;
+  font-weight: 600;
+}
+
+.employee-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 7px 52px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+  overflow-x: auto;
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+.employee-nav-btn {
+  flex-shrink: 0;
+
+  height: 44px;
+
+  padding: 0 38px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #333333;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.employee-nav-btn.active {
+  background: #d65b27;
+  border-color: #d65b27;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#what-is,
+#claim-calculator,
+#why-it-matters,
+#who-needs-it,
+#key-benefits,
+#coverage,
+#esia-wc,
+#why-icici {
+  scroll-margin-top: 80px;
+}
+
+/* =========================================================
+   EMPLOYEE COMPENSATION NAVIGATION
+   ========================================================= */
+
+.employee-nav {
+  width: 100%;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 7px 52px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  white-space: nowrap;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  box-sizing: border-box;
+
+  scrollbar-width: none;
+}
+
+.employee-nav::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTON
+   ========================================================= */
+
+.employee-nav-btn {
+  flex: 0 0 auto;
+
+  height: 44px;
+
+  padding: 0 38px;
+
+  background: #ffffff;
+
+  color: #333333;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 10px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition: 0.2s ease;
+}
+
+
+/* First / Active Button */
+
+.employee-nav-btn.active {
+  background: #d65b27;
+
+  border-color: #d65b27;
+
+  color: #ffffff;
+
+  font-weight: 600;
+}
+
+
+/* Hover */
+
+.employee-nav-btn:hover {
+  border-color: #d65b27;
+}
+
+
+/* =========================================================
+   WHAT IS EMPLOYEE COMPENSATION SECTION
+   ========================================================= */
+
+.employee-about-section {
+  width: 100%;
+
+  background: #ffffff;
+
+  padding-top: 108px;
+
+  padding-bottom: 118px;
+
+  box-sizing: border-box;
+}
+
+
+/* Main two-column container */
+
+.employee-about-container {
+  width: calc(100% - 270px);
+
+  max-width: 1570px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.45fr 0.9fr;
+
+  column-gap: 80px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.employee-about-content {
+  width: 100%;
+}
+
+
+/* Heading */
+
+.employee-about-title {
+  margin: 0 0 38px 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 48px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: -1.2px;
+
+  color: #222222;
+}
+
+
+/* Orange "What is" */
+
+.employee-about-title span {
+  color: #d65b27;
+}
+
+
+/* Paragraphs */
+
+.employee-about-content p {
+  margin: 0 0 17px 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 20px;
+
+  line-height: 1.45;
+
+  font-weight: 400;
+
+  color: #29445d;
+
+  max-width: 900px;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+   ========================================================= */
+
+.employee-about-image {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.employee-about-image img {
+  width: 100%;
+
+  max-width: 570px;
+
+  height: 350px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 48% 48% 48% 48% / 48% 48% 48% 48%;
+}
+
+
+/* =========================================================
+   SECTION DIVIDER
+   ========================================================= */
+
+.employee-about-section::after {
+  content: "";
+
+  display: block;
+
+  width: calc(100% - 270px);
+
+  max-width: 1570px;
+
+  height: 1px;
+
+  margin: 105px auto 0;
+
+  background: #dddddd;
+}
+
+
+/* =========================================================
+   SCROLL POSITION
+   ========================================================= */
+
+#what-is,
+#claim-calculator,
+#why-it-matters,
+#who-needs-it,
+#key-benefits,
+#coverage,
+#esia-wc,
+#why-icici {
+  scroll-margin-top: 80px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .employee-about-container {
+    width: calc(100% - 100px);
+
+    grid-template-columns: 1fr 0.8fr;
+
+    column-gap: 45px;
+  }
+
+  .employee-about-title {
+    font-size: 42px;
+  }
+
+  .employee-about-content p {
+    font-size: 18px;
+  }
+
+  .employee-about-section::after {
+    width: calc(100% - 100px);
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .employee-about-container {
+    width: calc(100% - 50px);
+
+    grid-template-columns: 1fr;
+
+    row-gap: 40px;
+  }
+
+  .employee-about-image {
+    order: 2;
+  }
+
+  .employee-about-image img {
+    max-width: 600px;
+  }
+
+  .employee-about-section::after {
+    width: calc(100% - 50px);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .employee-nav {
+    padding: 7px 15px;
+
+    gap: 10px;
+  }
+
+  .employee-nav-btn {
+    padding: 0 22px;
+
+    font-size: 15px;
+  }
+
+  .employee-about-section {
+    padding-top: 60px;
+
+    padding-bottom: 70px;
+  }
+
+  .employee-about-container {
+    width: calc(100% - 30px);
+  }
+
+  .employee-about-title {
+    font-size: 34px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .employee-about-content p {
+    font-size: 17px;
+
+    line-height: 1.5;
+  }
+
+  .employee-about-image img {
+    height: 280px;
+  }
+
+  .employee-about-section::after {
+    width: calc(100% - 30px);
+
+    margin-top: 60px;
+  }
+}
+
+/* =====================================================
+   CLAIM CALCULATOR
+   ===================================================== */
+
+.claim-section {
+  width: 100%;
+  padding: 90px 0 100px;
+  background: #ffffff;
+}
+
+.claim-title {
+  text-align: center;
+  margin: 0 0 25px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color: #222;
+}
+
+.claim-title span {
+  color: #df6930;
+}
+
+.claim-description {
+  width: 900px;
+  max-width: 90%;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #34495e;
+}
+
+.claim-box {
+  width: 1100px;
+  max-width: calc(100% - 40px);
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 35px;
+
+  padding: 35px;
+
+  border: 1px solid #dedede;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.claim-left h3 {
+  margin: 0 0 35px;
+
+  font-size: 20px;
+  color: #222;
+}
+
+.claim-left label {
+  display: block;
+
+  margin: 0 0 8px;
+
+  font-size: 17px;
+  color: #243b53;
+}
+
+.claim-input {
+  width: 100%;
+  height: 50px;
+
+  padding: 10px 14px;
+
+  margin-bottom: 22px;
+
+  border: 1px solid #c8c8c8;
+  border-radius: 6px;
+
+  font-size: 17px;
+
+  box-sizing: border-box;
+}
+
+.salary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 5px 0 18px;
+}
+
+.salary-value {
+  min-width: 125px;
+
+  padding: 12px;
+
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.salary-range {
+  width: 100%;
+
+  accent-color: #e36b32;
+
+  cursor: pointer;
+}
+
+.salary-scale {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 8px 0 28px;
+
+  font-size: 14px;
+  color: #34495e;
+}
+
+.claim-button {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #e66b32;
+
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.claim-button:hover {
+  background: #d95e27;
+}
+
+.claim-result {
+  padding: 30px 25px;
+
+  background: #fff3ef;
+
+  border-radius: 12px;
+}
+
+.claim-result h3 {
+  margin: 0 0 25px;
+
+  text-align: center;
+
+  font-size: 20px;
+  line-height: 1.4;
+
+  color: #222;
+}
+
+.claim-result-row {
+  padding: 18px 0;
+
+  border-bottom: 1px solid #ddd;
+
+  font-size: 16px;
+
+  color: #26384d;
+}
+
+.claim-result-row span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  line-height: 1.4;
+}
+
+.claim-result-row strong {
+  font-size: 18px;
+  color: #111;
+}
+
+@media (max-width: 900px) {
+
+  .claim-box {
+    grid-template-columns: 1fr;
+  }
+
+  .claim-title {
+    font-size: 34px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .claim-section {
+    padding: 60px 0;
+  }
+
+  .claim-title {
+    font-size: 30px;
+  }
+
+  .claim-box {
+    max-width: calc(100% - 25px);
+    padding: 20px;
+  }
+
+}
+
+/* =========================================================
+   EMPLOYEE COMPENSATION
+   WHY IT MATTERS SECTION
+   ========================================================= */
+
+.ec-why-section {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 58px 7.2% 65px;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   MAIN HEADING
+   ========================= */
+
+.ec-why-title {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 700;
+
+  letter-spacing: -1.2px;
+
+  color: #222222;
+}
+
+.ec-why-title span {
+  color: #df6930;
+}
+
+
+/* =========================
+   SUBTITLE
+   ========================= */
+
+.ec-why-subtitle {
+  margin: 37px 0 40px;
+
+  text-align: center;
+
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #34495e;
+}
+
+
+/* =========================
+   CARDS CONTAINER
+   ========================= */
+
+.ec-why-cards {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.ec-why-card {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   CARD IMAGE
+   ========================= */
+
+.ec-why-card-image {
+  display: block;
+
+  width: 100%;
+  height: 188px;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   CARD CONTENT
+   ========================= */
+
+.ec-why-card-content {
+  padding: 25px 23px 30px;
+}
+
+
+/* Card heading */
+
+.ec-why-card-content h3 {
+  margin: 0 0 14px;
+
+  font-size: 20px;
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  color: #26384d;
+}
+
+
+/* Card paragraph */
+
+.ec-why-card-content p {
+  margin: 0;
+
+  font-size: 19px;
+  line-height: 1.35;
+
+  font-weight: 400;
+
+  color: #34495e;
+}
+
+
+/* Superscript numbers */
+
+.ec-why-card-content sup {
+  position: relative;
+
+  top: -0.3em;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   NOTE BOX
+   ========================= */
+
+.ec-why-note {
+  width: 64%;
+
+  min-height: 88px;
+
+  margin: 25px auto 0;
+
+  padding: 15px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  box-sizing: border-box;
+
+  background: #fffdf3;
+
+  border: 1px solid #f0e6bd;
+
+  border-radius: 18px;
+}
+
+
+/* Note label */
+
+.ec-why-note-label {
+  flex-shrink: 0;
+
+  padding: 7px 13px;
+
+  background: #ffc928;
+
+  border-radius: 5px;
+
+  color: #222222;
+
+  font-size: 17px;
+
+  line-height: 1;
+
+  font-weight: 600;
+}
+
+
+/* Note text */
+
+.ec-why-note p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.55;
+
+  color: #34495e;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .ec-why-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .ec-why-title {
+    font-size: 44px;
+  }
+
+  .ec-why-cards {
+    gap: 20px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .ec-why-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ec-why-note {
+    width: 90%;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .ec-why-section {
+    padding: 45px 20px;
+  }
+
+  .ec-why-title {
+    font-size: 32px;
+  }
+
+  .ec-why-subtitle {
+    margin-top: 25px;
+
+    font-size: 17px;
+  }
+
+  .ec-why-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ec-why-card-image {
+    height: 200px;
+  }
+
+  .ec-why-note {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}
+
+/* =========================================
+   WHO SHOULD BUY SECTION
+========================================= */
+
+.who-should-buy {
+  width: 100%;
+  padding: 55px 7% 95px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.who-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.who-heading h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: 1.22;
+  font-weight: 700;
+  color: #222222;
+}
+
+.who-heading h2 span {
+  color: #df652d;
+}
+
+/* =========================================
+   CARDS GRID
+========================================= */
+
+.buyer-grid {
+  max-width: 1535px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.buyer-card {
+  min-height: 200px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: flex-start;
+
+  padding: 38px 38px;
+
+  box-sizing: border-box;
+}
+
+/* Icon */
+.buyer-icon {
+  width: 75px;
+  min-width: 75px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  font-size: 48px;
+  line-height: 1;
+
+  margin-right: 28px;
+}
+
+/* Card Content */
+.buyer-content {
+  flex: 1;
+}
+
+.buyer-content h3 {
+  margin: 0 0 14px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.25;
+  font-weight: 700;
+
+  color: #111111;
+}
+
+.buyer-content p {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 1.55;
+  font-weight: 400;
+
+  color: #263b50;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .who-should-buy {
+    padding: 45px 5% 70px;
+  }
+
+  .who-heading h2 {
+    font-size: 40px;
+  }
+
+  .buyer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .who-heading h2 {
+    font-size: 32px;
+  }
+
+  .buyer-card {
+    padding: 25px 20px;
+  }
+
+  .buyer-icon {
+    width: 55px;
+    min-width: 55px;
+    margin-right: 15px;
+    font-size: 38px;
+  }
+
+  .buyer-content h3 {
+    font-size: 18px;
+  }
+
+  .buyer-content p {
+    font-size: 16px;
+  }
+}
+
+.employee-nav {
+  display: flex;
+  gap: 14px;
+  padding: 8px 52px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.employee-nav button {
+  height: 44px;
+  padding: 0 38px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fff;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* CLICKED / ACTIVE BUTTON */
+.employee-nav button.active {
+  background: #d95b27;
+  color: #fff;
+  border-color: #d95b27;
+  font-weight: 600;
+}
+
+/* Optional hover */
+.employee-nav button:hover {
+  border-color: #d95b27;
+}
+
+.employee-nav button.active-nav {
+  background-color: #e66b32 !important;
+  border-color: #e66b32 !important;
+  color: #ffffff !important;
+}
+
+.employee-nav button.active-nav:hover {
+  background-color: #e66b32 !important;
+  border-color: #e66b32 !important;
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   KEY BENEFITS SECTION
+   ========================================================= */
+
+.key-benefits-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 55px 0 70px;
+}
+
+.key-benefits-container {
+  width: 84%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+/* ================= HEADING ================= */
+
+.key-benefits-title {
+  margin: 0 0 48px;
+
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 48px;
+
+  line-height: 1.18;
+
+  font-weight: 700;
+
+  color: #222222;
+}
+
+.key-benefits-title span {
+  color: #df6730;
+}
+
+
+/* ================= GRID ================= */
+
+.benefits-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 28px;
+
+  row-gap: 28px;
+}
+
+
+/* ================= CARD ================= */
+
+.benefit-card {
+  display: flex;
+
+  width: 100%;
+
+  min-height: 238px;
+
+  background: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* ================= IMAGE ================= */
+
+.benefit-image {
+  width: 39%;
+
+  min-width: 39%;
+
+  height: 238px;
+
+  overflow: hidden;
+}
+
+.benefit-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* ================= CONTENT ================= */
+
+.benefit-content {
+  flex: 1;
+
+  padding: 25px 25px 20px;
+}
+
+.benefit-content h3 {
+  margin: 0 0 13px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 21px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  color: #171717;
+}
+
+.benefit-content p {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 19px;
+
+  line-height: 1.48;
+
+  font-weight: 400;
+
+  color: #34485c;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .key-benefits-container {
+    width: 90%;
+  }
+
+  .key-benefits-title {
+    font-size: 40px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .key-benefits-section {
+    padding: 40px 0;
+  }
+
+  .key-benefits-title {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .benefit-card {
+    flex-direction: column;
+  }
+
+  .benefit-image {
+    width: 100%;
+    min-width: 100%;
+    height: 220px;
+  }
+
+  .benefit-content {
+    padding: 20px;
+  }
+
+  .benefit-content h3 {
+    font-size: 20px;
+  }
+
+  .benefit-content p {
+    font-size: 17px;
+  }
+
+}
+
+/* =========================================================
+   WHAT'S INCLUDED SECTION
+========================================================= */
+
+.coverage-section {
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 42px 70px 100px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+
+/* ================= HEADING ================= */
+
+.coverage-title {
+  margin: 0;
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  line-height: 1.15;
+  font-weight: 800;
+
+  color: #222222;
+}
+
+.coverage-title span {
+  color: #df6b32;
+}
+
+
+/* ================= TABS ================= */
+
+.coverage-tabs {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 38px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.coverage-tab {
+  width: 170px;
+  height: 52px;
+
+  padding: 0;
+
+  border: none;
+  border-bottom: 2px solid transparent;
+
+  background: transparent;
+
+  color: #333333;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+/* Active tab */
+
+.coverage-tab.active {
+  color: #df6b32;
+  border-bottom: 2px solid #df6b32;
+}
+
+
+/* Hover */
+
+.coverage-tab:hover {
+  color: #df6b32;
+}
+
+
+/* ================= GRID ================= */
+
+.coverage-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-top: 38px;
+}
+
+
+/* ================= CARD ================= */
+
+.coverage-card {
+  min-height: 108px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 20px 22px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= ICON ================= */
+
+.coverage-icon {
+  width: 52px;
+  min-width: 52px;
+
+  margin-right: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 38px;
+}
+
+
+/* ================= TEXT ================= */
+
+.coverage-text {
+  color: #26364a;
+
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.coverage-text span {
+  display: inline-block;
+}
+
+.coverage-text sup {
+  font-size: 11px;
+  vertical-align: super;
+}
+
+
+/* Information icon */
+
+.info-icon {
+  width: 17px;
+  height: 17px;
+
+  margin-left: 4px;
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #555;
+  border-radius: 50%;
+
+  font-size: 11px !important;
+  font-weight: 600;
+
+  color: #555;
+
+  vertical-align: middle;
+}
+
+
+/* ================= NOTE ================= */
+
+.coverage-note {
+  width: 815px;
+  max-width: 100%;
+
+  min-height: 64px;
+
+  margin: 38px auto 0;
+
+  padding: 12px 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  border: 1px solid #f0e8c9;
+  border-radius: 18px;
+
+  background: #fffdf2;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Note yellow label */
+
+.note-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 67px;
+  height: 34px;
+
+  padding: 0 12px;
+
+  border-radius: 5px;
+
+  background: #ffd34e;
+
+  color: #111111;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* Note text */
+
+.note-text {
+  color: #26364a;
+
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+/* Policy wording */
+
+.note-text a {
+  color: #e26631;
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+
+/* ================= EXCLUSIONS ================= */
+
+.exclusions-content {
+  margin-top: 38px;
+  min-height: 200px;
+}
+
+.exclusion-box {
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+
+  padding: 30px;
+
+  color: #26364a;
+}
+
+.exclusion-box h3 {
+  margin: 0 0 15px;
+
+  font-size: 22px;
+  color: #222222;
+}
+
+.exclusion-box p {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+
+  .coverage-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .coverage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .coverage-section {
+    padding: 35px 20px 70px;
+  }
+
+  .coverage-title {
+    font-size: 34px;
+  }
+
+  .coverage-tabs {
+    margin-top: 25px;
+  }
+
+  .coverage-tab {
+    width: 130px;
+    font-size: 15px;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .coverage-note {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+/* =========================================================
+   ESI ACT & EMPLOYEE'S COMPENSATION
+   COMPACT SCREENSHOT MATCH
+   ========================================================= */
+
+.esi-wc-section {
+  width: 100% !important;
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+  padding: 45px 0 35px !important;
+  box-sizing: border-box !important;
+  background: #ffffff !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.esi-wc-section .esi-wc-title {
+  width: 100% !important;
+  max-width: 1250px !important;
+
+  margin: 0 auto 34px !important;
+  padding: 0 !important;
+
+  text-align: center !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 48px !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+
+  color: #202020 !important;
+}
+
+.esi-wc-section .esi-wc-title span {
+  color: #df6b32 !important;
+  font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.esi-wc-section .esi-wc-description {
+  width: 100% !important;
+  max-width: 1050px !important;
+
+  margin: 0 auto 28px !important;
+  padding: 0 !important;
+
+  text-align: center !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 19px !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+
+  color: #17395b !important;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+   ========================================================= */
+
+.esi-wc-section .esi-table-wrapper {
+  display: block !important;
+
+  width: 1495px !important;
+  max-width: calc(100% - 100px) !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  box-sizing: border-box !important;
+
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 20px !important;
+
+  overflow: hidden !important;
+
+  background: #ffffff !important;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.esi-wc-section .esi-table {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+
+  table-layout: fixed !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.35 !important;
+
+  color: #111111 !important;
+}
+
+
+/* =========================================================
+   COLUMN WIDTHS
+   ========================================================= */
+
+.esi-wc-section .esi-table th:nth-child(1),
+.esi-wc-section .esi-table td:nth-child(1) {
+  width: 17% !important;
+}
+
+.esi-wc-section .esi-table th:nth-child(2),
+.esi-wc-section .esi-table td:nth-child(2) {
+  width: 46% !important;
+}
+
+.esi-wc-section .esi-table th:nth-child(3),
+.esi-wc-section .esi-table td:nth-child(3) {
+  width: 37% !important;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.esi-wc-section .esi-table thead th {
+  height: 64px !important;
+
+  padding: 12px 18px !important;
+
+  box-sizing: border-box !important;
+
+  background: #eef6ff !important;
+
+  border-right: 1px solid #d9d9d9 !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+
+  text-align: center !important;
+  vertical-align: middle !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 19px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+
+  color: #111111 !important;
+}
+
+.esi-wc-section .esi-table thead th:last-child {
+  border-right: none !important;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.esi-wc-section .esi-table tbody td {
+  height: 60px !important;
+
+  padding: 13px 27px !important;
+
+  box-sizing: border-box !important;
+
+  border-right: 1px solid #d9d9d9 !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+
+  vertical-align: middle !important;
+
+  text-align: left !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.35 !important;
+  font-weight: 400 !important;
+
+  color: #111111 !important;
+}
+
+.esi-wc-section .esi-table tbody td:first-child {
+  font-weight: 700 !important;
+}
+
+.esi-wc-section .esi-table tbody td:last-child {
+  border-right: none !important;
+}
+
+.esi-wc-section .esi-table tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+
+/* =========================================================
+   BOTTOM NOTE
+   ========================================================= */
+
+.esi-wc-section .esi-wc-note {
+  margin: 11px auto 0 !important;
+  padding: 0 !important;
+
+  text-align: center !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.4 !important;
+  font-weight: 400 !important;
+
+  color: #333333 !important;
+}
+
+.esi-wc-section .esi-wc-note sup {
+  font-size: 15px !important;
+}
+
+
+/* =========================================================
+   FORCE OVERRIDE GLOBAL h2 / p / table CSS
+   ========================================================= */
+
+.esi-wc-section h2.esi-wc-title {
+  font-size: 48px !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 34px !important;
+}
+
+.esi-wc-section p.esi-wc-description {
+  font-size: 19px !important;
+  line-height: 1.5 !important;
+}
+
+.esi-wc-section table.esi-table {
+  font-size: 18px !important;
+}
+
+.esi-wc-section table.esi-table th {
+  font-size: 19px !important;
+}
+
+.esi-wc-section table.esi-table td {
+  font-size: 18px !important;
+}
+
+
+/* =========================================================
+   1200px AND BELOW
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .esi-wc-section {
+    max-width: 100% !important;
+    padding: 40px 25px 35px !important;
+  }
+
+  .esi-wc-section .esi-wc-title {
+    max-width: 1100px !important;
+    font-size: 42px !important;
+  }
+
+  .esi-wc-section .esi-wc-description {
+    max-width: 950px !important;
+    font-size: 18px !important;
+  }
+
+  .esi-wc-section .esi-table-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .esi-wc-section .esi-table thead th {
+    font-size: 17px !important;
+  }
+
+  .esi-wc-section .esi-table tbody td {
+    font-size: 16px !important;
+    padding: 12px 18px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .esi-wc-section {
+    padding: 30px 15px !important;
+  }
+
+  .esi-wc-section .esi-wc-title {
+    max-width: 100% !important;
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  .esi-wc-section .esi-wc-description {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  .esi-wc-section .esi-wc-description br {
+    display: none !important;
+  }
+
+  .esi-wc-section .esi-table-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  .esi-wc-section .esi-table {
+    min-width: 850px !important;
+  }
+
+  .esi-wc-section .esi-table thead th {
+    font-size: 16px !important;
+  }
+
+  .esi-wc-section .esi-table tbody td {
+    font-size: 15px !important;
+    padding: 11px 15px !important;
+  }
+
+  .esi-wc-section .esi-wc-note {
+    font-size: 15px !important;
+  }
+}
+
+
+   /* WHY CHOOSE ICICI LOMBARD SECTION
+   ========================================================= */ */
+
+.why-choose-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 48px 7% 0;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+.why-choose-title {
+  margin: 0 auto 40px;
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 700;
+
+  color: #202020;
+  letter-spacing: -1.2px;
+}
+
+.why-choose-title span {
+  color: #df6b35;
+}
+
+
+/* =========================
+   FOUR CARD GRID
+   ========================= */
+
+.why-choose-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  column-gap: 24px;
+  align-items: start;
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.why-choose-card {
+  width: 100%;
+  min-width: 0;
+
+  background: #ffffff;
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+.why-choose-image {
+  display: block;
+
+  width: 100%;
+  height: 208px;
+
+  object-fit: cover;
+
+  border-radius: 11px;
+}
+
+
+/* =========================
+   CARD HEADING
+   ========================= */
+
+.why-choose-card h3 {
+  margin: 25px 0 12px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  line-height: 1.25;
+  font-weight: 700;
+
+  color: #171717;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+   ========================= */
+
+.why-choose-card p {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #29435a;
+}
+
+
+/* =========================
+   BOTTOM LINE
+   ========================= */
+
+.why-choose-bottom-line {
+  width: 100%;
+  height: 1px;
+
+  margin-top: 125px;
+
+  background: #dddddd;
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .why-choose-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .why-choose-title {
+    font-size: 42px;
+  }
+
+  .why-choose-grid {
+    column-gap: 20px;
+  }
+
+  .why-choose-image {
+    height: 190px;
+  }
+
+  .why-choose-card h3 {
+    font-size: 21px;
+  }
+
+  .why-choose-card p {
+    font-size: 18px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .why-choose-title {
+    font-size: 36px;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 45px;
+  }
+
+  .why-choose-image {
+    height: 210px;
+  }
+
+  .why-choose-bottom-line {
+    margin-top: 70px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .why-choose-section {
+    padding: 35px 20px 0;
+  }
+
+  .why-choose-title {
+    font-size: 30px;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+
+    margin-bottom: 30px;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .why-choose-image {
+    height: 220px;
+  }
+
+  .why-choose-card h3 {
+    margin-top: 18px;
+    font-size: 21px;
+  }
+
+  .why-choose-card p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .why-choose-bottom-line {
+    margin-top: 60px;
+  }
+
+}

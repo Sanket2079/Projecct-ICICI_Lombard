@@ -1,0 +1,1240 @@
+<div class="marine-page">
+
+  <!-- =====================================================
+       HERO SECTION
+  ====================================================== -->
+  <section class="hero-section">
+
+    <div class="hero-container">
+
+      <!-- LEFT SIDE -->
+      <div class="hero-left">
+
+        <h1>
+          <span>Marine</span> Insurance
+        </h1>
+
+        <h2>
+          Safety in transit. Strength in business.
+          Explore plans starting @ ₹499<sup>$</sup>
+        </h2>
+
+        <!-- POLICY INFO -->
+        <div class="policy-info">
+
+          <div class="policy-count">
+            <strong>10 Lakh+</strong>
+            <span>Policies issued*</span>
+          </div>
+
+          <div class="leader-badge">
+            <span>🏅</span>
+            <span>One of the Market leaders in the private sector#</span>
+          </div>
+
+        </div>
+
+
+        <!-- FEATURE CARDS -->
+        <div class="feature-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <span>Easy claim process</span>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📑</div>
+            <span>Instant policy creation</span>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">👨‍💼</div>
+            <span>Dedicated relationship<br>manager</span>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🚢</div>
+            <span>Coverage for rail, road,<br>air and sea</span>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📦</div>
+            <span>Covers import, export &<br>domestic transits</span>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <span>Covers overturning or<br>derailment of vehicle</span>
+          </div>
+
+        </div>
+
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-container">
+          <img
+            src="/Images/marine-banner-bg.webp"
+            alt="Marine Insurance"
+            class="marine-image"
+          >
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           QUOTE CARD
+      ====================================================== -->
+      <div class="quote-card">
+
+        <div class="step-badge">
+          Step 1/2
+        </div>
+
+        <h2>
+          Get your goods insured in under 60
+          <br>
+          seconds
+        </h2>
+
+        <label>Mobile number</label>
+
+        <input
+          type="text"
+          maxlength="10"
+          [(ngModel)]="mobileNumber"
+          (keypress)="allowOnlyNumbers($event)"
+          (input)="validateMobile()"
+        >
+
+        <div
+          class="error-message"
+          *ngIf="mobileError"
+        >
+          {{ mobileError }}
+        </div>
+
+        <button
+          type="button"
+          class="proceed-button"
+          (click)="proceed()"
+        >
+          Proceed
+        </button>
+
+        <div
+          class="retrieve-quote"
+          (click)="retrieveQuote()"
+        >
+          <span>Retrieve quote</span>
+          <span class="info-icon">i</span>
+        </div>
+
+        <label class="checkbox-row">
+
+          <input
+            type="checkbox"
+            [(ngModel)]="agreeTerms"
+          >
+
+          <span>
+            I agree to the terms and conditions
+          </span>
+
+        </label>
+
+
+        <label class="checkbox-row">
+
+          <input
+            type="checkbox"
+            [(ngModel)]="whatsappUpdates"
+          >
+
+          <span>
+            I want to receive updates on
+            <strong>◉ WhatsApp</strong>
+          </span>
+
+        </label>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       STICKY NAVIGATION
+  ====================================================== -->
+
+  <nav class="bottom-nav">
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'about'"
+      (click)="scrollTo('about')"
+    >
+      About the insurance
+    </button>
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'importance'"
+      (click)="scrollTo('importance')"
+    >
+      Importance
+    </button>
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'who-buy'"
+      (click)="scrollTo('who-buy')"
+    >
+      Who should buy
+    </button>
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'how-works'"
+      (click)="scrollTo('how-works')"
+    >
+      How it works
+    </button>
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'types'"
+      (click)="scrollTo('types')"
+    >
+      Types
+    </button>
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'inclusion-exclusion'"
+      (click)="scrollTo('inclusion-exclusion')"
+    >
+      Inclusion & Exclusion
+    </button>
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'why-buy'"
+      (click)="scrollTo('why-buy')"
+    >
+      Why buy it
+    </button>
+
+    <button
+      type="button"
+      [class.active]="activeSection === 'claim'"
+      (click)="scrollTo('claim')"
+    >
+      Claim Process
+    </button>
+
+  </nav>
+
+
+  <!-- =====================================================
+       ABOUT
+  ====================================================== -->
+
+  <section
+    id="about"
+    class="marine-about-section"
+  >
+
+    <div class="marine-about-container">
+
+      <!-- LEFT -->
+      <div class="marine-about-content">
+
+        <h2>
+          <span>What is</span> Marine insurance?
+        </h2>
+
+        <p>
+          Sending goods across cities or countries?
+          Think of marine insurance as a safety net for your
+          shipments. Whether they’re on a truck, plane, or ship -
+          they’re protected.
+        </p>
+
+        <p>
+          Bad weather, accidents, or fires don’t come with a warning.
+          But with marine insurance, you don’t need to worry if
+          something goes wrong along the way.
+        </p>
+
+        <p>
+          For example, if your truck meets with an accident while
+          carrying your goods, that could mean a big loss.
+          But with insurance, your business stays secure.
+        </p>
+
+        <div class="marine-trivia-box">
+
+          <div class="marine-trivia-title">
+            Trivia
+          </div>
+
+          <p>
+            Did you know that Marine Insurance, as the name typically
+            suggests, doesn’t necessarily cover only sea routes?
+            It protects your cargo across air, road, rail, and sea —
+            through every leg of the journey — until it reaches its
+            final stop.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT IMAGE -->
+      <div class="marine-about-image">
+
+        <img
+          src="/Images/what-is-marine-1x.webp"
+          alt="Marine Insurance cargo transportation"
+        >
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       IMPORTANCE
+  ====================================================== -->
+
+  <section
+    id="importance"
+    class="importance-section"
+  >
+
+    <div class="section-heading">
+
+      <h2>
+        <span>Importance of</span><br>
+        Marine insurance policy
+      </h2>
+
+    </div>
+
+
+    <div class="importance-grid">
+
+      <!-- CARD 1 -->
+      <div class="importance-card">
+
+        <div class="importance-icon">
+          <img
+            src="/Images/covers-every-mode-transit-2x.webp"
+            alt="Air Road Rail Sea"
+          >
+        </div>
+
+        <div class="importance-content">
+
+          <h3>
+            Single Cover for Air, Road, Rail & Sea
+          </h3>
+
+          <p>
+            From accidents and theft to floods and earthquakes —
+            marine insurance handles the mess. Your cargo is protected
+            across road, air, and sea, no matter what surprises the
+            journey throws at you.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 2 -->
+      <div class="importance-card">
+
+        <div class="importance-icon">
+          <img
+            src="/Images/ensures-smooth-delivery-icon.webp"
+            alt="Smooth Customs and Delivery"
+          >
+        </div>
+
+        <div class="importance-content">
+
+          <h3>
+            Ensures smooth customs & delivery
+          </h3>
+
+          <p>
+            Having valid marine insurance documents speeds up customs
+            clearance and prevents disputes with buyers in case goods
+            arrive damaged.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+      <div class="importance-card">
+
+        <div class="importance-icon">
+          <img
+            src="/Images/mandatory-approval-icon.webp"
+            alt="LC and Trade Approval"
+          >
+        </div>
+
+        <div class="importance-content">
+
+          <h3>
+            Mandatory for LC & trade approval
+          </h3>
+
+          <p>
+            If you’re shipping goods under a Letter of Credit (LC),
+            the bank won’t pay unless you provide certain documents —
+            including insurance. Marine insurance makes sure you meet
+            this requirement, so your payment isn’t delayed.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       WHO SHOULD BUY
+  ====================================================== -->
+
+  <section
+    id="who-buy"
+    class="marine-buy-section"
+  >
+
+    <h2 class="marine-buy-title">
+      <span>Who should buy</span> Marine insurance
+    </h2>
+
+
+    <div class="marine-buy-grid">
+
+      <!-- CARD 1 -->
+      <div class="marine-buy-card">
+
+        <img
+          src="/Images/exporters-importers-1x.webp"
+          alt="Exporters and Importers"
+        >
+
+        <div class="marine-buy-card-content">
+
+          <h3>
+            Exporters & importers –
+            <span>Protect goods across borders</span>
+          </h3>
+
+          <p>
+            If you regularly ship or receive goods across borders,
+            you face risks like loss, theft, or damage during
+            international transit. Marine insurance safeguards
+            your cargo and ensures smoother trade and payment
+            compliance under LC terms.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 2 -->
+      <div class="marine-buy-card">
+
+        <img
+          src="/Images/domestic-manufacturers-traders-1x.webp"
+          alt="Domestic manufacturers and traders"
+        >
+
+        <div class="marine-buy-card-content">
+
+          <h3>
+            Domestic manufacturers & traders –
+            <span>Secure raw material & finished goods</span>
+          </h3>
+
+          <p>
+            If you move raw materials to factories or finished
+            goods to clients within India, marine insurance covers
+            your shipments against transit risks, whether by road,
+            rail, air, or coastal shipping.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+      <div class="marine-buy-card">
+
+        <img
+          src="/Images/merchant-exporters-wholesalers-1x.webp"
+          alt="Merchant exporters and wholesalers"
+        >
+
+        <div class="marine-buy-card-content">
+
+          <h3>
+            Merchant exporters & wholesalers –
+            <span>Shield your supply chain from risk</span>
+          </h3>
+
+          <p>
+            Entities engaged in third-party or triangular trade,
+            where goods are shipped directly from one country to
+            another without entering the trader’s country of
+            registration, should obtain marine insurance to cover
+            transit risks.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 4 -->
+      <div class="marine-buy-card">
+
+        <img
+          src="/Images/logistics-providers-transporters-1x.webp"
+          alt="Logistics providers"
+        >
+
+        <div class="marine-buy-card-content">
+
+          <h3>
+            Logistics providers
+            (Transporters, 3PLs, C&F Agents) –
+            <span>Reduce liability, boost trust</span>
+          </h3>
+
+          <p>
+            If your business is moving goods for others, your
+            reputation and liability is dependent on safe delivery.
+            Marine insurance adds a layer of protection for the same.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       HOW IT WORKS
+  ====================================================== -->
+
+  <section
+    id="how-works"
+    class="marine-how-section"
+  >
+
+    <!-- LEFT IMAGE -->
+    <div class="marine-how-image">
+
+      <img
+        src="/Images/how-marine-work-1x.webp"
+        alt="How Marine Insurance Works"
+      >
+
+    </div>
+
+
+    <!-- RIGHT CONTENT -->
+    <div class="marine-how-content">
+
+      <h2>
+        <span>How does</span><br>
+        Marine insurance work?
+      </h2>
+
+
+      <!-- STEP 1 -->
+      <div class="marine-step">
+
+        <div class="marine-step-number">
+          1
+        </div>
+
+        <div class="marine-step-content">
+
+          <h3>
+            Choose the right policy
+          </h3>
+
+          <p>
+            You buy marine insurance before shipping goods and
+            choose a policy based on your commodity type and journey.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- STEP 2 -->
+      <div class="marine-step">
+
+        <div class="marine-step-number">
+          2
+        </div>
+
+        <div class="marine-step-content">
+
+          <h3>
+            Pay the premium
+          </h3>
+
+          <p>
+            You pay a premium, which depends on the value of the
+            goods and the risks involved.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- STEP 3 -->
+      <div class="marine-step">
+
+        <div class="marine-step-number">
+          3
+        </div>
+
+        <div class="marine-step-content">
+
+          <h3>
+            Report the loss
+          </h3>
+
+          <p>
+            You face a loss or damage due to fire, explosion,
+            earthquake, volcanic eruption, jettison etc., and
+            inform your insurer about the same to claim the insurance.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- STEP 4 -->
+      <div class="marine-step">
+
+        <div class="marine-step-number">
+          4
+        </div>
+
+        <div class="marine-step-content">
+
+          <h3>
+            Surveyor inspection
+          </h3>
+
+          <p>
+            The insurer then appoints a licensed surveyor to inspect
+            the loss and prepare a detailed report based on the
+            policy terms.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- STEP 5 -->
+      <div class="marine-step">
+
+        <div class="marine-step-number">
+          5
+        </div>
+
+        <div class="marine-step-content">
+
+          <h3>
+            Claim approval
+          </h3>
+
+          <p>
+            Once the report is reviewed and approved, the insurer
+            compensates you for the loss as per the coverage.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       TYPES
+  ====================================================== -->
+
+  <!-- =========================================================
+     TYPES OF MARINE INSURANCE POLICY
+     ========================================================= -->
+
+<section id="types" class="marine-types-section">
+
+  <div class="marine-types-container">
+
+    <!-- SECTION HEADING -->
+    <div class="marine-types-heading">
+      <h2>
+        <span>Types of</span> Marine insurance policy
+      </h2>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="marine-types-content">
+
+      <!-- LEFT CONTENT -->
+      <div class="marine-types-text">
+
+        <div class="marine-type-item">
+          <span class="marine-type-arrow">➤</span>
+
+          <p>
+            <strong>Domestic (India)</strong> :
+            Covers goods transported within the country by road, rail,
+            air or water. Perfect for continuous domestic trade and
+            supply chains.
+          </p>
+        </div>
+
+
+        <div class="marine-type-item">
+          <span class="marine-type-arrow">➤</span>
+
+          <p>
+            <strong>Export</strong> :
+            Covers goods shipped abroad under multiple consignments.
+            Ensures uninterrupted international trade.
+          </p>
+        </div>
+
+
+        <div class="marine-type-item">
+          <span class="marine-type-arrow">➤</span>
+
+          <p>
+            <strong>Import</strong> :
+            Covers incoming goods from abroad across multiple shipments.
+            Keeps import operations smooth.
+          </p>
+        </div>
+
+
+        <p class="marine-category-intro">
+          <strong>
+            The above policies are sold under two broad categories.
+            These are:
+          </strong>
+        </p>
+
+
+        <!-- MARINE OPEN INSURANCE -->
+        <div class="marine-category">
+
+          <h3>Marine Open Insurance</h3>
+
+          <p>
+            Covers multiple shipments during the policy period without
+            buying separate insurance each time. Ideal for businesses
+            with frequent shipments.
+          </p>
+
+        </div>
+
+
+        <!-- MARINE SINGLE TRANSIT INSURANCE -->
+        <div class="marine-category">
+
+          <h3>Marine SingleTransit Insurance</h3>
+
+          <p>
+            Covers only a single shipment. Simple, cost-effective, ideal
+            for businesses with occasional shipments.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT IMAGE -->
+      <div class="marine-types-image">
+
+        <img
+          src="/Images/types-of-marine.webp"
+          alt="Types of Marine Insurance"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- =====================================================
+       INCLUSION / EXCLUSION
+  ====================================================== -->
+
+  <section class="coverage-section" id="inclusion-exclusion">
+
+  <!-- Heading -->
+  <div class="coverage-heading">
+    <h2>
+      <span>What’s covered</span> in ICICI
+      <br />
+      Lombard’s Marine insurance?
+    </h2>
+  </div>
+
+  <!-- Tabs -->
+  <div class="coverage-tabs">
+    <button
+      class="coverage-tab"
+      [class.active]="activeTab === 'inclusions'"
+      (click)="activeTab = 'inclusions'">
+      Inclusions
+    </button>
+
+    <button
+      class="coverage-tab"
+      [class.active]="activeTab === 'exclusions'"
+      (click)="activeTab = 'exclusions'">
+      Exclusions
+    </button>
+  </div>
+
+  <!-- ================= INCLUSIONS ================= -->
+  <div
+    class="coverage-grid"
+    *ngIf="activeTab === 'inclusions'">
+
+    <div class="coverage-card">
+      <img src="/Images/fire-icon.webp" alt="Fire or explosion">
+      <span>Fire or explosion</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/overturning-vehicle-icon.webp" alt="Overturning or derailment">
+      <span>Overturning or derailment of vehicle</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/collision-icon.webp" alt="Collision">
+      <span>Collision between two vehicles</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/missing-item-icon.webp" alt="Missing items">
+      <span>Missing items in cargo</span>
+
+      <span class="info-icon">i</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/theft-damage-icon.webp" alt="Theft">
+      <span>Theft or malicious damage</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/package-lost-icon.webp" alt="Package lost">
+      <span>Package lost overboard or dropped</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/river-sea-water-icon.webp" alt="Water entering cargo">
+      <span>River, lake or sea water entering cargo</span>
+
+      <span class="info-icon">i</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/lightening-earthquake-icon.webp" alt="Natural disaster">
+      <span>Lightning, earthquake or volcanic eruption during transit</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/damage-icon.webp" alt="Loading and unloading">
+      <span>Damage to goods during loading and unloading</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/damage-handling-icon.webp" alt="Handling goods">
+      <span>Damage to goods during handling of goods in transit</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/shortage-non-delivery-icon.webp" alt="Shortage">
+      <span>Shortage or non-delivery of goods</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/hijack-goods-icon.webp" alt="Hijack">
+      <span>Hijack of goods</span>
+    </div>
+
+  </div>
+
+  <!-- ================= EXCLUSIONS ================= -->
+  <div
+    class="coverage-grid"
+    *ngIf="activeTab === 'exclusions'">
+
+    <div class="coverage-card">
+      <img src="/Images/exclusion.png" alt="Exclusion">
+      <span>Loss or damage due to normal wear and tear</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/exclusion.png" alt="Exclusion">
+      <span>Loss caused by improper packing</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/exclusion.png" alt="Exclusion">
+      <span>Loss caused by delay in transit</span>
+    </div>
+
+    <div class="coverage-card">
+      <img src="/Images/exclusion.png" alt="Exclusion">
+      <span>Loss due to inherent nature of the goods</span>
+    </div>
+
+  </div>
+
+  <!-- Note -->
+  <div class="coverage-note">
+    <span class="note-label">Note</span>
+
+    <p>
+      Please refer
+      <strong>policy wording</strong>
+      of specific covers for better understanding on the complete list
+      of what’s covered and what’s not covered.
+    </p>
+  </div>
+
+</section>
+
+
+  <!-- =====================================================
+       WHY BUY
+  ====================================================== -->
+
+  <!-- ================= WHY BUY MARINE INSURANCE ================= -->
+<section id="why-buy" class="why-buy-section">
+
+  <div class="why-buy-container">
+
+    <!-- Heading -->
+    <div class="why-buy-heading">
+      <h2>
+        <span>Why should you buy</span><br>
+        ICICI Lombard’s Marine insurance
+      </h2>
+
+      <p>
+        Small business deserve big protection. With ICICI Lombard, you get
+        instant policies, easy claims, and a dedicated relationship manager –
+        because your growth matters!
+      </p>
+    </div>
+
+
+    <!-- Cards -->
+    <div class="why-buy-grid">
+
+      <!-- Card 1 -->
+      <div class="why-buy-card">
+
+        <img
+          src="/Images/expert-through-dedicated-1x.webp"
+          alt="Dedicated relationship manager"
+        >
+
+        <div class="why-buy-card-content">
+          <h3>Expert help through dedicated RM</h3>
+
+          <p>
+            We have a team of dedicated Relationship managers (RM) that help
+            you through your journey of buying and raising claims for marine
+            insurance.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="why-buy-card">
+
+        <img
+          src="/Images/trusted-insurance-expertise-1x.webp"
+          alt="Trusted insurance expertise"
+        >
+
+        <div class="why-buy-card-content">
+          <h3>Trusted insurance expertise</h3>
+
+          <p>
+            We are the market leaders in private sector for marine and other
+            notable insurances, delivering exceptional services to our
+            esteemed customers.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="why-buy-card">
+
+        <img
+          src="/Images/easy-claim-process-settled-1x.webp"
+          alt="Easy claim process"
+        >
+
+        <div class="why-buy-card-content">
+          <h3>Easy claim process</h3>
+
+          <p>
+            Small businesses only need one document to claim up to ₹5 lakh,
+            and we try to settle it in just 10 days. Our team is always ready
+            to help, whenever you need.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Card 4 -->
+      <div class="why-buy-card">
+
+        <img
+          src="/Images/instant-policy-creation-buy-1x.webp"
+          alt="Instant policy creation"
+        >
+
+        <div class="why-buy-card-content">
+          <h3>Instant policy creation</h3>
+
+          <p>
+            With smart technology, you can get a marine insurance policy
+            almost instantly. No big forms or long waits, just a few clicks
+            and you are covered!
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- =====================================================
+       CLAIM PROCESS
+  ====================================================== -->
+
+ <!-- ================= CLAIM PROCESS SECTION ================= -->
+<section class="claim-process-section" id="claim">
+
+  <div class="claim-process-container">
+
+    <!-- Section Heading -->
+    <div class="claim-process-heading">
+      <h2>
+        <span>How to process</span> a claim?
+      </h2>
+    </div>
+
+    <!-- Claim Process Grid -->
+    <div class="claim-process-grid">
+
+      <!-- STEP 1 -->
+      <div class="claim-step step-1">
+        <div class="claim-icon">
+          <img src="/Images/raise-claim-icon.webp" alt="Raise a claim">
+        </div>
+
+        <h3>1. Raise a claim</h3>
+
+        <p>
+          Inform us about the claim
+          <span>online</span> via our website or
+          toll-free number (1800 2666) or
+          <span>mail</span>. A surveyor
+          will be appointed within 24 hours.
+        </p>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="claim-arrow arrow-1">
+        <span>⌁</span>
+      </div>
+
+
+      <!-- STEP 2 -->
+      <div class="claim-step step-2">
+        <div class="claim-icon">
+          <img src="/Images/surveyor-visit-icon.webp" alt="Surveyor visit">
+        </div>
+
+        <h3>2. Surveyor visit</h3>
+
+        <p>
+          The surveyor will assess the damage and request
+          the necessary documents.
+        </p>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="claim-arrow arrow-2">
+        <span>⌁</span>
+      </div>
+
+
+      <!-- STEP 3 -->
+      <div class="claim-step step-3">
+        <div class="claim-icon">
+          <img src="/Images/upload-documents-icon.webp" alt="Upload documents">
+        </div>
+
+        <h3>3. Upload documents</h3>
+
+        <p>
+          Submit the <span>required documents</span>
+          using the provided link.
+        </p>
+      </div>
+
+
+      <!-- STEP 4 -->
+      <div class="claim-step step-4">
+        <div class="claim-icon">
+          <img src="/Images/claim-verification-icon.webp" alt="Claim verification">
+        </div>
+
+        <h3>4. Claim verification</h3>
+
+        <p>
+          The surveyor will finalise the report.
+          We will verify it and begin processing the claim.
+        </p>
+      </div>
+
+      <!-- Arrow 3 -->
+      <div class="claim-arrow arrow-3">
+        <span>⌁</span>
+      </div>
+
+
+      <!-- STEP 5 -->
+      <div class="claim-step step-5">
+        <div class="claim-icon">
+          <img src="/Images/settlement-summary-icon.webp" alt="Settlement summary">
+        </div>
+
+        <h3>5. Settlement summary</h3>
+
+        <p>
+          On receiving consent the surveyor will share his
+          report.
+        </p>
+      </div>
+
+      <!-- Arrow 4 -->
+      <div class="claim-arrow arrow-4">
+        <span>⌁</span>
+      </div>
+
+
+      <!-- STEP 6 -->
+      <div class="claim-step step-6">
+        <div class="claim-icon">
+          <img src="/Images/claim-payment-icon.webp" alt="Claim payment">
+        </div>
+
+        <h3>6. Claim payment</h3>
+
+        <p>
+          Complete your KYC and the payment will be
+          credited to your account.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- =====================================================
+       FINAL CTA
+  ====================================================== -->
+
+  <section class="final-cta">
+
+    <div>
+
+      <h2>
+        Protect your goods during transit
+      </h2>
+
+      <p>
+        Get Marine Insurance protection for your business cargo.
+      </p>
+
+    </div>
+
+    <button
+      type="button"
+      (click)="scrollTo('about')"
+    >
+      Explore Marine Insurance
+    </button>
+
+  </section>
+
+</div>

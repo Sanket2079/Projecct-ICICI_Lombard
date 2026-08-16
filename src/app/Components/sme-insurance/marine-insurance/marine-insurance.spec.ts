@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComp } from './header-comp';
+import { MarineInsurance } from './marine-insurance';
 
-describe('HeaderComp', () => {
-  let component: HeaderComp;
-  let fixture: ComponentFixture<HeaderComp>;
+describe('MarineInsurance', () => {
+  let component: MarineInsurance;
+  let fixture: ComponentFixture<MarineInsurance>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComp],
-    }).compileComponents();
+      imports: [MarineInsurance]
+    })
+    .compileComponents();
 
-    fixture = TestBed.createComponent(HeaderComp);
+    fixture = TestBed.createComponent(MarineInsurance);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,0 +1,998 @@
+<section class="employee-hero">
+
+  <!-- ================= LEFT CONTENT ================= -->
+  <div class="employee-hero-left">
+
+    <!-- Heading -->
+    <h1>
+      <span>Employee’s</span> Compensation Insurance
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="employee-subtitle">
+      Secure your workers with premium starting from
+      <span>₹750/year~</span>
+    </p>
+
+    <!-- Policy Count + Market Leader -->
+    <div class="employee-policy-row">
+
+      <div class="policy-count">
+        <strong>4 Lakh+</strong>
+        <span>Policies issued*</span>
+      </div>
+
+      <div class="market-badge">
+        <span class="badge-icon">🏅</span>
+        <span>One of the market leaders</span>
+        <sup>#</sup>
+      </div>
+
+    </div>
+
+    <!-- ================= FEATURES ================= -->
+    <div class="employee-features">
+
+      <!-- Feature 1 -->
+      <div class="employee-feature-card">
+        <img src="/Images/cover-icon_1.png" alt="Pan India coverage" />
+
+        <span>
+          Get Pan-India<br />
+          coverage
+        </span>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="employee-feature-card">
+        <img src="/Images/cover-icon_2.png" alt="Instant policy generation" />
+
+        <span>
+          Instant policy<br />
+          generation
+        </span>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="employee-feature-card">
+        <img src="/Images/cover-icon_3.png" alt="Accidental death" />
+
+        <span>
+          Covers on-site<br />
+          accidental death**
+        </span>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="employee-feature-card">
+        <img src="/Images/cover-icon-4.png" alt="Sub-contractors" />
+
+        <span>
+          Covers sub-<br />
+          contractors and<br />
+          their employees"@
+        </span>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="employee-feature-card">
+        <img src="/Images/cover-icon_5.png" alt="Medical expenses" />
+
+        <span>
+          Covers medical<br />
+          expenses up to<br />
+          rupees 5 lakh
+        </span>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="employee-feature-card">
+        <img src="/Images/cover-icon_6.png" alt="24x7 claim support" />
+
+        <span>
+          24 * 7 claim support
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= QUOTE FORM ================= -->
+  <div class="employee-quote-card">
+
+    <div class="quote-header">
+
+      <h2>
+        Get your employees insured in 60
+        <br />
+        seconds
+      </h2>
+
+      <span class="step-badge">
+        Step 1 / 2
+      </span>
+
+    </div>
+
+
+    <!-- Mobile Number -->
+    <label for="employee-mobile">
+      Mobile number
+    </label>
+
+    <input id="employee-mobile" type="tel" maxlength="10" [(ngModel)]="mobileNumber" placeholder="" />
+
+
+    <!-- Proceed -->
+    <button type="button" class="proceed-btn" (click)="proceed()">
+      Proceed
+    </button>
+
+
+    <!-- Retrieve Quote -->
+    <div class="retrieve-quote">
+      Retrieve quote
+      <span class="info-circle">i</span>
+    </div>
+
+
+    <!-- Terms -->
+    <label class="checkbox-row">
+
+      <input type="checkbox" [(ngModel)]="agreeTerms" />
+
+      <span>
+        I agree to the
+        <u>terms and conditions</u>
+      </span>
+
+    </label>
+
+
+    <!-- WhatsApp -->
+    <label class="checkbox-row">
+
+      <input type="checkbox" [(ngModel)]="whatsappUpdates" />
+
+      <span>
+        I want to receive updates on
+        <strong>◉ WhatsApp</strong>
+      </span>
+
+    </label>
+
+  </div>
+
+
+  <!-- ================= HERO IMAGE ================= -->
+  <div class="employee-hero-image">
+
+    <img src="/Images/workman-compensation-banner.png" alt="Employee Compensation Insurance" />
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EMPLOYEE COMPENSATION NAVIGATION
+     ========================================================= -->
+
+<div class="employee-nav">
+
+  <button [class.active]="activeSection === 'what-is'" (click)="scrollToSection('what-is')">
+    What is Employee Compensation
+  </button>
+
+  <button [class.active]="activeSection === 'claim-calculator'" (click)="scrollToSection('claim-calculator')">
+    Claim Calculator
+  </button>
+
+  <button type="button" [class.active-nav]="activeSection === 'why-it-matters'"
+    (click)="scrollToSection('why-it-matters')">
+    Why It Matters
+  </button>
+  <button [class.active]="activeSection === 'who-needs-it'" (click)="scrollToSection('who-needs-it')">
+    Who Needs It
+  </button>
+
+  <button [class.active]="activeSection === 'key-benefits'" (click)="scrollToSection('key-benefits')">
+    Key Benefits
+  </button>
+
+  <button [class.active]="activeSection === 'coverage'" (click)="scrollToSection('coverage')">
+    Coverage
+  </button>
+
+  <button class="nav-btn" [class.active]="activeSection === 'esia'" (click)="scrollToSection('esia')">
+    Understanding ESIA &amp; WC
+  </button>
+
+  <button [class.active]="activeSection === 'why-icici'" (click)="scrollToSection('why-icici')">
+    Why ICICI
+  </button>
+
+</div>
+
+<!-- =========================================================
+     WHAT IS EMPLOYEE COMPENSATION
+     ========================================================= -->
+
+<section id="what-is" class="employee-about-section">
+
+  <div class="employee-about-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="employee-about-content">
+
+      <h2 class="employee-about-title">
+        <span>What is</span> Employee’s<br>
+        Compensation Insurance?
+      </h2>
+
+      <p>
+        Employee’s Compensation Insurance (earlier called Workmen’s
+        Compensation Policy) helps provide financial support if your
+        employees get injured, disabled or pass away while on the job.
+      </p>
+
+      <p>
+        For example: You own a construction business and your employee
+        falls from the 7th floor, breakshis leg. Without an insurance,
+        the employee can sue you or your company but with an insurance,
+        none of you have to take care of this financially.
+      </p>
+
+      <p>
+        Additionally, this policy helps employers meet the requirement
+        of the Employees’ Compensation Act, 1923, which mandates
+        compensation for employees in case of accidents during
+        employment. Workers are eligible to receive the following
+        compensation under this Act:
+      </p>
+
+    </div>
+
+
+    <!-- RIGHT IMAGE -->
+    <div class="employee-about-image">
+
+      <img src="/Images/what-is-compensation-img_1.png" alt="Employee Compensation Insurance">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     OTHER SECTIONS
+     Keep your existing content inside these sections
+     ========================================================= -->
+
+<!-- ================= CLAIM CALCULATOR ================= -->
+
+<section id="claim-calculator" class="claim-section">
+
+  <h2 class="claim-title">
+    <span>Employee Compensation</span> Claim calculator
+  </h2>
+
+  <p class="claim-description">
+    Use this calculator to estimate the compensation payable to an employee
+    in case of an injury, disability or death arising out of employment.
+  </p>
+
+  <div class="claim-box">
+
+    <!-- LEFT -->
+    <div class="claim-left">
+
+      <h3>Enter your worker details</h3>
+
+      <label>Worker age (in years)</label>
+
+      <input type="number" [(ngModel)]="workerAge" class="claim-input">
+
+      <label>Number of days absent</label>
+
+      <input type="number" [(ngModel)]="daysAbsent" class="claim-input">
+
+      <div class="salary-header">
+        <strong>Monthly Salary</strong>
+
+        <div class="salary-value">
+          ₹{{ monthlySalary | number:'1.0-0' }}
+        </div>
+      </div>
+
+      <input type="range" min="20000" max="100000" step="1000" [(ngModel)]="monthlySalary" class="salary-range">
+
+      <div class="salary-scale">
+        <span>₹20K</span>
+        <span>₹40K</span>
+        <span>₹60K</span>
+        <span>₹80K</span>
+        <span>₹100K</span>
+      </div>
+
+      <button type="button" class="claim-button" (click)="calculateCompensation()">
+        Calculate Compensation
+      </button>
+
+    </div>
+
+
+    <!-- RIGHT -->
+    <div class="claim-result">
+
+      <h3>
+        This is how much your worker will
+        <br>
+        receive
+      </h3>
+
+      <div class="claim-result-row">
+        <span>Death</span>
+        <strong>
+          ₹{{ deathAmount | number:'1.0-0' }}
+        </strong>
+      </div>
+
+      <div class="claim-result-row">
+        <span>
+          Temporary total/partial disability due to injury
+        </span>
+
+        <strong>
+          ₹{{ temporaryDisability | number:'1.0-0' }}
+        </strong>
+      </div>
+
+      <div class="claim-result-row">
+        <span>
+          Permanent total disability due to injury
+        </span>
+
+        <strong>
+          ₹{{ permanentTotalDisability | number:'1.0-0' }}
+        </strong>
+      </div>
+
+      <div class="claim-result-row">
+        <span>
+          Permanent partial disability due to injury
+        </span>
+
+        <strong>
+          ₹{{ permanentPartialDisability | number:'1.0-0' }}
+        </strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     WHY EMPLOYEE COMPENSATION INSURANCE IS IMPORTANT
+     ========================================================= -->
+
+<section id="why-it-matters" class="ec-why-section">
+
+  <!-- Heading -->
+  <h2 class="ec-why-title">
+    <span>Why is</span> Employee’s Compensation<br>
+    Insurance Important?
+  </h2>
+
+  <!-- Subtitle -->
+  <p class="ec-why-subtitle">
+    Workplace accidents and occupational hazards remain a serious concern in India.
+  </p>
+
+
+  <!-- Cards -->
+  <div class="ec-why-cards">
+
+    <!-- Card 1 -->
+    <div class="ec-why-card">
+
+      <img src="/Images/why-compensation-img-1.png" alt="Employee injury" class="ec-why-card-image">
+
+      <div class="ec-why-card-content">
+
+        <h3>Rising industry injury trends</h3>
+
+        <p>
+          Labour safety reporting flagged nearly 4,000 fatal workplace
+          accidents<sup>3</sup> in India in 2025.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="ec-why-card">
+
+      <img src="/Images/why-compensation-img-2.png" alt="Industrial accident" class="ec-why-card-image">
+
+      <div class="ec-why-card-content">
+
+        <h3>Major industrial accidents in 2025</h3>
+
+        <p>
+          A chemical factory explosion<sup>1</sup> in Telangana in 2025
+          resulted in 46 worker fatalities and 33 injuries.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="ec-why-card">
+
+      <img src="/Images/why-compensation-img-3.png" alt="Workplace fatalities" class="ec-why-card-image">
+
+      <div class="ec-why-card-content">
+
+        <h3>Workplace fatalities across sectors</h3>
+
+        <p>
+          A survey found around 802 workers were killed in 713
+          workplace accidents<sup>4</sup> in India in 2025.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="ec-why-card">
+
+      <img src="/Images/why-compensation-img-4.png" alt="Legal protection" class="ec-why-card-image">
+
+      <div class="ec-why-card-content">
+
+        <h3>Legal protection expanded</h3>
+
+        <p>
+          In 2025, the Supreme Court ruled that accidents occurring
+          during an employee’s commute to or from...
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Note -->
+  <div class="ec-why-note">
+
+    <div class="ec-why-note-label">
+      Note
+    </div>
+
+    <p>
+      These numbers show why every business—big or small—needs to protect
+      its workers and stay legally compliant with Employee’s Compensation Insurance.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- WHO SHOULD BUY SECTION -->
+<section class="who-should-buy" id="who-needs-it">
+
+  <!-- Heading -->
+  <div class="who-heading">
+    <h2>
+      <span>Who should buy</span><br>
+      Employee’s Compensation Insurance?
+    </h2>
+  </div>
+
+  <!-- Cards -->
+  <div class="buyer-grid">
+
+    <!-- Card 1 -->
+    <div class="buyer-card">
+      <div class="buyer-icon">
+        🏭
+      </div>
+
+      <div class="buyer-content">
+        <h3>Engineering firms</h3>
+        <p>
+          Ideal for protecting employees against on-site injuries, machinery
+          hazards, and occupational risks.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="buyer-card">
+      <div class="buyer-icon">
+        🏗️
+      </div>
+
+      <div class="buyer-content">
+        <h3>Construction companies</h3>
+        <p>
+          Ideal for protection against falls, equipment-related injury, also
+          covers high-risk nature of construction sites to stay compliant with
+          safety laws.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="buyer-card">
+      <div class="buyer-icon">
+        🔌
+      </div>
+
+      <div class="buyer-content">
+        <h3>Electrical work</h3>
+        <p>
+          Ideal for protection against electrical shocks, burns or height-
+          related injuries at workplace. This policy ensures you are covered
+          for all field-related hazards.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="buyer-card">
+      <div class="buyer-icon">
+        🧑‍💻
+      </div>
+
+      <div class="buyer-content">
+        <h3>Service-based jobs</h3>
+        <p>
+          Ideal for desk jobs where accidents can happen unannounced like
+          tripping on a wet floor or travel-related accidents when on a work
+          trip. This policy ensures your employees are protected and your
+          operations run smoothly.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= KEY BENEFITS SECTION ================= -->
+
+<section id="key-benefits" class="key-benefits-section">
+
+  <div class="key-benefits-container">
+
+    <!-- Heading -->
+    <h2 class="key-benefits-title">
+      <span>Key benefits</span> of buying Employee’s
+      <br>
+      Compensation Insurance
+    </h2>
+
+
+    <!-- Benefits Grid -->
+    <div class="benefits-grid">
+
+      <!-- Card 1 -->
+      <div class="benefit-card">
+
+        <div class="benefit-image">
+          <img src="/Images/compensation-benefit-img-1.png" alt="Employee medical bill">
+        </div>
+
+        <div class="benefit-content">
+          <h3>Offers financial help</h3>
+
+          <p>
+            This insurance gives support if an employee is
+            hurt at work. It covers medical bills, lost
+            wages, or even death. It helps both the
+            employee and the employer manage costs
+            without worry.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="benefit-card">
+
+        <div class="benefit-image">
+          <img src="/Images/compensation-benefit-img-2.png" alt="Legal compliance">
+        </div>
+
+        <div class="benefit-content">
+          <h3>Ensures legal compliance</h3>
+
+          <p>
+            It helps you be legally compliant by offering
+            financial coverage to employees whenever
+            they suffer from any injury, disability or death
+            on the job. This protects your business and
+            saves money.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="benefit-card">
+
+        <div class="benefit-image">
+          <img src="/Images/compensation-benefit-img-3.png" alt="Strong reputation">
+        </div>
+
+        <div class="benefit-content">
+          <h3>Builds a strong reputation</h3>
+
+          <p>
+            Looking after your employees shows you care.
+            It improves your image with customers,
+            partners, and investors.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Card 4 -->
+      <div class="benefit-card">
+
+        <div class="benefit-image">
+          <img src="/Images/compensation-benefit-img-4.png" alt="Following rules">
+        </div>
+
+        <div class="benefit-content">
+          <h3>Helps you follow the rules</h3>
+
+          <p>
+            Many contracts need this insurance. Having it
+            means you're meeting legal requirements and
+            avoiding disputes or cancellations.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     WHAT'S INCLUDED AND WHAT'S NOT
+========================================================= -->
+<section class="coverage-section" id="coverage">
+
+  <!-- Heading -->
+  <h2 class="coverage-title">
+    What’s included and
+    <span>what’s not?</span>
+  </h2>
+
+  <!-- Tabs -->
+  <div class="coverage-tabs">
+
+    <button class="coverage-tab" [class.active]="activeCoverageTab === 'inclusions'"
+      (click)="showCoverageTab('inclusions')">
+      Inclusions
+    </button>
+
+    <button class="coverage-tab" [class.active]="activeCoverageTab === 'exclusions'"
+      (click)="showCoverageTab('exclusions')">
+      Exclusions
+    </button>
+
+  </div>
+
+  <!-- ================= INCLUSIONS ================= -->
+  <div class="coverage-grid" *ngIf="activeCoverageTab === 'inclusions'">
+
+    <!-- 1 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">👤</div>
+
+      <div class="coverage-text">
+        <span>Accidental death</span>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">🧑🏽</div>
+
+      <div class="coverage-text">
+        <span>
+          Permanent total or partial<br>
+          disability
+        </span>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">♿</div>
+
+      <div class="coverage-text">
+        <span>Temporary total disability</span>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">👷</div>
+
+      <div class="coverage-text">
+        <span>
+          Occupational diseases<sup>@</sup>
+          <span class="info-icon">i</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">👷🏽‍♂️👷🏽</div>
+
+      <div class="coverage-text">
+        <span>
+          Covers contractors, sub-<br>
+          contractors and their employees
+        </span>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">🧑‍⚕️</div>
+
+      <div class="coverage-text">
+        <span>
+          Medical extensions<sup>@</sup>
+          <span class="info-icon">i</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">💣</div>
+
+      <div class="coverage-text">
+        <span>
+          Terrorism<sup>@</sup>
+        </span>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">🇮🇳</div>
+
+      <div class="coverage-text">
+        <span>
+          Pan India coverage<sup>@</sup>
+        </span>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="coverage-card">
+      <div class="coverage-icon">👷🏻</div>
+
+      <div class="coverage-text">
+        <span>
+          Compressed air disease<sup>@</sup>
+          <span class="info-icon">i</span>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ================= EXCLUSIONS ================= -->
+  <div class="exclusions-content" *ngIf="activeCoverageTab === 'exclusions'">
+
+    <div class="exclusion-box">
+      <h3>Exclusions</h3>
+
+      <p>
+        Please refer to the policy wording for detailed information
+        about exclusions and conditions applicable to this policy.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- Note -->
+  <div class="coverage-note">
+
+    <span class="note-label">Note</span>
+
+    <span class="note-text">
+      for detailed understanding of the add-on please go through with
+      the
+      <a href="javascript:void(0)">policy wording</a>
+    </span>
+
+  </div>
+
+</section>
+
+<section id="esia" class="esi-wc-section">
+
+  <section class="esi-wc-section">
+
+  <h2 class="esi-wc-title">
+    <span>Understanding Employees' </span>State Insurance Act
+    <br>
+    (ESI Act) and Employee’s Compensation policy
+  </h2>
+
+  <p class="esi-wc-description">
+    Many employers assume the ESI Act is enough. But while ESI is a mandatory requirement, there
+    <br>
+    are some limitations. That’s where an Employee’s Compensation Policy steps in — offering
+    <br>
+    protection for workers not covered under ESI and safeguarding your business from unexpected
+    <br>
+    liabilities.
+  </p>
+
+  <div class="esi-table-wrapper">
+
+    <table class="esi-table">
+
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>ESI Act</th>
+          <th>Employee’s Compensation</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Employee Wage limit</td>
+          <td>Covers employees earning up to ₹21,000/month</td>
+          <td>No wage limit; all employees can be covered</td>
+        </tr>
+
+        <tr>
+          <td>Seasonal factories</td>
+          <td>Generally not covered</td>
+          <td>Covered</td>
+        </tr>
+
+        <tr>
+          <td>Minimum workers</td>
+          <td>
+            Applicable to establishments with 10 or more workers (in most cases)
+          </td>
+          <td>No minimum employee requirement</td>
+        </tr>
+
+        <tr>
+          <td>Premiums</td>
+          <td>Fixed rates as per law</td>
+          <td>Lower &amp; flexible, depending on risk and coverage</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <p class="esi-wc-note">
+    <sup>"</sup>@20 workers are needed in Maharashtra or Chandigarh.
+  </p>
+
+</section>
+<!-- WHY CHOOSE ICICI LOMBARD -->
+<section class="why-choose-section" id="why-icici">
+
+  <h2 class="why-choose-title">
+    <span>Why choose</span> ICICI Lombard’s
+    <br>
+    Employee’s Compensation Insurance?
+  </h2>
+
+  <div class="why-choose-grid">
+
+    <!-- Card 1 -->
+    <div class="why-choose-card">
+
+      <img src="/Images/why-choose-img-1.png" alt="Instant policy generation" class="why-choose-image">
+
+      <h3>Instant policy generation</h3>
+
+      <p>
+        With smart technology, you can get an
+        Employee’s Compensation insurance
+        policy generated instantly. No big forms
+        or long waits, just a few clicks and you
+        are covered!
+      </p>
+
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="why-choose-card">
+
+      <img src="/Images/why-choose-img-2.png" alt="Speedy claim process" class="why-choose-image">
+
+      <h3>Speedy claim process</h3>
+
+      <p>
+        With our expertise in handling claims and
+        helping businesses mitigate potential
+        risks, claims are processed quickly without
+        any hassles. Afterall, your business
+        deserves uninterrupted growth.
+      </p>
+
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="why-choose-card">
+
+      <img src="/Images/why-compensation-img-3.png" alt="Trusted by millions" class="why-choose-image">
+
+      <h3>Trusted by millions</h3>
+
+      <p>
+        As one of the market leader in insurance,
+        we’ve earned the trust of millions. Your
+        success is our priority.
+      </p>
+
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="why-choose-card">
+
+      <img src="/Images/why-compensation-img-4.png" alt="Customised policy" class="why-choose-image">
+
+      <h3>Customised policy</h3>
+
+      <p>
+        You can choose from a wide range of
+        add-ons to make your business even
+        more secure from unexpected crises.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="why-choose-bottom-line"></div>
+
+</section>

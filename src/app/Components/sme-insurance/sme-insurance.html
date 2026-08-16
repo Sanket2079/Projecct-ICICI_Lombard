@@ -1,0 +1,102 @@
+```html
+<div class="sme-dropdown-container">
+
+  <!-- SME Insurance Button -->
+  <button
+    type="button"
+    class="sme-menu-button"
+    (click)="toggleSmeDropdown()"
+  >
+    <span>SME Insurance</span>
+
+    <span
+      class="arrow"
+      [class.arrow-up]="isSmeDropdownOpen"
+    >
+      ▾
+    </span>
+  </button>
+
+
+  <!-- Mega Dropdown -->
+  <div
+    class="sme-mega-menu"
+    *ngIf="isSmeDropdownOpen"
+  >
+
+    <div class="mega-menu-content">
+
+      <!-- Employee -->
+      <div class="mega-column">
+
+        <h3>Employee</h3>
+
+        <a
+          routerLink="/group-health"
+          (click)="closeDropdown()"
+        >
+          Group Health Insurance
+        </a>
+
+        <a
+          routerLink="/employee-compensation"
+          (click)="closeDropdown()"
+        >
+          Employee's Compensation
+        </a>
+
+      </div>
+
+
+      <!-- Marine -->
+      <div class="mega-column">
+
+        <h3>Marine</h3>
+
+        <a
+          routerLink="/marine"
+          (click)="closeDropdown()"
+        >
+          Marine Insurance
+        </a>
+
+      </div>
+
+
+      <!-- Fire -->
+      <div class="mega-column">
+
+        <h3>Fire</h3>
+
+        <a
+          routerLink="/fire-insurance"
+          (click)="closeDropdown()"
+        >
+          Fire Insurance
+        </a>
+
+      </div>
+
+
+      <!-- Liability -->
+      <div class="mega-column">
+
+        <h3>Liability</h3>
+
+        <a
+          routerLink="/professional-indemnity"
+          (click)="closeDropdown()"
+        >
+          Professional Indemnity
+          <br>
+          <span>For Doctors</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```

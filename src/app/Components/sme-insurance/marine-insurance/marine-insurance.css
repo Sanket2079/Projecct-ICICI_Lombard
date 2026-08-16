@@ -1,0 +1,2649 @@
+/* =====================================================
+   MARINE INSURANCE
+   CLEAN / SINGLE VERSION
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.marine-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.marine-page button,
+.marine-page input {
+  font-family: inherit;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 32px 7% 0;
+}
+
+.hero-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 30px;
+  align-items: start;
+}
+
+.hero-left {
+  min-width: 0;
+  padding-right: 20px;
+}
+
+.hero-left h1 {
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #111827;
+}
+
+.hero-left h1 span {
+  color: #d95d25;
+}
+
+.hero-left h2 {
+  margin: 12px 0 22px;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #111827;
+}
+
+
+/* =====================================================
+   POLICY INFO
+===================================================== */
+
+.policy-info {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 22px;
+}
+
+.policy-count {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy-count strong {
+  font-size: 30px;
+  line-height: 1.1;
+  color: #d95d25;
+}
+
+.policy-count span {
+  margin-top: 5px;
+  font-size: 17px;
+  color: #222222;
+}
+
+.leader-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 1px solid #f5c785;
+  border-radius: 30px;
+  background: #fff9ef;
+  color: #263238;
+  font-size: 16px;
+}
+
+
+/* =====================================================
+   HERO FEATURE CARDS
+===================================================== */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 930px;
+}
+
+.feature-card {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  border: 1px solid #f3d3c5;
+  border-radius: 11px;
+  background: #fff5f1;
+}
+
+.feature-icon {
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+}
+
+.feature-card span {
+  font-size: 16px;
+  line-height: 1.3;
+  color: #18202b;
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+/* =========================================================
+   MARINE INSURANCE - FULL WIDTH BANNER
+========================================================= */
+
+.marine-hero {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.marine-hero img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-width: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =====================================================
+   QUOTE CARD
+===================================================== */
+
+.quote-card {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin-left: auto;
+  padding: 32px 48px;
+  border: 1px solid #d6d6d6;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  min-height: 455px;
+}
+
+.quote-card h2 {
+  margin: 0 70px 30px 0;
+  font-size: 24px;
+  line-height: 1.35;
+  color: #121a25;
+}
+
+.step-badge {
+  position: absolute;
+  top: 32px;
+  right: 45px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #eaf6ff;
+  color: #172b3d;
+  font-size: 14px;
+}
+
+.quote-card label:not(.checkbox-row) {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #18202b;
+}
+
+.quote-card input[type="text"] {
+  width: 100%;
+  height: 56px;
+  padding: 0 15px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  outline: none;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.quote-card input[type="text"]:focus {
+  border-color: #e46d2d;
+  box-shadow: 0 0 0 2px rgba(228, 109, 45, 0.1);
+}
+
+.error-message {
+  margin: 2px 0 18px;
+  color: #e53935;
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   PROCEED BUTTON
+===================================================== */
+
+.proceed-button {
+  width: 100%;
+  height: 56px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 5px;
+  background: #df6c32;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.proceed-button:hover {
+  background: #c9561f;
+}
+
+
+/* =====================================================
+   RETRIEVE QUOTE
+===================================================== */
+
+.retrieve-quote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+  color: #df6c32;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.info-icon {
+  width: 19px;
+  height: 19px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #777777;
+  border-radius: 50%;
+  color: #777777;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* =====================================================
+   CHECKBOX
+===================================================== */
+
+.checkbox-row {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  cursor: pointer;
+  color: #222222 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.checkbox-row input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: #df6c32;
+}
+
+
+/* =====================================================
+   BOTTOM NAVIGATION
+===================================================== */
+
+.bottom-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px 7%;
+
+  background: #ffffff;
+
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+
+  overflow-x: auto;
+
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.bottom-nav button {
+  flex: 0 0 auto;
+
+  min-width: max-content;
+
+  padding: 11px 30px;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #263238;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.bottom-nav button:hover {
+  border-color: #df6c32;
+  color: #df6c32;
+}
+
+.bottom-nav button.active {
+  background: #d95d25;
+  border-color: #d95d25;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   COMMON SECTION HEADING
+===================================================== */
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #222222;
+}
+
+.section-heading h2 span {
+  color: #d95f27;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.marine-about-section {
+  width: 100%;
+  padding: 70px 7% 80px;
+  background: #ffffff;
+
+  scroll-margin-top: 85px;
+}
+
+.marine-about-container {
+  width: 100%;
+  max-width: 1580px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 70px;
+}
+
+.marine-about-content {
+  width: 58%;
+  flex: 0 0 58%;
+}
+
+.marine-about-content h2 {
+  margin: 0 0 25px;
+
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color: #252525;
+}
+
+.marine-about-content h2 span {
+  color: #d95d27;
+}
+
+.marine-about-content > p {
+  margin: 0 0 18px;
+
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 400;
+
+  color: #444444;
+}
+
+
+/* TRIVIA */
+
+.marine-trivia-box {
+  width: 100%;
+  margin-top: 15px;
+
+  padding: 15px 25px 17px;
+
+  background: #fffdf3;
+
+  border: 1px solid #f1ead1;
+  border-radius: 15px;
+}
+
+.marine-trivia-title {
+  display: inline-block;
+
+  margin-bottom: 8px;
+  padding: 5px 11px;
+
+  border-radius: 5px;
+
+  background: #f5c33b;
+
+  color: #222222;
+
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.marine-trivia-box p {
+  margin: 0;
+
+  color: #333333;
+
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 600;
+}
+
+
+/* ABOUT IMAGE */
+
+.marine-about-image {
+  width: 40%;
+  flex: 0 0 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marine-about-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 550px;
+  height: 390px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+}
+
+
+/* =====================================================
+   IMPORTANCE
+===================================================== */
+
+.importance-section {
+  width: 100%;
+  padding: 75px 7% 95px;
+
+  background: #ffffff;
+
+  scroll-margin-top: 85px;
+}
+
+.importance-grid {
+  max-width: 1520px;
+
+  margin: 50px auto 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 28px;
+}
+
+.importance-card {
+  display: flex;
+  align-items: center;
+
+  min-height: 220px;
+
+  padding: 30px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+}
+
+.importance-icon {
+  width: 120px;
+  min-width: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.importance-icon img {
+  width: 90px;
+  height: 90px;
+
+  object-fit: contain;
+}
+
+.importance-content {
+  padding-left: 20px;
+}
+
+.importance-content h3 {
+  margin: 0 0 12px;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+.importance-content p {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.6;
+
+  color: #333333;
+}
+
+
+/* =====================================================
+   WHO SHOULD BUY
+===================================================== */
+
+.marine-buy-section {
+  width: 100%;
+  padding: 75px 7% 90px;
+
+  background: #ffffff;
+
+  scroll-margin-top: 85px;
+}
+
+.marine-buy-title {
+  margin: 0 0 40px;
+
+  text-align: center;
+
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color: #252525;
+}
+
+.marine-buy-title span {
+  color: #d95f27;
+}
+
+.marine-buy-grid {
+  width: 100%;
+  max-width: 1580px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+.marine-buy-card {
+  overflow: hidden;
+
+  min-width: 0;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.marine-buy-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+}
+
+.marine-buy-card > img {
+  display: block;
+
+  width: 100%;
+  height: 285px;
+
+  object-fit: cover;
+}
+
+.marine-buy-card-content {
+  padding: 25px 14px 28px;
+}
+
+.marine-buy-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+
+  color: #292929;
+}
+
+.marine-buy-card h3 span {
+  color: #d95f27;
+}
+
+.marine-buy-card p {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.55;
+
+  color: #555555;
+}
+
+
+/* =====================================================
+   HOW IT WORKS
+===================================================== */
+
+.marine-how-section {
+  width: 100%;
+
+  min-height: 780px;
+
+  padding: 80px 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 90px;
+
+  background: #ffffff;
+
+  scroll-margin-top: 85px;
+}
+
+
+/* LEFT IMAGE */
+
+.marine-how-image {
+  width: 42%;
+  flex: 0 0 42%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marine-how-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 560px;
+  height: 470px;
+
+  object-fit: cover;
+
+  border-radius: 0;
+}
+
+
+/* RIGHT CONTENT */
+
+.marine-how-content {
+  width: 55%;
+  flex: 0 0 55%;
+}
+
+.marine-how-content h2 {
+  margin: 0 0 35px;
+
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+.marine-how-content h2 span {
+  color: #d96327;
+}
+
+
+/* STEPS */
+
+.marine-step {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  width: 100%;
+
+  margin-bottom: 25px;
+}
+
+.marine-step-number {
+  position: relative;
+  z-index: 2;
+
+  width: 48px;
+  min-width: 48px;
+
+  height: 48px;
+  min-height: 48px;
+
+  margin-right: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d96a2b;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  box-shadow: 0 0 0 7px #fff1e9;
+}
+
+
+/* LINE BETWEEN STEPS */
+
+.marine-step:not(:last-child) .marine-step-number::after {
+  content: "";
+
+  position: absolute;
+
+  top: 48px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 3px;
+  height: calc(100% + 25px);
+
+  background: #eeeeee;
+
+  z-index: -1;
+}
+
+.marine-step-content {
+  flex: 1;
+  padding-top: 0;
+}
+
+.marine-step-content h3 {
+  margin: 0 0 5px;
+
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+.marine-step-content p {
+  max-width: 800px;
+
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.55;
+
+  color: #333333;
+}
+
+
+/* =====================================================
+   GENERIC SECTIONS
+===================================================== */
+
+.content-section {
+  width: 100%;
+
+  padding: 80px 7%;
+
+  scroll-margin-top: 85px;
+}
+
+.content-section h2 {
+  margin: 0 0 22px;
+
+  text-align: center;
+
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color: #18202b;
+}
+
+.light-section {
+  background: #fff8f4;
+}
+
+
+/* =====================================================
+   GENERIC CARD GRID
+===================================================== */
+
+.content-grid {
+  max-width: 1200px;
+
+  margin: 40px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.info-card {
+  padding: 30px;
+
+  border: 1px solid #f0dfd7;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h3 {
+  margin: 10px 0 12px;
+
+  font-size: 21px;
+  line-height: 1.35;
+
+  color: #18202b;
+}
+
+.info-card p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #62676d;
+}
+
+.large-icon {
+  font-size: 40px;
+}
+
+
+/* =====================================================
+   INCLUSION / EXCLUSION
+===================================================== */
+
+.include-grid {
+  max-width: 1100px;
+
+  margin: 40px auto 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+}
+
+.include-card,
+.exclude-card {
+  padding: 35px;
+
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.include-card {
+  border-left: 5px solid #39a852;
+}
+
+.exclude-card {
+  border-left: 5px solid #df6c32;
+}
+
+.include-card h3 {
+  color: #278a3b;
+}
+
+.exclude-card h3 {
+  color: #df6c32;
+}
+
+.include-card li,
+.exclude-card li {
+  margin: 15px 0;
+
+  color: #555555;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   CLAIM STEPS
+===================================================== */
+
+.steps-container {
+  max-width: 1100px;
+
+  margin: 45px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.step-card {
+  padding: 30px;
+
+  border: 1px solid #f0ddd4;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.step-number {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #df6c32;
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.step-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 21px;
+}
+
+.step-card p {
+  margin: 0;
+
+  color: #666666;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.final-cta {
+  margin: 70px 7%;
+
+  padding: 45px 55px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    90deg,
+    #d95d25,
+    #ef8a42
+  );
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.final-cta h2 {
+  margin: 0 0 10px;
+
+  font-size: 32px;
+}
+
+.final-cta p {
+  margin: 0;
+
+  font-size: 17px;
+}
+
+.final-cta button {
+  border: none;
+
+  padding: 16px 28px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #d95d25;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .hero-section {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .hero-container {
+    grid-template-columns: 58% 42%;
+  }
+
+  .bottom-nav {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .marine-buy-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .marine-buy-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .importance-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .marine-how-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 50px;
+  }
+
+}
+
+
+/* =====================================================
+   TABLET / SMALL LAPTOP
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left {
+    padding-right: 0;
+  }
+
+  .quote-card {
+    margin: 30px auto 0;
+  }
+
+  .marine-about-container {
+    flex-direction: column;
+  }
+
+  .marine-about-content,
+  .marine-about-image {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .marine-about-image img {
+    max-width: 550px;
+  }
+
+  .marine-how-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .marine-how-image,
+  .marine-how-content {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .marine-how-image img {
+    max-width: 650px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .hero-section {
+    padding: 25px 20px 0;
+  }
+
+  .hero-left h1 {
+    font-size: 35px;
+  }
+
+  .hero-left h2 {
+    font-size: 18px;
+  }
+
+  .policy-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-card {
+    padding: 25px;
+    border-radius: 12px;
+  }
+
+  .step-badge {
+    right: 25px;
+    top: 25px;
+  }
+
+  .quote-card h2 {
+    font-size: 21px;
+    margin-right: 60px;
+  }
+
+  .bottom-nav {
+    padding: 10px 15px;
+  }
+
+  .bottom-nav button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+
+  /* ABOUT */
+
+  .marine-about-section {
+    padding: 50px 20px 60px;
+  }
+
+  .marine-about-content h2 {
+    font-size: 34px;
+  }
+
+  .marine-about-content > p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .marine-trivia-box {
+    padding: 15px 18px;
+  }
+
+  .marine-trivia-box p {
+    font-size: 15px;
+  }
+
+  .marine-about-image img {
+    height: 300px;
+  }
+
+
+  /* IMPORTANCE */
+
+  .importance-section {
+    padding: 55px 20px 70px;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+  }
+
+  .importance-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .importance-card {
+    min-height: auto;
+    padding: 25px 20px;
+  }
+
+  .importance-icon {
+    width: 90px;
+    min-width: 90px;
+  }
+
+  .importance-icon img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .importance-content {
+    padding-left: 10px;
+  }
+
+  .importance-content h3 {
+    font-size: 18px;
+  }
+
+  .importance-content p {
+    font-size: 15px;
+  }
+
+
+  /* WHO SHOULD BUY */
+
+  .marine-buy-section {
+    padding: 55px 20px 70px;
+  }
+
+  .marine-buy-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .marine-buy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marine-buy-card > img {
+    height: 250px;
+  }
+
+  .marine-buy-card h3 {
+    font-size: 20px;
+  }
+
+  .marine-buy-card p {
+    font-size: 16px;
+  }
+
+
+  /* HOW IT WORKS */
+
+  .marine-how-section {
+    padding: 55px 20px;
+    gap: 40px;
+  }
+
+  .marine-how-content h2 {
+    font-size: 34px;
+  }
+
+  .marine-how-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .marine-step-number {
+    width: 42px;
+    min-width: 42px;
+
+    height: 42px;
+    min-height: 42px;
+
+    margin-right: 15px;
+
+    font-size: 17px;
+  }
+
+  .marine-step:not(:last-child) .marine-step-number::after {
+    top: 42px;
+  }
+
+  .marine-step-content h3 {
+    font-size: 18px;
+  }
+
+  .marine-step-content p {
+    font-size: 15px;
+  }
+
+
+  /* OTHER SECTIONS */
+
+  .content-section {
+    padding: 55px 20px;
+  }
+
+  .content-section h2 {
+    font-size: 30px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .include-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* CTA */
+
+  .final-cta {
+    margin: 50px 20px;
+    padding: 35px 25px;
+  }
+
+  .final-cta h2 {
+    font-size: 26px;
+  }
+
+}
+
+/* =========================================
+   HOW IT WORKS
+========================================= */
+
+.how-it-works {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 32px !important;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.how-it-works-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.how-it-works-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.how-step {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.how-step:hover {
+    transform: translateY(-8px);
+}
+
+.how-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #f58220;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.how-content h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.how-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .how-it-works-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .how-it-works {
+        width: 92%;
+    }
+
+    .how-it-works h2 {
+        font-size: 30px !important;
+    }
+
+    .how-it-works-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================================
+   MARINE INSURANCE - CLAIM PROCESS
+   ========================================================= */
+
+.claim-process-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 55px 0 70px;
+  box-sizing: border-box;
+}
+
+.claim-process-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+/* ================= HEADING ================= */
+
+.claim-process-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.claim-process-heading h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #222222;
+}
+
+.claim-process-heading h2 span {
+  color: #d85d28;
+}
+
+
+/* ================= GRID ================= */
+
+.claim-process-grid {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  column-gap: 70px;
+  row-gap: 70px;
+
+  align-items: start;
+}
+
+
+/* ================= EACH STEP ================= */
+
+.claim-step {
+  position: relative;
+  text-align: center;
+  min-width: 0;
+  z-index: 2;
+}
+
+
+/* ================= ICON CIRCLE ================= */
+
+.claim-icon {
+  width: 125px;
+  height: 125px;
+
+  margin: 0 auto 18px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+.claim-icon img {
+  width: 78px;
+  height: 78px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* ================= STEP TITLE ================= */
+
+.claim-step h3 {
+  margin: 0 0 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 24px;
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  color: #111111;
+}
+
+
+/* ================= STEP DESCRIPTION ================= */
+
+.claim-step p {
+  width: 100%;
+  max-width: 410px;
+
+  margin: 0 auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+  line-height: 1.45;
+
+  font-weight: 400;
+
+  color: #222222;
+}
+
+.claim-step p span {
+  color: #d85d28;
+}
+
+
+/* =========================================================
+   DOTTED ARROWS
+   ========================================================= */
+
+.claim-arrow {
+  position: absolute;
+
+  width: 180px;
+  height: 70px;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+/* Create dotted curved line */
+
+.claim-arrow::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+  height: 45px;
+
+  border-top: 3px dashed #c8c8c8;
+
+  border-radius: 50%;
+
+  top: 15px;
+}
+
+
+/* Arrow head */
+
+.claim-arrow::after {
+  content: "";
+
+  position: absolute;
+
+  right: -2px;
+  top: 30px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 11px solid #c8c8c8;
+}
+
+
+/* Hide the text symbol */
+.claim-arrow span {
+  display: none;
+}
+
+
+/* ================= TOP ROW ARROWS ================= */
+
+/* Step 1 → Step 2 */
+
+.arrow-1 {
+  left: calc(33.33% - 90px);
+  top: 35px;
+
+  transform: rotate(-7deg);
+}
+
+
+/* Step 2 → Step 3 */
+
+.arrow-2 {
+  left: calc(66.66% - 90px);
+  top: 35px;
+
+  transform: rotate(7deg);
+}
+
+
+/* ================= BOTTOM ROW ARROWS ================= */
+
+/* Step 4 → Step 5 */
+
+.arrow-3 {
+  left: calc(33.33% - 90px);
+  top: 470px;
+
+  transform: rotate(7deg);
+}
+
+
+/* Step 5 → Step 6 */
+
+.arrow-4 {
+  left: calc(66.66% - 90px);
+  top: 470px;
+
+  transform: rotate(-7deg);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .claim-process-container {
+    width: 94%;
+  }
+
+  .claim-process-grid {
+    column-gap: 35px;
+  }
+
+  .claim-step h3 {
+    font-size: 22px;
+  }
+
+  .claim-step p {
+    font-size: 18px;
+  }
+
+  .claim-arrow {
+    width: 130px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .claim-process-heading h2 {
+    font-size: 38px;
+  }
+
+  .claim-process-grid {
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 60px;
+  }
+
+  .claim-arrow {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .claim-process-section {
+    padding: 40px 0 50px;
+  }
+
+  .claim-process-heading {
+    margin-bottom: 40px;
+  }
+
+  .claim-process-heading h2 {
+    font-size: 32px;
+  }
+
+  .claim-process-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 50px;
+  }
+
+  .claim-step h3 {
+    font-size: 21px;
+  }
+
+  .claim-step p {
+    font-size: 17px;
+    max-width: 350px;
+  }
+
+}
+
+/* =========================================================
+   WHY BUY MARINE INSURANCE
+   ========================================================= */
+
+.why-buy-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 55px 0 70px;
+  box-sizing: border-box;
+}
+
+.why-buy-container {
+  width: 86%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+/* ---------------- HEADING ---------------- */
+
+.why-buy-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.why-buy-heading h2 {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 700;
+
+  color: #242424;
+}
+
+.why-buy-heading h2 span {
+  color: #d85f29;
+}
+
+.why-buy-heading p {
+  width: 780px;
+  max-width: 90%;
+
+  margin: 30px auto 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #344054;
+}
+
+
+/* ---------------- CARDS GRID ---------------- */
+
+.why-buy-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 26px;
+
+  width: 100%;
+}
+
+
+/* ---------------- CARD ---------------- */
+
+.why-buy-card {
+  min-width: 0;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* ---------------- CARD IMAGE ---------------- */
+
+.why-buy-card img {
+  display: block;
+
+  width: 100%;
+  height: 215px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  margin: 0;
+}
+
+
+/* ---------------- CARD CONTENT ---------------- */
+
+.why-buy-card-content {
+  padding: 20px 2px 0;
+}
+
+.why-buy-card-content h3 {
+  margin: 0 0 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+
+  color: #171717;
+}
+
+.why-buy-card-content p {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #374151;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .why-buy-container {
+    width: 90%;
+  }
+
+  .why-buy-heading h2 {
+    font-size: 40px;
+  }
+
+  .why-buy-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .why-buy-section {
+    padding: 40px 0 50px;
+  }
+
+  .why-buy-container {
+    width: 90%;
+  }
+
+  .why-buy-heading h2 {
+    font-size: 32px;
+  }
+
+  .why-buy-heading p {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 16px;
+
+    margin-top: 20px;
+  }
+
+  .why-buy-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .why-buy-card img {
+    height: 220px;
+  }
+
+  .why-buy-card-content h3 {
+    font-size: 19px;
+  }
+
+  .why-buy-card-content p {
+    font-size: 16px;
+  }
+
+}
+
+/* =========================================================
+   TYPES OF MARINE INSURANCE POLICY
+   ========================================================= */
+
+.marine-types-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 55px 0 75px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.marine-types-container {
+  width: 86%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.marine-types-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.marine-types-heading h2 {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 700;
+
+  color: #242424;
+}
+
+.marine-types-heading h2 span {
+  color: #d85f29;
+}
+
+
+/* =========================================================
+   MAIN TWO COLUMN AREA
+   ========================================================= */
+
+.marine-types-content {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 57% 43%;
+
+  align-items: center;
+
+  column-gap: 35px;
+}
+
+
+/* =========================================================
+   LEFT TEXT
+   ========================================================= */
+
+.marine-types-text {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TYPE ITEM
+   ========================================================= */
+
+.marine-type-item {
+  display: flex;
+  align-items: flex-start;
+
+  width: 100%;
+
+  margin-bottom: 28px;
+}
+
+.marine-type-arrow {
+  flex: 0 0 28px;
+
+  margin-top: 2px;
+
+  font-size: 19px;
+  line-height: 1.5;
+
+  color: #d85f29;
+}
+
+.marine-type-item p {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 400;
+
+  color: #344054;
+}
+
+.marine-type-item strong {
+  font-weight: 700;
+  color: #242424;
+}
+
+
+/* =========================================================
+   BROAD CATEGORY TEXT
+   ========================================================= */
+
+.marine-category-intro {
+  margin: 8px 0 18px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: #242424;
+}
+
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.marine-category {
+  margin-bottom: 16px;
+}
+
+.marine-category h3 {
+  margin: 0 0 4px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+
+  color: #242424;
+}
+
+.marine-category p {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #344054;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+   ========================================================= */
+
+.marine-types-image {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marine-types-image img {
+  display: block;
+
+  width: 90%;
+  max-width: 540px;
+
+  height: 335px;
+
+  object-fit: cover;
+
+  border-radius: 48% 48% 48% 48%;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   BOTTOM BORDER
+   ========================================================= */
+
+.marine-types-section::after {
+  content: "";
+
+  display: block;
+
+  width: 86%;
+  max-width: 1350px;
+
+  height: 1px;
+
+  margin: 0 auto;
+
+  background: #dddddd;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .marine-types-container {
+    width: 90%;
+  }
+
+  .marine-types-content {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .marine-types-image {
+    order: 2;
+  }
+
+  .marine-types-image img {
+    width: 70%;
+    max-width: 550px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .marine-types-section {
+    padding: 40px 0 55px;
+  }
+
+  .marine-types-container {
+    width: 90%;
+  }
+
+  .marine-types-heading h2 {
+    font-size: 32px;
+  }
+
+  .marine-type-item p,
+  .marine-category-intro,
+  .marine-category p {
+    font-size: 16px;
+  }
+
+  .marine-category h3 {
+    font-size: 17px;
+  }
+
+  .marine-types-image img {
+    width: 100%;
+    height: 280px;
+  }
+
+}
+
+/* =====================================================
+   INCLUSION & EXCLUSION SECTION
+   ===================================================== */
+
+.coverage-section {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 55px 35px 70px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   HEADING
+   ===================================================== */
+
+.coverage-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.coverage-heading h2 {
+  margin: 0;
+  color: #242424;
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.coverage-heading h2 span {
+  color: #d95d28;
+}
+
+
+/* =====================================================
+   TABS
+   ===================================================== */
+
+.coverage-tabs {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 35px;
+}
+
+.coverage-tab {
+  width: 25%;
+  padding: 0 0 17px;
+
+  border: none;
+  border-bottom: 3px solid transparent;
+
+  background: transparent;
+
+  color: #666666;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.coverage-tab.active {
+  color: #e0642b;
+  border-bottom-color: #e0642b;
+}
+
+.coverage-tab:hover {
+  color: #e0642b;
+}
+
+
+/* =====================================================
+   CARDS GRID
+   ===================================================== */
+
+.coverage-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   INDIVIDUAL CARD
+   ===================================================== */
+
+.coverage-card {
+  min-height: 98px;
+
+  padding: 18px 22px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dedede;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  position: relative;
+
+  transition: box-shadow 0.2s ease,
+              transform 0.2s ease;
+}
+
+.coverage-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CARD IMAGE
+   ===================================================== */
+
+.coverage-card img {
+  width: 55px;
+  height: 55px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   CARD TEXT
+   ===================================================== */
+
+.coverage-card span:not(.info-icon) {
+  color: #26384b;
+
+  font-size: 16px;
+
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+
+/* =====================================================
+   INFO ICON
+   ===================================================== */
+
+.info-icon {
+  width: 21px;
+  height: 21px;
+
+  border: 2px solid #777777;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #666666 !important;
+
+  font-size: 13px !important;
+
+  font-weight: 700 !important;
+
+  flex-shrink: 0;
+
+  margin-left: auto;
+}
+
+
+/* =====================================================
+   NOTE BOX
+   ===================================================== */
+
+.coverage-note {
+  width: 75%;
+
+  min-height: 52px;
+
+  margin: 10px auto 0;
+
+  padding: 10px 20px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  background: #fffdf2;
+
+  border: 1px solid #f3edc8;
+
+  border-radius: 20px;
+}
+
+
+/* Note label */
+
+.note-label {
+  background: #f7c928;
+
+  color: #222222;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  padding: 6px 11px;
+
+  border-radius: 5px;
+
+  flex-shrink: 0;
+}
+
+
+/* Note text */
+
+.coverage-note p {
+  margin: 0;
+
+  color: #26384b;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+.coverage-note strong {
+  color: #e0642b;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+  .coverage-heading h2 {
+    font-size: 40px;
+  }
+
+  .coverage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .coverage-note {
+    width: 90%;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+  .coverage-section {
+    padding: 40px 18px 50px;
+  }
+
+  .coverage-heading {
+    margin-bottom: 35px;
+  }
+
+  .coverage-heading h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .coverage-tabs {
+    margin-bottom: 25px;
+  }
+
+  .coverage-tab {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .coverage-card {
+    min-height: 85px;
+  }
+
+  .coverage-card img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .coverage-card span:not(.info-icon) {
+    font-size: 15px;
+  }
+
+  .coverage-note {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 12px;
+  }
+}

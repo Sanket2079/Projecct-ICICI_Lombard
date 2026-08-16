@@ -1,0 +1,3335 @@
+/* =========================================================
+   FIRE INSURANCE
+   HERO SECTION
+========================================================= */
+
+.fire-page {
+  width: 100%;
+  min-height: 790px;
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 70px;
+
+  padding: 40px 110px 0;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  position: relative;
+
+  
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.fire-left {
+  width: calc(100% - 600px);
+  max-width: 1000px;
+
+  position: relative;
+
+  padding-top: 0;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.fire-title {
+  margin: 0;
+
+  font-size: 43px;
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  color: #151515;
+}
+
+.fire-title span {
+  color: #df6932;
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.fire-subtitle {
+  margin: 4px 0 24px;
+
+  font-size: 21px;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: #151515;
+}
+
+
+/* =========================================================
+   POLICY ROW
+========================================================= */
+
+.fire-policy-row {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-bottom: 25px;
+}
+
+
+/* Policy count */
+
+.fire-policy-count {
+  display: flex;
+  flex-direction: column;
+}
+
+.fire-policy-count strong {
+  font-size: 30px;
+  line-height: 1.1;
+
+  font-weight: 700;
+
+  color: #df6932;
+}
+
+.fire-policy-count span {
+  margin-top: 5px;
+
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: #171717;
+}
+
+.fire-policy-count sup {
+  color: #df6932;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   MARKET LEADER BADGE
+========================================================= */
+
+.fire-market-badge {
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 18px;
+
+  border: 1px solid #f4c27d;
+  border-radius: 24px;
+
+  background: #fffaf3;
+
+  color: #173f67;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  white-space: nowrap;
+}
+
+.fire-market-badge sup {
+  color: #df6932;
+  font-size: 11px;
+}
+
+.fire-medal {
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   FEATURES GRID
+========================================================= */
+
+.fire-features {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 11px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.fire-feature-card {
+  min-height: 72px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 10px 20px;
+
+  border: 1px solid #f3cfc0;
+
+  border-radius: 12px;
+
+  background: #fff7f3;
+
+  color: #17395b;
+
+  font-size: 16px;
+
+  line-height: 1.25;
+
+  font-weight: 400;
+}
+
+.fire-feature-card img {
+  width: 38px;
+  height: 38px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.fire-feature-card span {
+  display: block;
+}
+
+.fire-feature-card sup {
+  color: #df6932;
+
+  font-size: 10px;
+
+  position: relative;
+  top: -2px;
+}
+
+
+/* =========================================================
+   FIRE BANNER
+========================================================= */
+
+.fire-banner {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: 390px;
+
+  width: 100%;
+
+  height: 390px;
+
+  overflow: hidden;
+
+  z-index: 1;
+}
+
+.fire-banner img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/* =========================================================
+   RIGHT QUOTE CARD
+========================================================= */
+
+.fire-quote-card {
+  width: 550px;
+
+  min-width: 550px;
+
+  box-sizing: border-box;
+
+  padding: 35px 37px 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #d8d8d8;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.04);
+
+  position: relative;
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   QUOTE HEADING
+========================================================= */
+
+.fire-quote-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 27px;
+}
+
+.fire-quote-heading h2 {
+  margin: 0;
+
+  font-size: 23px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  color: #111111;
+}
+
+.fire-quote-card {
+  width: 360px !important;
+  max-width: 360px !important;
+
+  padding: 22px 24px !important;
+
+  margin: 0 !important;
+
+  box-sizing: border-box !important;
+
+  background: #fff !important;
+  border-radius: 12px !important;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12) !important;
+
+  transform: scale(0.88);
+  transform-origin: center center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* =========================================================
+   STEP BADGE
+========================================================= */
+
+.fire-step-badge {
+  flex-shrink: 0;
+
+  padding: 9px 16px;
+
+  border-radius: 22px;
+
+  background: #edf7ff;
+
+  color: #17395b;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   FORM LABEL
+========================================================= */
+
+.fire-form-label {
+  display: block;
+
+  margin: 0 0 7px;
+
+  font-size: 14px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  color: #172f4b;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.fire-input {
+  width: 100%;
+
+  height: 55px;
+
+  box-sizing: border-box;
+
+  margin: 0 0 25px;
+
+  padding: 0 14px;
+
+  border: 1px solid #a8a8a8;
+
+  border-radius: 5px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #222222;
+
+  font-size: 16px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fire-input:focus {
+  border-color: #df6932;
+
+  box-shadow:
+    0 0 0 1px #df6932;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.fire-error {
+  margin-top: -14px;
+
+  margin-bottom: 14px;
+
+  color: #d93025;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   PROCEED BUTTON
+========================================================= */
+
+.fire-proceed-btn {
+  width: 100%;
+
+  height: 52px;
+
+  margin: 8px 0 28px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #d9632d;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.fire-proceed-btn:hover {
+  background: #c95726;
+}
+
+.fire-proceed-btn:active {
+  background: #b94d21;
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.fire-checkbox-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 19px;
+
+  cursor: pointer;
+
+  color: #222222;
+
+  font-size: 15px;
+
+  line-height: 1.3;
+}
+
+.fire-checkbox-row input {
+  width: 22px;
+  height: 22px;
+
+  margin: 0;
+
+  accent-color: #d9632d;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.fire-checkbox-row strong {
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1400px) {
+
+  .fire-page {
+    gap: 45px;
+
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .fire-quote-card {
+    width: 500px;
+    min-width: 500px;
+  }
+
+  .fire-title {
+    font-size: 40px;
+  }
+
+  .fire-feature-card {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    gap: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .fire-page {
+    flex-direction: column;
+
+    padding: 35px 35px 50px;
+
+    gap: 35px;
+  }
+
+  .fire-left {
+    width: 100%;
+
+    max-width: none;
+  }
+
+  .fire-quote-card {
+    width: 100%;
+    min-width: 0;
+
+    max-width: 550px;
+
+    margin: 0 auto;
+  }
+
+  .fire-banner {
+    position: relative;
+
+    top: auto;
+
+    height: 350px;
+
+    margin-top: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .fire-page {
+    padding: 25px 15px 40px;
+  }
+
+  .fire-title {
+    font-size: 34px;
+  }
+
+  .fire-subtitle {
+    font-size: 18px;
+  }
+
+  .fire-policy-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .fire-market-badge {
+    max-width: 100%;
+
+    height: auto;
+
+    min-height: 40px;
+
+    white-space: normal;
+
+    padding: 8px 14px;
+  }
+
+  .fire-features {
+    grid-template-columns: 1fr;
+  }
+
+  .fire-banner {
+    height: 250px;
+  }
+
+  .fire-quote-card {
+    padding: 28px 22px;
+  }
+
+  .fire-quote-heading h2 {
+    font-size: 20px;
+  }
+
+  .fire-step-badge {
+    font-size: 12px;
+
+    padding: 8px 11px;
+  }
+
+}
+
+/* =========================================================
+   INSURANCE NAVIGATION
+   ========================================================= */
+
+.insurance-nav {
+  width: 100%;
+  height: 68px;
+  background: #ffffff;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  border-bottom: 1px solid #dddddd;
+
+  box-sizing: border-box;
+}
+
+
+/* Main navigation container */
+
+.insurance-nav-inner {
+  width: calc(100% - 100px);
+  max-width: 1665px;
+  height: 68px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTON
+   ========================================================= */
+
+.insurance-nav .nav-item {
+  position: relative;
+
+  height: 68px;
+
+  padding: 0 13px;
+  margin: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #242424;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.insurance-nav .nav-item:hover {
+  color: #df642d;
+}
+
+
+/* =========================================================
+   ACTIVE BUTTON
+   ========================================================= */
+
+.insurance-nav .nav-item.active {
+  color: #df642d;
+}
+
+
+/* =========================================================
+   ORANGE ACTIVE UNDERLINE
+   ========================================================= */
+
+.insurance-nav .nav-item::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: 0;
+
+  height: 4px;
+
+  background: #df642d;
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition: transform 0.2s ease;
+}
+
+
+.insurance-nav .nav-item.active::after {
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   REMOVE DEFAULT BUTTON FOCUS EFFECT
+   ========================================================= */
+
+.insurance-nav .nav-item:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .insurance-nav-inner {
+    width: calc(100% - 40px);
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .insurance-nav .nav-item {
+    flex: 0 0 auto;
+    padding: 0 14px;
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .insurance-nav {
+    height: 60px;
+  }
+
+  .insurance-nav-inner {
+    width: 100%;
+    height: 60px;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    scrollbar-width: none;
+  }
+
+  .insurance-nav-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .insurance-nav .nav-item {
+    height: 60px;
+
+    padding: 0 14px;
+
+    font-size: 14px;
+  }
+
+}
+
+/* =========================================================
+   WHO NEEDS FIRE INSURANCE
+   Screenshot-matched compact layout
+   ========================================================= */
+
+/* =========================================================
+   WHAT IS FIRE INSURANCE
+   OFFICIAL SCREENSHOT STYLE
+   ========================================================= */
+
+.fire-about-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 88px 0 105px;
+  box-sizing: border-box;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+
+/* MAIN CONTAINER */
+
+.fire-about-container {
+  width: 100%;
+  max-width: 1790px;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 560px;
+  column-gap: 90px;
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.fire-about-content {
+  width: 100%;
+  max-width: 1080px;
+}
+
+
+/* HEADING */
+
+.fire-about-title {
+  margin: 0 0 26px;
+
+  font-size: 50px;
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+
+  color: #222222;
+}
+
+.fire-about-title span {
+  color: #d7652c;
+}
+
+
+/* DESCRIPTION */
+
+.fire-about-description {
+  margin: 0;
+  max-width: 1000px;
+
+  font-size: 20px;
+  line-height: 1.52;
+  font-weight: 400;
+
+  color: #173d67;
+}
+
+
+/* =========================================================
+   TRIVIA BOX
+   ========================================================= */
+
+.fire-trivia-box {
+  width: 100%;
+  max-width: 1080px;
+
+  margin-top: 38px;
+  padding: 15px 40px 22px;
+
+  box-sizing: border-box;
+
+  background: #fffdf5;
+
+  border: 1px solid #f0e7c8;
+  border-radius: 18px;
+}
+
+
+/* TRIVIA LABEL */
+
+.fire-trivia-label {
+  display: inline-flex;
+  align-items: center;
+
+  height: 33px;
+
+  padding: 0 12px;
+
+  margin-bottom: 10px;
+
+  background: #ffd95a;
+
+  border-radius: 5px;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+
+  color: #173d67;
+}
+
+
+/* TRIVIA TEXT */
+
+.fire-trivia-box p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+
+  color: #173d67;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+   ========================================================= */
+
+.fire-about-image {
+  width: 560px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.fire-about-image img {
+  display: block;
+
+  width: 560px;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   1600px - 1800px
+   ========================================================= */
+
+@media (max-width: 1800px) {
+
+  .fire-about-container {
+    max-width: 1700px;
+    grid-template-columns: minmax(0, 1fr) 540px;
+    column-gap: 70px;
+    padding: 0 55px;
+  }
+
+  .fire-about-image {
+    width: 540px;
+  }
+
+  .fire-about-image img {
+    width: 540px;
+  }
+
+}
+
+
+/* =========================================================
+   1400px - 1600px
+   ========================================================= */
+
+@media (max-width: 1600px) {
+
+  .fire-about-section {
+    padding-top: 75px;
+    padding-bottom: 90px;
+  }
+
+  .fire-about-container {
+    grid-template-columns: minmax(0, 1fr) 500px;
+    column-gap: 55px;
+    padding: 0 55px;
+  }
+
+  .fire-about-title {
+    font-size: 46px;
+  }
+
+  .fire-about-description {
+    font-size: 18px;
+  }
+
+  .fire-trivia-box p {
+    font-size: 17px;
+  }
+
+  .fire-about-image {
+    width: 500px;
+  }
+
+  .fire-about-image img {
+    width: 500px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .fire-about-container {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+    padding: 0 40px;
+  }
+
+  .fire-about-content {
+    max-width: 100%;
+  }
+
+  .fire-about-title {
+    font-size: 42px;
+  }
+
+  .fire-about-description {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .fire-trivia-box {
+    max-width: 100%;
+  }
+
+  .fire-about-image {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .fire-about-image img {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .fire-about-section {
+    padding: 55px 0 65px;
+  }
+
+  .fire-about-container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 20px;
+
+    row-gap: 35px;
+  }
+
+  .fire-about-title {
+    margin-bottom: 20px;
+
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+  }
+
+  .fire-about-description {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .fire-trivia-box {
+    margin-top: 28px;
+    padding: 15px 20px 20px;
+    border-radius: 15px;
+  }
+
+  .fire-trivia-label {
+    font-size: 16px;
+  }
+
+  .fire-trivia-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .fire-about-image {
+    width: 100%;
+  }
+
+  .fire-about-image img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+}
+
+/* =========================================================
+   WHO NEEDS FIRE INSURANCE
+   Screenshot-matched compact layout
+   ========================================================= */
+
+.who-needs-fire-section {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px 98px 65px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.who-needs-fire-title {
+  margin: 0 0 25px;
+  padding: 0;
+
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+  letter-spacing: -1px;
+
+  color: #202020;
+}
+
+.who-needs-fire-title span {
+  color: #d7652d;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.who-needs-fire-grid {
+  width: 100%;
+  max-width: 1704px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.who-needs-fire-card {
+  width: 100%;
+  min-height: 201px;
+
+  display: flex;
+  align-items: flex-start;
+
+  padding: 25px 35px;
+
+  box-sizing: border-box;
+
+  background: #f6f4f3;
+
+  border-radius: 12px;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.who-needs-fire-icon {
+  width: 82px;
+  min-width: 82px;
+
+  height: 70px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin-right: 32px;
+
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+.who-needs-fire-icon img {
+  width: 58px;
+  height: 58px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.who-needs-fire-content {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* Card heading */
+.who-needs-fire-content h3 {
+  margin: 14px 0 17px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+
+  color: #102d4b;
+}
+
+
+/* Card paragraph */
+.who-needs-fire-content p {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+
+  color: #123b64;
+}
+
+
+/* =========================================================
+   PREVENT GLOBAL CSS FROM MAKING THIS SECTION HUGE
+   ========================================================= */
+
+.who-needs-fire-section h2 {
+  font-size: 48px !important;
+}
+
+.who-needs-fire-section h3 {
+  font-size: 20px !important;
+}
+
+.who-needs-fire-section p {
+  font-size: 17px !important;
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1400px) {
+
+  .who-needs-fire-section {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .who-needs-fire-card {
+    padding: 24px 28px;
+  }
+
+  .who-needs-fire-icon {
+    width: 75px;
+    min-width: 75px;
+    margin-right: 25px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .who-needs-fire-section {
+    padding: 15px 35px 50px;
+  }
+
+  .who-needs-fire-title {
+    font-size: 40px !important;
+  }
+
+  .who-needs-fire-section h2 {
+    font-size: 40px !important;
+  }
+
+  .who-needs-fire-grid {
+    column-gap: 22px;
+    row-gap: 22px;
+  }
+
+  .who-needs-fire-card {
+    min-height: 190px;
+    padding: 22px;
+  }
+
+  .who-needs-fire-icon {
+    width: 65px;
+    min-width: 65px;
+    margin-right: 18px;
+  }
+
+  .who-needs-fire-icon img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .who-needs-fire-content h3 {
+    font-size: 18px !important;
+  }
+
+  .who-needs-fire-content p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .who-needs-fire-section {
+    padding: 30px 18px 40px;
+  }
+
+  .who-needs-fire-title {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 25px;
+  }
+
+  .who-needs-fire-section h2 {
+    font-size: 32px !important;
+  }
+
+  .who-needs-fire-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .who-needs-fire-card {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .who-needs-fire-icon {
+    width: 65px;
+    min-width: 65px;
+    margin-right: 15px;
+  }
+
+  .who-needs-fire-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .who-needs-fire-content h3 {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 18px !important;
+  }
+
+  .who-needs-fire-content p {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+/* =========================================================
+   OUR FIRE INSURANCE OFFERINGS
+   ICICI LOMBARD STYLE
+   ========================================================= */
+
+.fire-offerings-section {
+  width: 100%;
+  background: #ffffff;
+
+  padding: 72px 0 80px;
+
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.fire-offerings-container {
+  width: 100%;
+  max-width: 1660px;
+
+  margin: 0 auto;
+
+  padding: 0 45px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.fire-offerings-title {
+  margin: 0 0 45px;
+
+  text-align: center;
+
+  font-size: 44px;
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  letter-spacing: -0.6px;
+
+  color: #222222;
+}
+
+.fire-offerings-title span {
+  color: #d9652c;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.fire-offerings-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 32px;
+  row-gap: 30px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.fire-offering-card {
+  width: 100%;
+
+  min-height: 270px;
+
+  display: grid;
+
+  grid-template-columns: 230px minmax(0, 1fr);
+
+  align-items: center;
+
+  background: #f8f6f5;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  padding: 22px 25px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* SMALL HOVER */
+
+.fire-offering-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.fire-offering-image {
+  width: 210px;
+  height: 210px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+/* IMPORTANT:
+   Image will NOT become huge */
+
+.fire-offering-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: 210px;
+  max-height: 210px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.fire-offering-content {
+  min-width: 0;
+
+  padding-left: 20px;
+}
+
+
+/* CARD HEADING */
+
+.fire-offering-content h3 {
+  margin: 0 0 14px;
+
+  font-size: 20px;
+
+  line-height: 1.35;
+
+  font-weight: 700;
+
+  color: #222222;
+}
+
+.fire-offering-content h3 span {
+  color: #222222;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.fire-offering-subtitle {
+  margin: -8px 0 12px;
+
+  font-size: 16px;
+
+  line-height: 1.4;
+
+  color: #173d67;
+}
+
+
+/* =========================================================
+   BULLET LIST
+   ========================================================= */
+
+.fire-offering-content ul {
+  margin: 0;
+
+  padding-left: 20px;
+}
+
+
+.fire-offering-content li {
+  margin-bottom: 9px;
+
+  font-size: 17px;
+
+  line-height: 1.45;
+
+  font-weight: 400;
+
+  color: #173d67;
+}
+
+
+.fire-offering-content li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   1500px
+   ========================================================= */
+
+@media (max-width: 1500px) {
+
+  .fire-offerings-container {
+    max-width: 1450px;
+
+    padding: 0 40px;
+  }
+
+  .fire-offerings-title {
+    font-size: 42px;
+  }
+
+  .fire-offering-card {
+    grid-template-columns: 190px minmax(0, 1fr);
+
+    min-height: 245px;
+
+    padding: 20px;
+  }
+
+  .fire-offering-image {
+    width: 175px;
+    height: 175px;
+  }
+
+  .fire-offering-image img {
+    max-width: 175px;
+    max-height: 175px;
+  }
+
+  .fire-offering-content {
+    padding-left: 18px;
+  }
+
+  .fire-offering-content h3 {
+    font-size: 18px;
+  }
+
+  .fire-offering-content li {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .fire-offerings-section {
+    padding: 60px 0;
+  }
+
+  .fire-offerings-container {
+    padding: 0 25px;
+  }
+
+  .fire-offerings-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 24px;
+  }
+
+  .fire-offering-card {
+    grid-template-columns: 210px minmax(0, 1fr);
+
+    min-height: 230px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .fire-offerings-section {
+    padding: 45px 0 55px;
+  }
+
+  .fire-offerings-container {
+    padding: 0 15px;
+  }
+
+  .fire-offerings-title {
+    margin-bottom: 30px;
+
+    font-size: 32px;
+  }
+
+  .fire-offering-card {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    padding: 20px;
+
+    text-align: center;
+  }
+
+  .fire-offering-image {
+    width: 170px;
+    height: 150px;
+
+    margin: 0 auto 15px;
+  }
+
+  .fire-offering-image img {
+    max-width: 170px;
+    max-height: 150px;
+  }
+
+  .fire-offering-content {
+    padding-left: 0;
+  }
+
+  .fire-offering-content h3 {
+    font-size: 18px;
+  }
+
+  .fire-offering-content ul {
+    text-align: left;
+  }
+
+  .fire-offering-content li {
+    font-size: 15px;
+  }
+
+}
+
+/* =========================================================
+   ICICI LOMBARD
+   INCLUSIONS & EXCLUSIONS
+   ========================================================= */
+
+.coverage-section {
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 70px 55px 75px;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= HEADING ================= */
+
+.coverage-title {
+  margin: 0 0 32px;
+  text-align: center;
+
+  font-size: 42px !important;
+  line-height: 1.15;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+
+/* ================= TABS ================= */
+
+.coverage-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 42px;
+
+  margin-bottom: 42px;
+
+  border-bottom: 1px solid #dedede;
+}
+
+
+.coverage-tab {
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  padding: 0 8px 16px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px !important;
+  font-weight: 600;
+
+  color: #333333;
+
+  cursor: pointer;
+}
+
+
+/* Orange active underline */
+
+.coverage-tab.active {
+  color: #d65f2a;
+}
+
+
+.coverage-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -1px;
+
+  height: 3px;
+
+  background: #d65f2a;
+
+  border-radius: 2px;
+}
+
+
+/* ================= CONTENT ================= */
+
+.coverage-content {
+  width: 100%;
+}
+
+
+/* ================= HORIZONTAL GRID ================= */
+
+.coverage-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  column-gap: 28px;
+  row-gap: 20px;
+
+  width: 100%;
+}
+
+
+/* ================= CARD ================= */
+
+.coverage-card {
+  min-height: 105px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 18px 20px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ================= ICON ================= */
+
+.coverage-icon {
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff1eb;
+
+  font-size: 24px;
+}
+
+
+/* ================= TEXT ================= */
+
+.coverage-card span {
+  display: block;
+
+  font-size: 17px !important;
+  line-height: 1.45;
+
+  font-weight: 400;
+
+  color: #17395b;
+}
+
+
+/* ================= EXCLUSION ================= */
+
+.coverage-card.exclusion {
+  background: #ffffff;
+}
+
+
+/* ================= NOTE ================= */
+
+.coverage-note {
+  margin: 28px 0 0;
+
+  text-align: center;
+
+  font-size: 14px !important;
+  line-height: 1.5;
+
+  color: #555555;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .coverage-section {
+    padding: 60px 30px;
+  }
+
+  .coverage-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .coverage-section {
+    padding: 45px 18px;
+  }
+
+  .coverage-title {
+    font-size: 32px !important;
+  }
+
+  .coverage-tabs {
+    gap: 25px;
+  }
+
+  .coverage-tab {
+    font-size: 16px !important;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-card span {
+    font-size: 15px !important;
+  }
+
+}
+
+.fire-section-title {
+  color: #222222 !important;
+}
+
+.fire-section-title span {
+  color: #d9652d !important;
+}
+
+/* =========================================================
+   BENEFITS OF CHOOSING ICICI LOMBARD FIRE INSURANCE
+========================================================= */
+
+.fire-benefits-section {
+  width: 100%;
+  max-width: 1650px;
+  margin: 0 auto;
+
+  padding: 65px 45px 70px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= HEADING ================= */
+
+.fire-benefits-title {
+  margin: 0 0 45px !important;
+
+  text-align: center !important;
+
+  font-size: 42px !important;
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+.fire-benefits-title span {
+  color: #d9652d !important;
+}
+
+
+/* ================= FOUR HORIZONTAL CARDS ================= */
+
+.fire-benefits-grid {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+
+  align-items: stretch;
+}
+
+
+/* ================= CARD ================= */
+
+.fire-benefit-card {
+  min-width: 0;
+
+  min-height: 360px;
+
+  padding: 25px 22px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ================= IMAGE ================= */
+
+.fire-benefit-image {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  overflow: visible;
+}
+
+.fire-benefit-image img {
+  width: 290px !important;
+  height: 290px !important;
+
+  max-width: none !important;
+  max-height: none !important;
+
+  object-fit: contain;
+  display: block;
+}
+
+
+/* ================= CARD TITLE ================= */
+
+.fire-benefit-card h3 {
+  width: 100%;
+
+  margin: 0 0 12px;
+
+  font-size: 18px !important;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #222222;
+}
+
+
+/* ================= CARD DESCRIPTION ================= */
+
+.fire-benefit-card p {
+  width: 100%;
+
+  margin: 0;
+
+  font-size: 15px !important;
+
+  line-height: 1.5;
+
+  font-weight: 400;
+
+  color: #17395b;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .fire-benefits-section {
+    padding: 55px 25px;
+  }
+
+  .fire-benefits-grid {
+    gap: 16px;
+  }
+
+  .fire-benefit-card {
+    padding: 22px 15px;
+  }
+
+  .fire-benefit-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .fire-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .fire-benefits-section {
+    padding: 45px 18px;
+  }
+
+  .fire-benefits-title {
+    font-size: 32px !important;
+  }
+
+  .fire-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================================================
+   FIRE INSURANCE - BUY ONLINE
+========================================================= */
+
+.fire-buy-online-section {
+  width: 100%;
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 65px 45px 70px;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= HEADING ================= */
+
+.fire-buy-online-title {
+  margin: 0 0 14px !important;
+
+  text-align: center !important;
+
+  font-size: 42px !important;
+  line-height: 1.15;
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+.fire-buy-online-title span {
+  color: #d9652d !important;
+}
+
+
+/* ================= SUBTITLE ================= */
+
+.fire-buy-online-subtitle {
+  max-width: 850px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+
+  font-size: 17px !important;
+  line-height: 1.5;
+
+  font-weight: 400;
+
+  color: #17395b !important;
+}
+
+
+/* =========================================================
+   FOUR CARDS - ONE HORIZONTAL ROW
+========================================================= */
+
+.fire-buy-online-grid {
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 0 auto 38px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 22px;
+
+  align-items: stretch;
+}
+
+
+/* ================= CARD ================= */
+
+.fire-buy-card {
+  min-width: 0;
+  min-height: 220px;
+
+  padding: 28px 22px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e2e2;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ================= NUMBER ================= */
+
+.fire-buy-number {
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d9652d;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+
+/* ================= CARD TITLE ================= */
+
+.fire-buy-card h3 {
+  width: 100%;
+
+  margin: 0 0 10px;
+
+  font-size: 18px !important;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+
+/* ================= CARD TEXT ================= */
+
+.fire-buy-card p {
+  width: 100%;
+
+  margin: 0;
+
+  font-size: 14px !important;
+
+  line-height: 1.5;
+
+  font-weight: 400;
+
+  color: #17395b !important;
+}
+
+
+/* ================= BUY BUTTON ================= */
+
+.fire-buy-button {
+  display: block;
+
+  margin: 0 auto;
+
+  min-width: 150px;
+
+  padding: 13px 30px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #d9652d;
+
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.fire-buy-button:hover {
+  background: #c45720;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .fire-buy-online-section {
+    padding: 55px 30px 60px;
+  }
+
+  .fire-buy-online-grid {
+    gap: 15px;
+  }
+
+  .fire-buy-card {
+    padding: 24px 15px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .fire-buy-online-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .fire-buy-online-section {
+    padding: 45px 18px 50px;
+  }
+
+  .fire-buy-online-title {
+    font-size: 32px !important;
+  }
+
+  .fire-buy-online-subtitle {
+    font-size: 15px !important;
+  }
+
+  .fire-buy-online-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fire-buy-card {
+    min-height: 190px;
+  }
+
+  .fire-buy-button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* =========================================================
+   ONLINE CLAIM PROCESS
+========================================================= */
+
+.fire-online-claim-section {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 65px 60px 70px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 70px;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.fire-online-claim-content {
+  flex: 1;
+  max-width: 760px;
+}
+
+
+/* ================= HEADING ================= */
+
+.fire-online-claim-title {
+  margin: 0 0 18px !important;
+
+  font-size: 42px !important;
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+.fire-online-claim-title span {
+  color: #d9652d !important;
+}
+
+
+/* ================= INTRO ================= */
+
+.fire-online-claim-intro {
+  margin: 0 0 25px;
+
+  max-width: 680px;
+
+  font-size: 17px !important;
+  line-height: 1.5;
+
+  color: #17395b !important;
+}
+
+
+/* ================= SUBTITLE ================= */
+
+.fire-online-claim-subtitle {
+  margin: 0 0 18px;
+
+  font-size: 21px !important;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+
+/* =========================================================
+   STEPS
+========================================================= */
+
+.fire-online-claim-steps {
+  display: flex;
+  flex-direction: column;
+
+  gap: 13px;
+
+  margin-bottom: 28px;
+}
+
+
+/* ================= EACH STEP ================= */
+
+.fire-online-step {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin: 0;
+}
+
+
+/* ================= STEP NUMBER ================= */
+
+.fire-online-step-number {
+  width: 28px;
+  height: 28px;
+
+  min-width: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d9652d;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* ================= STEP TEXT ================= */
+
+.fire-online-step p {
+  margin: 2px 0 0;
+
+  font-size: 15px !important;
+  line-height: 1.45;
+
+  color: #17395b !important;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.fire-online-claim-button {
+  display: inline-block;
+
+  padding: 12px 28px;
+
+  min-width: 145px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #d9652d;
+
+  color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.fire-online-claim-button:hover {
+  background: #c45720;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.fire-online-claim-image {
+  width: 470px;
+
+  min-width: 470px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* IMAGE */
+
+.fire-online-claim-image img {
+  width: 100%;
+  max-width: 470px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .fire-online-claim-section {
+    padding: 55px 35px 60px;
+
+    gap: 40px;
+  }
+
+  .fire-online-claim-content {
+    max-width: 650px;
+  }
+
+  .fire-online-claim-image {
+    width: 380px;
+    min-width: 380px;
+  }
+
+  .fire-online-claim-image img {
+    max-width: 380px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .fire-online-claim-section {
+    flex-direction: column;
+
+    padding: 50px 25px 55px;
+
+    gap: 40px;
+  }
+
+  .fire-online-claim-content {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  .fire-online-claim-image {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .fire-online-claim-image img {
+    width: 80%;
+    max-width: 450px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .fire-online-claim-section {
+    padding: 40px 18px 45px;
+
+    gap: 30px;
+  }
+
+  .fire-online-claim-title {
+    font-size: 32px !important;
+  }
+
+  .fire-online-claim-intro {
+    font-size: 15px !important;
+  }
+
+  .fire-online-claim-subtitle {
+    font-size: 19px !important;
+  }
+
+  .fire-online-step p {
+    font-size: 14px !important;
+  }
+
+  .fire-online-claim-image img {
+    width: 100%;
+  }
+
+}
+
+/* =========================================================
+   FIRE INSURANCE - CUSTOMER SPEAK
+========================================================= */
+
+.fire-customer-section {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 65px 45px 70px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= HEADING ================= */
+
+.fire-customer-title {
+  margin: 0 0 42px !important;
+
+  text-align: center !important;
+
+  font-size: 42px !important;
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+.fire-customer-title span {
+  color: #d9652d !important;
+}
+
+
+/* =========================================================
+   CUSTOMER GRID
+========================================================= */
+
+.fire-customer-grid {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   CUSTOMER CARD
+========================================================= */
+
+.fire-customer-card {
+  min-width: 0;
+  min-height: 310px;
+
+  padding: 28px 22px 24px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e2e2;
+
+  border-radius: 12px;
+
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.fire-quote {
+  width: 38px;
+  height: 38px;
+
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff1e9;
+
+  color: #d9652d;
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   TESTIMONIAL TEXT
+========================================================= */
+
+.fire-customer-card p {
+  margin: 0;
+
+  font-size: 14px !important;
+  line-height: 1.55;
+
+  font-weight: 400;
+
+  color: #17395b !important;
+
+  flex: 1;
+}
+
+
+/* =========================================================
+   CUSTOMER NAME
+========================================================= */
+
+.fire-customer-card h3 {
+  margin: 20px 0 0;
+
+  font-size: 16px !important;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .fire-customer-section {
+    padding: 55px 30px 60px;
+  }
+
+  .fire-customer-grid {
+    gap: 15px;
+  }
+
+  .fire-customer-card {
+    padding: 24px 17px 22px;
+  }
+
+  .fire-customer-card p {
+    font-size: 13px !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .fire-customer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .fire-customer-section {
+    padding: 45px 18px 50px;
+  }
+
+  .fire-customer-title {
+    font-size: 32px !important;
+  }
+
+  .fire-customer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fire-customer-card {
+    min-height: 250px;
+  }
+
+  .fire-customer-card p {
+    font-size: 14px !important;
+  }
+
+}
+
+/* =========================================================
+   FIRE INSURANCE - FAQ SECTION
+========================================================= */
+
+.fire-faq-section {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 65px 40px 75px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.fire-faq-title {
+  margin: 0 0 12px !important;
+
+  text-align: center !important;
+
+  font-size: 42px !important;
+
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  color: #222222 !important;
+}
+
+.fire-faq-title span {
+  color: #d9652d !important;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.fire-faq-category {
+  margin: 0 auto 38px;
+
+  text-align: center;
+
+  font-size: 16px !important;
+
+  line-height: 1.4;
+
+  color: #17395b !important;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   FAQ LIST
+========================================================= */
+
+.fire-faq-list {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   FAQ ITEM
+========================================================= */
+
+.fire-faq-item {
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   QUESTION BUTTON
+========================================================= */
+
+.fire-faq-question {
+  width: 100%;
+
+  min-height: 62px;
+
+  padding: 17px 22px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  background: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.4;
+
+  font-weight: 600;
+
+  color: #222222;
+}
+
+
+/* Hover */
+
+.fire-faq-question:hover {
+  background: #fff8f4;
+}
+
+
+/* =========================================================
+   PLUS / MINUS ICON
+========================================================= */
+
+.fire-faq-icon {
+  width: 28px;
+
+  height: 28px;
+
+  min-width: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff0e8;
+
+  color: #d9652d;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ANSWER
+========================================================= */
+
+.fire-faq-answer {
+  padding: 0 22px 20px;
+
+  border-top: 1px solid #eeeeee;
+
+  background: #ffffff;
+}
+
+
+/* Answer paragraph */
+
+.fire-faq-answer p {
+  margin: 17px 0 10px;
+
+  font-size: 14px !important;
+
+  line-height: 1.6;
+
+  font-weight: 400;
+
+  color: #17395b !important;
+}
+
+
+/* =========================================================
+   ANSWER LIST
+========================================================= */
+
+.fire-faq-answer ul {
+  margin: 8px 0 0;
+
+  padding-left: 22px;
+}
+
+.fire-faq-answer li {
+  margin-bottom: 7px;
+
+  font-size: 14px !important;
+
+  line-height: 1.5;
+
+  color: #17395b !important;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .fire-faq-section {
+    padding: 55px 25px 65px;
+  }
+
+  .fire-faq-list {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .fire-faq-section {
+    padding: 45px 15px 55px;
+  }
+
+  .fire-faq-title {
+    font-size: 32px !important;
+  }
+
+  .fire-faq-category {
+    font-size: 15px !important;
+    margin-bottom: 28px;
+  }
+
+  .fire-faq-question {
+    min-height: 56px;
+
+    padding: 15px;
+
+    font-size: 14px;
+
+    gap: 12px;
+  }
+
+  .fire-faq-answer {
+    padding: 0 15px 17px;
+  }
+
+  .fire-faq-answer p,
+  .fire-faq-answer li {
+    font-size: 13px !important;
+  }
+
+}
+
+.fire-user-box {
+  position: relative;
+  z-index: 3;
+
+  width: 390px;
+  max-width: 100%;
+
+  box-sizing: border-box;
+
+  /* keep the box inside the image */
+  max-height: 520px;
+  overflow-y: auto;
+
+  padding: 25px 30px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+

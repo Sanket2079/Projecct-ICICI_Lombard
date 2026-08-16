@@ -1,0 +1,1628 @@
+<div class="fire-page">
+
+  <!-- =====================================================
+       LEFT SIDE
+  ====================================================== -->
+  <div class="fire-left">
+
+    <!-- Heading -->
+    <h1 class="fire-title">
+      <span>Fire</span> Insurance
+    </h1>
+
+    <h2 class="fire-subtitle">
+      Shield your business!
+    </h2>
+
+
+    <!-- Policy Count + Market Leader -->
+    <div class="fire-policy-row">
+
+      <div class="fire-policy-count">
+        <strong>49 Lakh+</strong>
+        <span>Policies issued<sup>*</sup></span>
+      </div>
+
+      <div class="fire-market-badge">
+
+        <span class="fire-medal">
+          🏅
+        </span>
+
+        <span>
+          One of the Market leaders in the private sector<sup>#</sup>
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         FEATURES
+    ================================================== -->
+    <div class="fire-features">
+
+      <!-- Feature 1 -->
+      <div class="fire-feature-card">
+
+        <img
+          src="/Images/easy-claim-process-1.svg"
+          alt="Easy claim process"
+        />
+
+        <span>
+          Easy claim process
+        </span>
+
+      </div>
+
+
+      <!-- Feature 2 -->
+      <div class="fire-feature-card">
+
+        <img
+          src="/Images/instant-policy-1.svg"
+          alt="Instant policy generation"
+        />
+
+        <span>
+          Instant policy<br>
+          generation
+        </span>
+
+      </div>
+
+
+      <!-- Feature 3 -->
+      <div class="fire-feature-card">
+
+        <img
+          src="/Images/covers-burglary-and-theft-1.svg"
+          alt="Covers burglary"
+        />
+
+        <span>
+          Covers burglary<sup>@</sup>
+        </span>
+
+      </div>
+
+
+      <!-- Feature 4 -->
+      <div class="fire-feature-card">
+
+        <img
+          src="/Images/covers-for-loss-of-cash.svg"
+          alt="Coverage for loss in stock"
+        />
+
+        <span>
+          Coverage for loss in stock
+        </span>
+
+      </div>
+
+
+      <!-- Feature 5 -->
+      <div class="fire-feature-card">
+
+        <img
+          src="/Images/covers-for-stock-and-content-1.svg"
+          alt="Covers up to 50 crores"
+        />
+
+        <span>
+          Covers up to 50<br>
+          crores
+        </span>
+
+      </div>
+
+
+      <!-- Feature 6 -->
+      <div class="fire-feature-card">
+
+        <img
+          src="/Images/covers-natural-and-manmade-calamities.svg"
+          alt="Natural and man-made calamities"
+        />
+
+        <span>
+          Covers natural and<br>
+          man-made calamities
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         FIRE BANNER IMAGE
+    ================================================== -->
+    <section class="fire-hero">
+  <img
+    src="/Images/hero-fire-banner-img.svg"
+    alt="Fire Insurance"
+    class="fire-hero-image"
+  />
+</section>
+
+  </div>
+
+
+  <!-- =====================================================
+       RIGHT SIDE QUOTE FORM
+  ====================================================== -->
+  <div class="fire-quote-card">
+
+    <!-- Heading -->
+    <div class="fire-quote-heading">
+
+      <h2>
+        Tell us a few things about you
+      </h2>
+
+      <span class="fire-step-badge">
+        Step 1/2
+      </span>
+
+    </div>
+
+
+    <!-- Mobile Number -->
+    <label class="fire-form-label">
+      Mobile number
+    </label>
+
+    <input
+      type="tel"
+      class="fire-input"
+      [(ngModel)]="mobileNumber"
+      maxlength="10"
+      inputmode="numeric"
+    />
+
+
+    <!-- Shop / Company -->
+    <label class="fire-form-label">
+      Shop/Company name
+    </label>
+
+    <input
+      type="text"
+      class="fire-input"
+      [(ngModel)]="companyName"
+    />
+
+
+    <!-- Pincode -->
+    <label class="fire-form-label">
+      Pincode
+    </label>
+
+    <input
+      type="tel"
+      class="fire-input"
+      [(ngModel)]="pincode"
+      maxlength="6"
+      inputmode="numeric"
+    />
+
+
+    <!-- Email -->
+    <label class="fire-form-label">
+      Email
+    </label>
+
+    <input
+      type="email"
+      class="fire-input"
+      [(ngModel)]="email"
+    />
+
+
+    <!-- Error -->
+    <div
+      class="fire-error"
+      *ngIf="formError"
+    >
+      {{ formError }}
+    </div>
+
+
+    <!-- Proceed -->
+    <button
+      type="button"
+      class="fire-proceed-btn"
+      (click)="proceed()"
+    >
+      Proceed
+    </button>
+
+
+    <!-- Terms -->
+    <label class="fire-checkbox-row">
+
+      <input
+        type="checkbox"
+        [(ngModel)]="agreeTerms"
+      />
+
+      <span>
+        I agree to the terms and conditions
+      </span>
+
+    </label>
+
+
+    <!-- WhatsApp -->
+    <label class="fire-checkbox-row">
+
+      <input
+        type="checkbox"
+        [(ngModel)]="whatsappUpdates"
+      />
+
+      <span>
+        I want to receive updates on
+        <strong>◉ WhatsApp</strong>
+      </span>
+
+    </label>
+
+  </div>
+
+</div>
+
+<!-- ================= FIRE INSURANCE NAVIGATION ================= -->
+<nav class="insurance-nav">
+
+  <div class="insurance-nav-inner">
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'fire-insurance'"
+      (click)="scrollToSection('fire-insurance')">
+      Fire insurance
+    </button>
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'importance'"
+      (click)="scrollToSection('importance')">
+      Importance
+    </button>
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'our-offerings'"
+      (click)="scrollToSection('our-offerings')">
+      Our offerings
+    </button>
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'inclusions-exclusions'"
+      (click)="scrollToSection('inclusions-exclusions')">
+      Inclusions and exclusions
+    </button>
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'benefits'"
+      (click)="scrollToSection('benefits')">
+      Benefits
+    </button>
+
+    
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'online-claim'"
+      (click)="scrollToSection('online-claim')">
+      Buy online
+    </button>
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'customer-speak'"
+      (click)="scrollToSection('customer-speak')">
+      Customer speak
+    </button>
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'faq'"
+      (click)="scrollToSection('faq')">
+      FAQs
+    </button>
+
+    <button
+      type="button"
+      class="nav-item"
+      [class.active]="activeSection === 'related-articles'"
+      (click)="scrollToSection('related-articles')">
+      Related articles
+    </button>
+
+  </div>
+
+</nav>
+<section class="fire-about-section" id="importance">
+
+  <div class="fire-about-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="fire-about-content">
+
+      <h2 class="fire-about-title">
+        <span>What is</span> Fire Insurance?
+      </h2>
+
+      <p class="fire-about-description">
+        Fire insurance protects your property from natural and man-made disasters such as
+        fire, floods, storms, and burglary. It’s perfect for micro-enterprises like hotels,
+        restaurants, and offices. The policy covers replacement, repair, and reconstruction
+        to keep your business secure.
+      </p>
+
+      <!-- TRIVIA -->
+      <div class="fire-trivia-box">
+
+        <div class="fire-trivia-label">
+          Trivia
+        </div>
+
+        <p>
+          Did you know? Fire insurance and property insurance are essentially the same thing!
+          You can choose from our four offerings i.e. MSME Suraksha Kavach, Merchant’s Cover III,
+          Bharat Griha Raksha policy and Standard fire and special perils.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT IMAGE -->
+    <div class="fire-about-image">
+
+      <img
+        src="/Images/what-is-property.svg"
+        alt="Fire Insurance"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="who-needs-fire-section" id="who-needs-fire">
+
+  <!-- Heading -->
+  <h2 class="who-needs-fire-title">
+    <span>Who needs</span> Fire Insurance?
+  </h2>
+
+  <!-- Cards -->
+  <div class="who-needs-fire-grid">
+
+    <!-- Card 1 -->
+    <div class="who-needs-fire-card">
+
+      <div class="who-needs-fire-icon">
+        <img
+          src="/Images/offices-1.svg"
+          alt="Offices and housing societies"
+        />
+      </div>
+
+      <div class="who-needs-fire-content">
+        <h3>Offices and housing societies</h3>
+
+        <p>
+          Offices and housing societies, whether small or large, should have Fire
+          Insurance to protect their space and to repair or replace furniture,
+          equipment due to unforeseen accidents.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="who-needs-fire-card">
+
+      <div class="who-needs-fire-icon">
+        <img
+          src="/Images/school-and-colleges-1.svg"
+          alt="Schools and colleges"
+        />
+      </div>
+
+      <div class="who-needs-fire-content">
+        <h3>Schools and colleges</h3>
+
+        <p>
+          Educational institutions can rely on Fire Insurance to cover the cost of
+          repairs if buildings are damaged by fire, floods, or earthquakes. This
+          helps them reopen quickly and safely.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="who-needs-fire-card">
+
+      <div class="who-needs-fire-icon">
+        <img
+          src="/Images/shops-and-malls-1.svg"
+          alt="Shops and malls"
+        />
+      </div>
+
+      <div class="who-needs-fire-content">
+        <h3>Shops and malls</h3>
+
+        <p>
+          These places can face major losses if their buildings or goods catch fire
+          or get damaged due to other reasons. Fire Insurance helps with repairs,
+          restarts operations, and also covers theft or burglary of contents and
+          stock.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="who-needs-fire-card">
+
+      <div class="who-needs-fire-icon">
+        <img
+          src="/Images/factories1.svg"
+          alt="Factories"
+        />
+      </div>
+
+      <div class="who-needs-fire-content">
+        <h3>Factories</h3>
+
+        <p>
+          Fire Insurance covers the cost of damaged machinery and stock,
+          helping factories maintain business continuity and keep operations
+          running smoothly.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- Card 5 -->
+    <div class="who-needs-fire-card">
+
+      <div class="who-needs-fire-icon">
+        <img
+          src="/Images/hotels1.svg"
+          alt="Hotels and restaurants"
+        />
+      </div>
+
+      <div class="who-needs-fire-content">
+        <h3>Hotels and restaurants</h3>
+
+        <p>
+          Fire Insurance supports hospitality businesses by covering repairs and
+          the replacement of damaged furniture or kitchen equipment after
+          unexpected events like fire, flood or theft.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- Card 6 -->
+    <div class="who-needs-fire-card">
+
+      <div class="who-needs-fire-icon">
+        <img
+          src="/Images/warehouse-1.svg"
+          alt="Warehouses"
+        />
+      </div>
+
+      <div class="who-needs-fire-content">
+        <h3>Warehouses</h3>
+
+        <p>
+          Fire Insurance protects warehouses that store goods and machinery,
+          helping manufacturing and retail businesses manage disruptions and
+          continue operations smoothly.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     OUR FIRE INSURANCE OFFERINGS
+     ========================================================= -->
+
+<section class="fire-offerings-section" id="our-offerings">
+
+  <div class="fire-offerings-container">
+
+    <!-- SECTION TITLE -->
+    <h2 class="fire-offerings-title">
+      <span>Our Fire Insurance</span> offerings
+    </h2>
+
+
+    <!-- FOUR OFFERINGS -->
+    <div class="fire-offerings-grid">
+
+
+      <!-- ================= CARD 1 ================= -->
+
+      <div class="fire-offering-card">
+
+        <div class="fire-offering-image">
+          <img
+            src="/Images/small-businesses-msme.svg"
+            alt="MSME Suraksha Kavach"
+          />
+        </div>
+
+        <div class="fire-offering-content">
+
+          <h3>
+            For Small businesses –
+            <span>MSME Suraksha Kavach</span>
+          </h3>
+
+          <ul>
+            <li>
+              Covers damage to buildings, machinery, and stock
+            </li>
+
+            <li>
+              Coverage up to ₹50 crore
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= CARD 2 ================= -->
+
+      <div class="fire-offering-card">
+
+        <div class="fire-offering-image">
+          <img
+            src="/Images/shopkeepers-merchants.svg"
+            alt="Merchant's Cover III"
+          />
+        </div>
+
+        <div class="fire-offering-content">
+
+          <h3>
+            For Shopkeepers –
+            <span>Merchant’s Cover III</span>
+          </h3>
+
+          <p class="fire-offering-subtitle">
+            (Shop Insurance)
+          </p>
+
+          <ul>
+            <li>
+              Protects against accidents, injuries,
+              and damage to the shop and its contents
+            </li>
+
+            <li>
+              Coverage up to ₹5 crore
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= CARD 3 ================= -->
+
+      <div class="fire-offering-card">
+
+        <div class="fire-offering-image">
+          <img
+            src="/Images/societies-bharat-griharaksha.svg"
+            alt="Bharat Griha Raksha Policy"
+          />
+        </div>
+
+        <div class="fire-offering-content">
+
+          <h3>
+            For Homeowners and housing societies –
+            <span>Bharat Griha Raksha Policy</span>
+          </h3>
+
+          <ul>
+            <li>
+              Covers damage from natural disasters like
+              floods, storms, and earthquakes
+            </li>
+
+            <li>
+              Coverage up to ₹10 crore for homeowners
+              and as per requirement, for housing societies
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= CARD 4 ================= -->
+
+      <div class="fire-offering-card">
+
+        <div class="fire-offering-image">
+          <img
+            src="/Images/properties-standard-fire.svg"
+            alt="Standard Fire and Special Perils Policy"
+          />
+        </div>
+
+        <div class="fire-offering-content">
+
+          <h3>
+            For Large business properties –
+            <span>Standard Fire and Special Perils Policy</span>
+          </h3>
+
+          <ul>
+            <li>
+              Protects buildings, machinery,
+              and business-related goods
+            </li>
+
+            <li>
+              Coverage above ₹50 crore
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="coverage-section" id="inclusions-exclusions">
+
+  <!-- Heading -->
+  <h2 class="fire-section-title">
+  <span>What’s included</span> and what’s not?
+</h2>
+
+  <!-- Tabs -->
+  <div class="coverage-tabs">
+
+    <button
+      type="button"
+      class="coverage-tab"
+      [class.active]="activeCoverageTab === 'inclusions'"
+      (click)="showCoverageTab('inclusions')">
+      Inclusions
+    </button>
+
+    <button
+      type="button"
+      class="coverage-tab"
+      [class.active]="activeCoverageTab === 'exclusions'"
+      (click)="showCoverageTab('exclusions')">
+      Exclusions
+    </button>
+
+  </div>
+
+
+  <!-- ================= INCLUSIONS ================= -->
+  <div
+    class="coverage-content"
+    *ngIf="activeCoverageTab === 'inclusions'">
+
+    <div class="coverage-grid">
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🔥</div>
+        <span>Fire and lightning</span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🌪️</div>
+        <span>
+          Cyclones, hurricanes, typhoons,
+          floods, storms, tornadoes, tsunamis
+        </span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🌲</div>
+        <span>Forest fires</span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🚀</div>
+        <span>Missile testing operations</span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🛡️</div>
+        <span>Acts of terrorism</span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">💧</div>
+        <span>
+          Bursting or overflow of water
+          tanks and pipes
+        </span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">💥</div>
+        <span>
+          Explosions or collapse due
+          to low internal pressure
+        </span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🌍</div>
+        <span>Earthquake</span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🔑</div>
+        <span>
+          Theft during working hours
+          (without any break-in)
+        </span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🔒</div>
+        <span>Burglary</span>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-icon">🔥</div>
+        <span>Bush fire</span>
+      </div>
+
+    </div>
+
+    <p class="coverage-note">
+      Please refer policy wording of specific products for better
+      understanding on the complete list of inclusion and exclusions.
+    </p>
+
+  </div>
+
+
+  <!-- ================= EXCLUSIONS ================= -->
+  <div
+    class="coverage-content"
+    *ngIf="activeCoverageTab === 'exclusions'">
+
+    <div class="coverage-grid">
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">🚫</div>
+        <span>
+          Loss caused by burning of insured
+          property following orders from a
+          public authority
+        </span>
+      </div>
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">⚔️</div>
+        <span>Loss or damage due to war</span>
+      </div>
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">☢️</div>
+        <span>Damage from nuclear contamination</span>
+      </div>
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">🏭</div>
+        <span>Damage due to pollution</span>
+      </div>
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">❄️</div>
+        <span>
+          Damage to stocks in cold storage
+          due to change in temperature
+        </span>
+      </div>
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">🔥</div>
+        <span>
+          Damage to property after undergoing
+          any heating or drying process
+        </span>
+      </div>
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">❓</div>
+        <span>
+          Missing or misplaced property
+          without any clear evidence of loss
+        </span>
+      </div>
+
+      <div class="coverage-card exclusion">
+        <div class="coverage-icon">🏚️</div>
+        <span>
+          Damage to kutcha
+          (temporary or thatched) constructions
+        </span>
+      </div>
+
+    </div>
+
+    <p class="coverage-note">
+      Please refer policy wording of specific products for better
+      understanding on the complete list of inclusion and exclusions.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ================= BENEFITS ================= -->
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="fire-benefits-section" id="benefits">
+
+  <h2 class="fire-benefits-title">
+    Benefits of choosing ICICI Lombard
+    <br>
+    <span>Fire Insurance</span>
+  </h2>
+
+  <div class="fire-benefits-grid">
+
+    <!-- 1 -->
+    <div class="fire-benefit-card">
+
+      <div class="fire-benefit-image">
+        <img
+          src="/Images/group-1707481398.svg"
+          alt="Instant policy generation"
+        />
+      </div>
+
+      <h3>1. Instant policy generation</h3>
+
+      <p>
+        With smart technology, you can get a Fire Insurance policy
+        almost instantly. No big forms or long waits just a few
+        clicks and you are covered!
+      </p>
+
+    </div>
+
+
+    <!-- 2 -->
+    <div class="fire-benefit-card">
+
+      <div class="fire-benefit-image">
+        <img
+          src="/Images/group-1707481331.svg"
+          alt="Speedy claim process"
+        />
+      </div>
+
+      <h3>2. Speedy claim process</h3>
+
+      <p>
+        Our team is always ready to help, whenever you need.
+      </p>
+
+    </div>
+
+
+    <!-- 3 -->
+    <div class="fire-benefit-card">
+
+      <div class="fire-benefit-image">
+        <img
+          src="/Images/trusted-by-millions-1.svg"
+          alt="Trusted by millions"
+        />
+      </div>
+
+      <h3>3. Trusted by millions</h3>
+
+      <p>
+        As one of the leaders in corporate insurance, we’ve earned
+        the trust of millions of Indian businesses. Your success
+        is our priority.
+      </p>
+
+    </div>
+
+
+    <!-- 4 -->
+    <div class="fire-benefit-card">
+
+      <div class="fire-benefit-image">
+        <img
+          src="/Images/group-1707481400.svg"
+          alt="Customised add-ons"
+        />
+      </div>
+
+      <h3>4. Customised add-ons, as per your needs</h3>
+
+      <p>
+        You can choose from a wide range of add-ons to make your
+        business even more secure from unexpected crises.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     ONLINE CLAIM PROCESS
+===================================================== -->
+
+<section class="fire-online-claim-section" id="online-claim">
+
+  <!-- LEFT CONTENT -->
+  <div class="fire-online-claim-content">
+
+    <h2 class="fire-online-claim-title">
+      Online <span>claim process</span>
+    </h2>
+
+    <p class="fire-online-claim-intro">
+      For claims up to ₹5 lakh, a virtual survey option is
+      available for making a claim.
+    </p>
+
+    <h3 class="fire-online-claim-subtitle">
+      Here is how:
+    </h3>
+
+    <div class="fire-online-claim-steps">
+
+      <div class="fire-online-step">
+        <span class="fire-online-step-number">1</span>
+        <p>
+          A surveyor will contact you to know a suitable time
+          for survey.
+        </p>
+      </div>
+
+      <div class="fire-online-step">
+        <span class="fire-online-step-number">2</span>
+        <p>
+          The surveyor will guide you through the virtual survey
+          to inspect damages.
+        </p>
+      </div>
+
+      <div class="fire-online-step">
+        <span class="fire-online-step-number">3</span>
+        <p>
+          Surveyor will ask you to submit necessary documents.
+        </p>
+      </div>
+
+      <div class="fire-online-step">
+        <span class="fire-online-step-number">4</span>
+        <p>
+          Once the documents are verified, you will receive an
+          offer for settlement through surveyor.
+        </p>
+      </div>
+
+      <div class="fire-online-step">
+        <span class="fire-online-step-number">5</span>
+        <p>
+          On receipt of consent, survey report is shared with us
+          along with documents.
+        </p>
+      </div>
+
+      <div class="fire-online-step">
+        <span class="fire-online-step-number">6</span>
+        <p>
+          After documents are received, payment is processed.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button
+      type="button"
+      class="fire-online-claim-button"
+      (click)="goToOnlineClaim()"
+    >
+      Online Claim
+    </button>
+
+  </div>
+
+
+  <!-- ONE IMAGE ONLY -->
+  <div class="fire-online-claim-image">
+
+    <img
+      src="/Images/cliam.svg"
+      alt="Online claim process"
+    />
+
+  </div>
+
+</section>
+
+<!-- ================= CUSTOMER SPEAK ================= -->
+
+<section class="fire-customer-section" id="customer-speak">
+
+  <h2 class="fire-customer-title">
+    <span>Customer</span> Speak
+  </h2>
+
+  <div class="fire-customer-grid">
+
+    <!-- Amicorp -->
+    <div class="fire-customer-card">
+
+      <div class="fire-quote">“</div>
+
+      <p>
+        We would like to express our sincere appreciation for your
+        service to us as one of our most reliable service providers.
+        Ever since we signed as trusted partners for insurance
+        requirements, you have provided the highest quality products
+        with even better customer service. Solutions are often
+        received earlier than expected, and you are quick to resolve
+        any issues that arise. We have, and will continue to,
+        recommend your services to other companies and contacts.
+        We look forward to continuing this relationship for long.
+      </p>
+
+      <h3>Amicorp</h3>
+
+    </div>
+
+
+    <!-- Larsen & Toubro -->
+    <div class="fire-customer-card">
+
+      <div class="fire-quote">“</div>
+
+      <p>
+        Customer friendly insurer. Goes the extra mile to meet
+        deliverables. Happy to work with ICICI Lombard.
+      </p>
+
+      <h3>Larsen &amp; Toubro</h3>
+
+    </div>
+
+
+    <!-- Punj Lloyd -->
+    <div class="fire-customer-card">
+
+      <div class="fire-quote">“</div>
+
+      <p>
+        I appreciate the kind of support ICICI Lombard provides us
+        in insuring our projects &amp; employees. They are transparent
+        in educating us with our requirements.
+      </p>
+
+      <h3>Punj Lloyd</h3>
+
+    </div>
+
+
+    <!-- LG Electronics -->
+    <div class="fire-customer-card">
+
+      <div class="fire-quote">“</div>
+
+      <p>
+        We appreciate the interaction of the ICICI Lombard team.
+        We are looking forward to unique solutions being offered.
+      </p>
+
+      <h3>LG Electronics India Pvt Ltd</h3>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================================
+     FREQUENTLY ASKED QUESTIONS
+===================================================== -->
+
+<section class="fire-faq-section" id="faq">
+
+  <h2 class="fire-faq-title">
+    Frequently asked <span>questions</span>
+  </h2>
+
+  <p class="fire-faq-category">
+    Fire insurance
+  </p>
+
+
+  <div class="fire-faq-list">
+
+    <!-- FAQ 1 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(0)"
+      >
+        <span>
+          1. What are the key objectives of Fire insurance?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 0 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 0"
+      >
+        <p>The key objectives of Fire insurance are:</p>
+
+        <ul>
+          <li><strong>Financial protection:</strong> Safeguards against losses caused by fire.</li>
+          <li><strong>Business continuity:</strong> Helps minimise disruptions and maintain operations.</li>
+          <li><strong>Asset preservation:</strong> Protects the value of assets and investments.</li>
+          <li><strong>Peace of mind:</strong> Provides assurance through comprehensive coverage.</li>
+          <li><strong>Reconstruction support:</strong> Facilitates recovery and rebuilding efforts.</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 2 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(1)"
+      >
+        <span>
+          2. Which types of commercial enterprises should consider a Fire insurance policy?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 1 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 1"
+      >
+        <p>
+          The following types of enterprises can benefit from a Fire insurance policy:
+        </p>
+
+        <ul>
+          <li>Retail stores</li>
+          <li>Restaurants</li>
+          <li>Offices</li>
+          <li>Warehouses</li>
+          <li>Hotels</li>
+          <li>Shopping malls</li>
+          <li>Healthcare facilities</li>
+          <li>Agricultural businesses</li>
+          <li>Educational institutions</li>
+          <li>Manufacturing plants</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 3 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(2)"
+      >
+        <span>
+          3. What are the key benefits of having a Fire insurance policy?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 2 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 2"
+      >
+        <p>
+          Fire insurance offers numerous advantages, including coverage for property
+          damage caused by fire, which helps reduce the financial burden on the insured.
+          It ensures business continuity by enabling operations to resume quickly after
+          a fire, minimising revenue loss. By covering repair or replacement costs, it
+          helps preserve the value of assets. The policy provides peace of mind and can
+          also be tailored to specific needs by adding optional protections.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 4 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(3)"
+      >
+        <span>
+          4. How long does a Fire insurance policy provide coverage?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 3 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 3"
+      >
+        <p>
+          A Fire insurance policy generally provides coverage for a specified tenure,
+          typically one year. However, it can be renewed periodically to ensure
+          continuous protection.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 5 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(4)"
+      >
+        <span>
+          5. Can changes be made to a Fire insurance policy during its tenure?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 4 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 4"
+      >
+        <p>
+          Yes, the insured can make modifications to the policy during its tenure,
+          such as updating coverage or increasing the sum insured. These adjustments
+          can be made by contacting the insurer and may require payment of additional
+          premiums.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 6 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(5)"
+      >
+        <span>
+          6. Is stock-in-trade covered under this policy?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 5 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 5"
+      >
+        <p>
+          Yes. The policy covers stock and inventory in your insured premises
+          against fire and other covered perils.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 7 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(6)"
+      >
+        <span>
+          7. What is the maximum sum insured I can opt for?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 6 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 6"
+      >
+        <p>
+          You can choose the sum insured based on the value of your building,
+          machinery, stock, and other assets. It’s recommended to calculate the
+          replacement cost to avoid underinsurance.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 8 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(7)"
+      >
+        <span>
+          8. Are losses due to short circuits and electrical fires covered?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 7 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 7"
+      >
+        <p>
+          Yes, fires caused by short circuits or electrical faults are covered,
+          but the cost of repairing the faulty device itself may not be covered.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 9 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(8)"
+      >
+        <span>
+          9. What is the claim process for fire insurance?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 8 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 8"
+      >
+        <p>
+          In case of a fire, inform ICICI Lombard immediately, lodge an FIR
+          (if applicable), document the damage, and submit a claim with
+          supporting proofs. A surveyor will assess the loss.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FAQ 10 -->
+    <div class="fire-faq-item">
+
+      <button
+        type="button"
+        class="fire-faq-question"
+        (click)="toggleFaq(9)"
+      >
+        <span>
+          10. Can I renew my fire insurance online?
+        </span>
+
+        <span class="fire-faq-icon">
+          {{ activeFaq === 9 ? '−' : '+' }}
+        </span>
+      </button>
+
+      <div
+        class="fire-faq-answer"
+        *ngIf="activeFaq === 9"
+      >
+        <p>
+          Yes. You can renew your fire policy online through the ICICI Lombard
+          website using your policy number. Timely renewal ensures continuous coverage.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="fire-articles-section" id="related-articles">
+
+  <h2 class="fire-articles-title">
+    Fire insurance <span>articles</span>
+  </h2>
+
+  <div class="fire-articles-grid">
+
+    <article class="fire-article-card">
+
+      <div class="fire-article-content">
+
+        <h3>
+          Retail Safety Equipment:
+          Essential Tools
+        </h3>
+
+        <p class="fire-article-description">
+          Learn about essential safety equipment and how it helps
+          protect retail businesses, employees, customers and property.
+        </p>
+
+        <p class="fire-article-date">
+          14 Nov 2025
+        </p>
+
+        <button type="button" class="fire-article-link">
+          Read more
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <article class="fire-article-card">
+
+      <div class="fire-article-content">
+
+        <h3>
+          Pressure Sensors:
+          Monitoring Critical Systems
+        </h3>
+
+        <p class="fire-article-description">
+          Understand how pressure sensors help improve industrial
+          safety, monitoring and risk management.
+        </p>
+
+        <p class="fire-article-date">
+          13 Nov 2025
+        </p>
+
+        <button type="button" class="fire-article-link">
+          Read more
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <article class="fire-article-card">
+
+      <div class="fire-article-content">
+
+        <h3>
+          Heat Exchanger Inspection
+          for Safety Tips
+        </h3>
+
+        <p class="fire-article-description">
+          Learn important heat exchanger inspection and safety
+          practices to help prevent industrial risks.
+        </p>
+
+        <p class="fire-article-date">
+          13 Nov 2025
+        </p>
+
+        <button type="button" class="fire-article-link">
+          Read more
+        </button>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+

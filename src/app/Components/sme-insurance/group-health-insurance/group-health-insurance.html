@@ -1,0 +1,580 @@
+<div class="breadcrumb">
+    Home > SME Insurance > Group Health Insurance
+</div>
+
+<section class="hero">
+
+    <div class="left">
+
+        <h1>
+            Group Health Insurance
+            <br>
+            for Employees
+        </h1>
+
+        <p>
+            Care that covers your entire workforce and their family.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                ✓ Dedicated Relationship Manager
+            </div>
+
+            <div class="feature">
+                ✓ Affordable Premium
+            </div>
+
+            <div class="feature">
+                ✓ Easy Claim Process
+            </div>
+
+            <div class="feature">
+                ✓ Cashless Hospital Network
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+
+
+    </div>
+
+    <div class="right">
+
+        <div class="quote-box">
+
+            <h3>Get Free Quote</h3>
+
+            <input type="text" placeholder="Mobile Number" [(ngModel)]="mobileNumber" name="mobileNumber">
+
+            <input type="text" placeholder="Pincode" [(ngModel)]="pincode" name="pincode">
+
+            <input type="text" placeholder="Company Name" [(ngModel)]="companyName" name="companyName">
+
+            <input type="email" placeholder="Email" [(ngModel)]="email" name="email">
+            <button type="button" (click)="submitQuote()">
+                Get Quote
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about-section">
+
+    <div class="about-left">
+
+        <h2>What is group health insurance?</h2>
+
+        <p>
+            Group health insurance is a type of policy designed to cover a group of
+            employees under one insurance plan.
+        </p>
+
+        <div *ngIf="showMore">
+
+            <p>
+                It provides hospitalization coverage, cashless treatment,
+                pre and post hospitalization expenses and several optional
+                benefits depending on the policy.
+            </p>
+
+            <p>
+                Employers can also customize the plan according to
+                organization requirements.
+            </p>
+
+        </div>
+
+        <a href="javascript:void(0)" (click)="toggleReadMore()">
+
+            {{ showMore ? 'Read Less' : 'Read More' }}
+
+        </a>
+
+    </div>
+
+    <div class="about-right">
+
+        <img src="/Images/group-family.svg" alt="Group Health Insurance">
+
+    </div>
+
+</section>
+
+
+
+<section class="why-section">
+
+    <h2>Why Choose Group Health Insurance?</h2>
+
+    <div class="why-cards">
+
+        <div class="why-card">
+            <h3>Cashless Hospital Network</h3>
+            <p>Get treatment at thousands of network hospitals without paying cash.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>Affordable Premium</h3>
+            <p>Comprehensive health coverage at cost-effective premiums for employees.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>24×7 Claim Assistance</h3>
+            <p>Our support team is available round the clock to assist with claims.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>Tax Benefits</h3>
+            <p>Employers can enjoy tax advantages under applicable laws.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="coverage-section">
+
+    <h2>Coverage & Benefits</h2>
+
+    <div class="coverage-container">
+
+        <div class="coverage-card">
+            <h3>🏥 Hospitalization Cover</h3>
+            <p>
+                Covers expenses incurred during hospitalization,
+                including room rent, ICU charges and treatment costs.
+            </p>
+        </div>
+
+        <div class="coverage-card">
+            <h3>💊 Day Care Procedures</h3>
+            <p>
+                Covers modern medical procedures that do not require
+                24-hour hospitalization.
+            </p>
+        </div>
+
+        <div class="coverage-card">
+            <h3>🤱 Maternity Benefits</h3>
+            <p>
+                Financial protection for maternity expenses,
+                delivery and newborn care.
+            </p>
+        </div>
+
+        <div class="coverage-card">
+            <h3>🩺 Pre & Post Hospitalization</h3>
+            <p>
+                Covers medical expenses before admission
+                and after discharge from hospital.
+            </p>
+        </div>
+
+        <div class="coverage-card">
+            <h3>🚑 Ambulance Cover</h3>
+            <p>
+                Covers emergency ambulance transportation expenses.
+            </p>
+        </div>
+
+        <div class="coverage-card">
+            <h3>💉 Annual Health Check-up</h3>
+            <p>
+                Employees can undergo preventive health check-ups
+                every policy year.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="why-lombard">
+
+    <h2>Why ICICI Lombard?</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h1>20+</h1>
+            <p>Years of Industry Experience</p>
+        </div>
+
+        <div class="stat-card">
+            <h1>10000+</h1>
+            <p>Network Hospitals</p>
+        </div>
+
+        <div class="stat-card">
+            <h1>1 Cr+</h1>
+            <p>Happy Customers</p>
+        </div>
+
+        <div class="stat-card">
+            <h1>24×7</h1>
+            <p>Customer Support</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="faq-section">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+
+        <div class="faq-card">
+            <h3>1. What is Group Health Insurance?</h3>
+            <p>
+                Group Health Insurance is a health insurance policy purchased by an employer
+                to provide medical coverage to employees under a single plan. It helps
+                employees manage hospitalization expenses and offers financial protection
+                against medical emergencies.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>2. Who can purchase this policy?</h3>
+            <p>
+                Any registered company, startup, partnership firm, MSME, or organization
+                can purchase a Group Health Insurance policy for its employees. The policy
+                can be customized based on the number of employees and business requirements.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>3. Does it include cashless treatment?</h3>
+            <p>
+                Yes. Employees can receive cashless treatment at a wide network of hospitals.
+                The insurance company directly settles eligible medical expenses with the
+                hospital, reducing the financial burden on employees.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>4. Can family members be covered?</h3>
+            <p>
+                Yes. Employers can choose to extend coverage to employees' spouses,
+                dependent children, and in some plans, dependent parents. The available
+                options depend on the selected policy.
+            </p>
+        </div>
+
+        <div class="faq-card">
+            <h3>5. How can I raise a claim?</h3>
+            <p>
+                Claims can be raised through the insurer's online portal, mobile application,
+                customer care, or by contacting the hospital during cashless treatment.
+                Required documents should be submitted as per the claim process.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="comparison-section">
+
+    <h2>
+        Difference Between Group Health Insurance and Individual Health Insurance
+    </h2>
+
+    <p class="sub-heading">
+        Compare the key features of group and individual health insurance plans.
+    </p>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Aspect</th>
+                    <th>Group Health Insurance</th>
+                    <th>Individual Health Insurance</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Meaning</td>
+                    <td>Covers a group of employees</td>
+                    <td>Covers one individual</td>
+                </tr>
+
+                <tr>
+                    <td>Who is covered?</td>
+                    <td>Employees and eligible dependents</td>
+                    <td>Only the policyholder</td>
+                </tr>
+
+                <tr>
+                    <td>Premium Paid By</td>
+                    <td>Employer</td>
+                    <td>Individual</td>
+                </tr>
+
+                <tr>
+                    <td>Control Over Plan</td>
+                    <td>Employer manages policy</td>
+                    <td>Full control by individual</td>
+                </tr>
+
+                <tr>
+                    <td>Pre-existing Disease Cover</td>
+                    <td>Usually available from Day One</td>
+                    <td>Generally after waiting period</td>
+                </tr>
+
+                <tr>
+                    <td>No Claim Bonus</td>
+                    <td>Usually not available</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>Policy Duration</td>
+                    <td>Valid while employed</td>
+                    <td>Renewable every year</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="features-section">
+
+    <h2>Features of Group Health Insurance Policy</h2>
+
+    <p class="sub-title">
+        With our group medical insurance policy, you get the following benefits:
+    </p>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <img src="/Images/health-services.svg" alt="">
+            <h3>10,200+ Network Hospitals</h3>
+
+            <p>
+                Access cashless treatment across a wide network of hospitals
+                throughout India. Employees can receive quality healthcare
+                without worrying about immediate medical expenses.
+            </p>
+
+            <a (click)="showFeature(0)">
+
+                Read More
+
+            </a>
+
+            <div *ngIf="expandedCard==0">
+
+                More information.....
+
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="/Images/house-claims.svg" alt="">
+            <h3>Tele Consultations</h3>
+
+            <p>
+                Employees can consult qualified doctors online for routine
+                health concerns without visiting a hospital, saving both
+                time and effort.
+            </p>
+
+            <a (click)="showFeature(1)">
+
+                Read More
+
+            </a>
+
+            <div *ngIf="expandedCard==1">
+
+                More information.....
+
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="/Images/network-hospitals.svg" alt="">
+            <h3>Health Assistance Services</h3>
+
+            <p>
+                Get complete health assistance including medical guidance,
+                appointment support and healthcare services for employees
+                and their families.
+            </p>
+
+            <a (click)="showFeature(2)">
+
+                Read More
+
+            </a>
+
+            <div *ngIf="expandedCard==2">
+
+                More information.....
+
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="/Images/tele-consult.svg" alt="">
+            <h3>In-house Claims Processing</h3>
+
+            <p>
+                Faster and smoother claim settlement with dedicated claim
+                assistance to ensure a hassle-free experience for employees.
+            </p>
+
+            <a (click)="showFeature(3)">
+
+                Read More
+
+            </a>
+
+            <div *ngIf="expandedCard==3">
+
+                More information.....
+
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <img src="/Images/wellness-program.svg" alt="">
+            <h3>Wellness Programmes</h3>
+
+            <p>
+                Encourage healthy lifestyles with wellness initiatives,
+                preventive healthcare and fitness benefits designed for
+                your workforce.
+            </p>
+
+            <a (click)="showFeature(4)">
+
+                Read More
+
+            </a>
+
+            <div *ngIf="expandedCard==4">
+
+                More information.....
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </section> <!-- Explore Other Businesses ends here -->
+
+<div class="section-gap"></div>
+
+<section class="features-section">
+
+
+
+
+
+    <h2>Explore Other Business Insurance Solutions</h2>
+
+    <p class="related-subtitle">
+        Protect every aspect of your business with our comprehensive insurance plans.
+    </p>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <h3>Fire Insurance</h3>
+
+            <p>
+                Protect your business premises, machinery and inventory against
+                fire and allied perils.
+            </p>
+
+            <a href="#">Know More →</a>
+
+        </div>
+
+        <div class="product-card">
+
+            <h3>Marine Insurance</h3>
+
+            <p>
+                Secure goods during transportation against accidental loss,
+                theft and damage.
+            </p>
+
+            <a href="#">Know More →</a>
+
+        </div>
+
+        <div class="product-card">
+
+            <h3>Workmen Compensation</h3>
+
+            <p>
+                Protect your employees against workplace injuries and meet
+                statutory liabilities.
+            </p>
+
+            <a href="#">Know More →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta-section">
+
+    <div class="cta-content">
+
+        <div class="cta-left">
+
+            <h2>Protect Your Employees with the Right Health Insurance</h2>
+
+            <p>
+                Give your workforce comprehensive health coverage with affordable
+                premiums, cashless hospitalisation and hassle-free claim support.
+            </p>
+
+        </div>
+
+        <div class="cta-right">
+
+            <button (click)="scrollToQuote()">
+
+                Get Quote
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</section>
