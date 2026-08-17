@@ -1,0 +1,847 @@
+/* ========================================
+   FORM
+======================================== */
+
+/* .renewal-wrapper {
+
+  min-height: 530px;
+
+  background: #ffffff;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  padding-top: 50px;
+}
+
+
+.renewal-card {
+
+  width: 650px;
+
+  min-height: 450px;
+
+  background: #f5f5f5;
+
+  padding: 30px 44px 45px;
+
+  border-radius: 10px;
+} */
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+/* .renewal-card h1 {
+
+  font-size: 38px;
+
+  font-weight: 480;
+
+  color: #050505;
+
+  margin: 0 0 30px;
+} */
+
+
+/* ========================================
+   SUBTITLE
+======================================== */
+
+/* .subtitle {
+
+  font-size: 19px;
+
+  color: #111;
+
+  margin-bottom: 30px;
+} */
+
+
+/* ========================================
+   RADIO BUTTON
+======================================== */
+
+/* .radio-group {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 55px;
+
+  margin-bottom: 35px;
+}
+
+
+.radio-option {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 19px;
+
+  color: #111;
+
+  cursor: pointer;
+}
+
+
+.radio-option input {
+
+  appearance: none;
+
+  width: 24px;
+
+  height: 24px;
+
+  border: 2px solid #777;
+
+  border-radius: 50%;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+
+.radio-option input:checked {
+
+  border: 2px solid #f56600;
+}
+
+
+.radio-option input:checked::after {
+
+  content: '';
+
+  position: absolute;
+
+  width: 10px;
+
+  height: 10px;
+
+  background: #f56600;
+
+  border-radius: 50%;
+
+  top: 5px;
+
+  left: 5px;
+} */
+
+
+/* ========================================
+   INPUT
+======================================== */
+
+/* .input-group {
+
+  width: 70%;
+
+  margin-bottom: 45px;
+}
+
+
+.input-group label {
+
+  display: block;
+
+  font-size: 20px;
+
+  color: #172b4d;
+
+  margin-bottom: 5px;
+}
+
+
+.form-control {
+
+  width: 100%;
+
+  height: 42px;
+
+  border: none;
+
+  border-bottom: 1px solid #c8c8c8;
+
+  background: transparent;
+
+  border-radius: 0;
+
+  outline: none;
+
+  font-size: 18px;
+
+  color: #111;
+
+  padding: 5px 0;
+}
+
+
+.form-control:focus {
+
+  border-bottom: 2px solid #f56600;
+
+  box-shadow: none;
+}
+
+
+.form-control::placeholder {
+
+  color: #999;
+} */
+
+
+/* ========================================
+   ERROR
+======================================== */
+
+/* .error-message {
+
+  color: #d32f2f;
+
+  font-size: 13px;
+} 
+
+  margin-top: 8px;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+/* .button-section {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+}
+
+
+.proceed-btn {
+
+  min-width: 125px;
+
+  height: 52px;
+
+  background: #f56600;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+.proceed-btn:hover:not(:disabled) {
+
+  background: #dc5900;
+}
+
+
+.proceed-btn:disabled {
+
+  background: #dc5900;
+
+  cursor: not-allowed;
+
+  opacity: 0.7;
+} */
+
+
+/* ========================================
+   LOGIN LINK
+======================================== */
+
+/* .button-section a {
+
+  color: #f56600;
+
+  font-size: 16px;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+} */
+
+
+/* ========================================
+   PRODUCT TABLE
+======================================== */
+
+/* .product-table-wrapper {
+
+  width: 100%;
+
+  max-width: 950px;
+
+  margin: 90px auto 0;
+
+  overflow-x: auto;
+
+  border-radius: 10px;
+
+  border: 1px solid #d8d8d8;
+}
+
+
+.product-table {
+
+  width: 100%;
+
+  border-collapse: separate;
+
+  border-spacing: 0;
+
+  overflow: hidden;
+
+  font-size: 16px;
+
+  color: #172b4d;
+} */
+
+
+/* ========================================
+   TABLE HEADER
+======================================== */
+
+/* .product-table thead th {
+
+  background: #e4e2d1;
+
+  color: #111;
+
+  font-weight: 600;
+
+  text-align: left;
+
+  padding: 20px 22px;
+
+  border-right: 1px solid white;
+}
+
+
+.product-table thead th:last-child {
+
+  border-right: none;
+} */
+
+
+/* ========================================
+   TABLE BODY
+======================================== */
+
+/* .product-table tbody td {
+
+  padding: 13px 22px;
+
+  border-bottom: 1px solid #d8d8d8;
+
+  border-right: 1px solid #d8d8d8;
+
+  background: #ffffff;
+
+  vertical-align: middle;
+}
+
+
+.product-table tbody tr:nth-child(even) td {
+
+  background: #f7f7f7;
+}
+
+
+.product-table tbody td:last-child {
+
+  border-right: none;
+} */
+
+
+/* ========================================
+   COLUMN WIDTH
+======================================== */
+
+/* .product-table th:first-child,
+.product-table td:first-child {
+
+  width: 45%;
+}
+
+
+.product-table th:nth-child(2),
+.product-table td:nth-child(2) {
+
+  width: 15%;
+
+  text-align: center;
+}
+
+
+.product-table th:nth-child(3),
+.product-table td:nth-child(3) {
+
+  width: 22%;
+
+  text-align: center;
+} */
+
+
+/* ========================================
+   DISCLAIMER
+======================================== */
+/* 
+.disclaimer-section {
+
+  width: 100%;
+
+  margin-top: 50px;
+
+  padding: 0 110px;
+
+  color: #565d63;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+} */
+
+
+/* ========================================
+   DISCLAIMER BOTTOM
+======================================== */
+
+/* .disclaimer-link {
+
+  border-top: 1px solid #e5e5e5;
+
+  margin-top: 15px;
+
+  padding: 22px 110px;
+
+  color: #f55600;
+
+  font-size: 13px;
+
+  font-weight: 550;
+} */
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+/* @media (max-width: 768px) {
+
+  .renewal-wrapper {
+
+    padding: 30px 15px;
+
+  }
+
+
+  .renewal-card {
+
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 30px 25px;
+
+  }
+
+
+  .renewal-card h1 {
+
+    font-size: 32px;
+
+  }
+
+
+  .radio-group {
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+
+  }
+
+
+  .radio-option {
+
+    font-size: 16px;
+
+  }
+
+
+  .input-group {
+
+    width: 100%;
+
+  }
+
+
+  .button-section {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+
+  .product-table-wrapper {
+
+    margin-top: 40px;
+
+    margin-left: 15px;
+
+    margin-right: 15px;
+
+    width: calc(100% - 30px);
+
+  }
+
+
+  .product-table {
+
+    min-width: 750px;
+
+  }
+
+
+  .disclaimer-section {
+
+    padding: 0 20px;
+
+    font-size: 12px;
+
+    margin-top: 30px;
+
+  }
+
+
+  .disclaimer-link {
+
+    padding: 22px 20px;
+
+  }
+
+} */
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+/* @media (max-width: 480px) {
+
+  .renewal-card h1 {
+
+    font-size: 28px;
+
+  }
+
+
+  .radio-group {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+  }
+
+
+  .button-section a {
+
+    font-size: 14px;
+
+  }
+
+} */
+
+
+
+ /* Form  */
+* {
+  box-sizing: border-box;
+}
+
+ .renewal-wrapper {
+  width: 100%;
+  min-height: 480px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+
+}
+
+.renewal-card {
+  width: 600px;
+  height: 430px;
+  background: #f5f5f5;
+  padding: 30px 44px 45px;
+  border-radius: 10px;
+}
+
+
+/* TITLE */
+.renewal-card h1 {
+  font-size: 38px;
+  font-weight: 480;
+  color: #050505;
+  margin: 0 0 30px;
+}
+
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 19px;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+
+/* RADIO BUTTON */
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin-bottom: 35px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 19px;
+  color: #111;
+}
+
+.radio-option input {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #777;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio-option input:checked {
+  border: 2px solid #f56600;
+}
+
+.radio-option input:checked::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f56600;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+/* INPUT */
+.input-group {
+  width: 70%;
+  margin-bottom: 45px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 20px;
+  color: #172b4d;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-bottom: 1px solid #c8c8c8;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+  font-size: 18px;
+  color: #111;
+  padding: 5px 0;
+}
+
+.form-control:focus {
+  border-bottom: 2px solid #f56600;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+
+/* ERROR */
+.error-message {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+
+/* BUTTON */
+
+.button-section {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.proceed-btn {
+  min-width: 125px;
+  height: 52px;
+  background: #f56600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.proceed-btn:hover:not(:disabled) {
+  background: #dc5900;
+}
+
+.proceed-btn:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+/* LOGIN LINK */
+.button-section a {
+  color: #f56600;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/* TABLE */
+
+.product-table-wrapper {
+  width: 100%;
+  max-width: 950px;
+  margin: 90px auto 0;
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #d8d8d8;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  font-size: 16px;
+  color: #172b4d;
+}
+
+
+/* HEADER */
+.product-table thead th {
+  background: #e4e2d1;
+  color: #111;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px 22px;
+  border-right: 1px solid white;
+}
+
+.product-table thead th:last-child {
+  border-right: none;
+}
+
+
+/* BODY */
+.product-table tbody td {
+  padding: 13px 22px;
+  border-bottom: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  background: #ffffff;
+  vertical-align: middle;
+}
+
+.product-table tbody tr:nth-child(even) td {
+  background: #f7f7f7;
+}
+
+.product-table tbody td:last-child {
+  border-right: none;
+}
+
+/* COLUMN WIDTHS */
+.product-table th:first-child,
+.product-table td:first-child {
+  width: 45%;
+}
+
+.product-table th:nth-child(2),
+.product-table td:nth-child(2) {
+  width: 15%;
+  text-align: center;
+}
+
+.product-table th:nth-child(3),
+.product-table td:nth-child(3) {
+  width: 22%;
+  text-align: center;
+}
+
+
+/* DISCLAIMER */
+
+.disclaimer-section {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 110px;
+  color: #565d63;
+  font-size: 13px;
+}
+
+/* DISCLAIMER BOTTOM */
+
+.disclaimer-link {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 15px;
+  padding: 22px 110px;
+  color: #f55600;
+  font-size: 13px;
+  font-weight: 550;
+}
+
+

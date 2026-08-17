@@ -1,0 +1,195 @@
+<br>
+<br>
+
+
+<div class="container-fluid">
+  <div class="row vh-100 align-items-center">
+
+    <div class="col-lg-6 left-section">
+        <h1 class="heading">
+            <span>Renew now and</span>
+            <br>
+            stay protected!
+        </h1>
+
+        <div class="feature">
+            <i class="bi bi-escape"></i>
+            <span>Quick & easy renewal</span>
+        </div>
+
+        <div class="feature">
+            <i class="bi bi-arrow-repeat"></i>
+            <span>Avail renewal benefits</span>
+        </div>
+
+        <div class="feature">
+            <i class="bi bi-hand-thumbs-up"></i>
+            <span>Low premium Assured</span>
+        </div>
+    </div>
+
+     
+   <div class="col-lg-6">
+
+    <form [formGroup]="userForm">
+        <div class="mb-5">
+          <label class="form-label">Renew with</label>
+
+          <select class="form-select" formControlName="renewType">
+              @for (item of renewOptions; track item.id) {
+               <option [value]="item.text">
+                {{item.text}}
+               </option>
+               }
+          </select>
+
+        </div>
+
+        <div class="mb-5">
+
+          <input type="text" class="form-control" [placeholder]="placeholder" formControlName="value">
+           <small>{{ helperText }}</small>
+        </div>
+
+        <button class="btn proceed-btn" type="submit">Proceed</button>
+      </form>
+
+    </div>
+
+  </div>
+</div> 
+
+
+
+
+
+
+<!-- <div class="container-fluid">
+
+<div class="row vh-100 align-items-center">
+
+<div class="col-lg-6">
+
+<h1 class="heading">
+
+<span>Renew now and</span>
+
+<br>
+
+stay protected!
+
+</h1>
+
+<div class="feature">
+
+<i class="bi bi-alarm"></i>
+
+<span>Quick & easy renewal</span>
+
+</div>
+
+<div class="feature">
+
+<i class="bi bi-arrow-repeat"></i>
+
+<span>Avail renewal benefits</span>
+
+</div>
+
+<div class="feature">
+
+<i class="bi bi-hand-thumbs-up"></i>
+
+<span>Low premium Assured</span>
+
+</div>
+
+</div>
+
+
+
+
+<div class="col-lg-6">
+
+<form
+[formGroup]="userForm">
+
+<div class="mb-5">
+
+<label class="form-label">
+
+Renew with
+
+</label>
+
+<select
+class="form-select"
+formControlName="renewType">
+
+@for(item of renewOptions;track item.id){
+
+<option [value]="item.text">
+
+{{item.text}}
+
+</option>
+
+}
+
+</select>
+
+</div>
+
+<div class="mb-5">
+
+
+
+<input
+class="form-control"
+type="text"
+[placeholder]="placeholder" 
+formControlName="text">
+
+<small>
+
+ {{helperText}} -->
+
+<!--</small>
+
+@if(userForm.get('text')?.touched &&
+userForm.get('text')?.errors){
+
+<div class="text-danger mt-2">
+
+@if(userForm.get('text')?.errors?.['required']){
+
+Enter value
+
+}
+
+@if(userForm.get('text')?.errors?.['pattern']){
+
+Only 10 digit mobile number allowed
+
+}
+
+</div>
+
+}
+
+</div>-->
+
+<!-- <button
+class="btn proceed-btn">
+
+Proceed
+
+</button> -->
+
+<!--</form>
+
+</div>
+
+</div>
+
+</div> -->
