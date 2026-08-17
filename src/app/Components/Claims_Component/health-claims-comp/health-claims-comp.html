@@ -1,0 +1,345 @@
+
+<div class="health-page">
+
+  <!-- ==========================================
+       HEALTH CLAIM HEADER
+  =========================================== -->
+
+  <header class="health-header">
+
+    <div class="health-header-inner">
+
+      <!-- LOGO -->
+      <div class="health-logo">
+
+        <div class="logo-mark">
+          i
+        </div>
+
+        <div class="logo-text">
+          <span class="icici">ICICI</span>
+          <span class="lombard">Lombard</span>
+        </div>
+
+      </div>
+
+
+      <!-- NAVIGATION -->
+      <nav class="health-navigation">
+
+        <a class="active">
+          Health Claims
+        </a>
+
+        <a (click)="fileClaim()">
+          File a claim
+        </a>
+
+        <a (click)="partnerHospital()">
+          Partner Hospital
+        </a>
+
+        <a (click)="downloads()">
+          Downloads
+        </a>
+
+        <a (click)="hospitalLogin()">
+          Hospital Login
+        </a>
+
+        <a (click)="support()">
+          Support
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- ==========================================
+       HERO SECTION
+  =========================================== -->
+
+  <section class="health-hero">
+
+    <div class="hero-container">
+
+
+      <!-- ======================================
+           LEFT HERO CONTENT
+      ======================================= -->
+
+      <div class="hero-left">
+
+        <div class="small-heading">
+          Health insurance claim
+        </div>
+
+
+        <h1>
+
+          We’re committed to providing a
+
+          <br>
+
+          <strong>worry-free</strong> claim
+
+          <br>
+
+          experience
+
+        </h1>
+
+
+        <!-- APP DOWNLOAD -->
+        <div class="app-download">
+
+          <div class="app-title">
+
+            <div class="takecare-icon">
+              IL
+            </div>
+
+            <span>
+              Download the
+              <strong>IL TakeCare</strong> App
+            </span>
+
+          </div>
+
+
+          <div class="app-buttons">
+
+            <!-- Google Play -->
+            <button class="store-button">
+
+              <span class="play-icon">
+                ▶
+              </span>
+
+              <span class="store-text">
+
+                <small>
+                  Get it On
+                </small>
+
+                <strong>
+                  Google Play
+                </strong>
+
+              </span>
+
+            </button>
+
+
+            <!-- App Store -->
+            <button class="store-button">
+
+              <span class="apple-icon">
+                ●
+              </span>
+
+              <span class="store-text">
+
+                <small>
+                  Download on the
+                </small>
+
+                <strong>
+                  App Store
+                </strong>
+
+              </span>
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ======================================
+           HERO ILLUSTRATION
+      ======================================= -->
+
+      <div class="hero-illustration">
+
+        <div class="illustration-person">
+
+          <div class="person-head"></div>
+
+          <div class="person-body"></div>
+
+          <div class="person-leg leg-one"></div>
+
+          <div class="person-leg leg-two"></div>
+
+          <div class="person-arm arm-one"></div>
+
+          <div class="person-arm arm-two"></div>
+
+        </div>
+
+
+        <!-- Chair -->
+        <div class="chair">
+
+          <div class="chair-back"></div>
+
+          <div class="chair-seat"></div>
+
+          <div class="chair-leg left"></div>
+
+          <div class="chair-leg right"></div>
+
+        </div>
+
+
+        <!-- Table -->
+        <div class="table">
+
+          <div class="table-top"></div>
+
+          <div class="table-leg"></div>
+
+        </div>
+
+
+        <!-- Plant / decorative shapes -->
+        <div class="decor decor-one"></div>
+
+        <div class="decor decor-two"></div>
+
+      </div>
+
+
+      <!-- ======================================
+           CLAIM STATUS CARD
+      ======================================= -->
+
+      <div class="claim-status-card">
+
+        <h2>
+          Check health claim status
+        </h2>
+
+
+        <!-- USER TYPE -->
+        <div class="user-type">
+
+          <label class="field-label">
+            Type of user
+          </label>
+
+
+          <div class="radio-group">
+
+
+            <!-- RETAIL -->
+            <label class="radio-option">
+
+              <input
+                type="radio"
+                name="userType"
+                value="retail"
+                [(ngModel)]="userType">
+
+              <span class="custom-radio"></span>
+
+              <span>
+                Retail User
+              </span>
+
+            </label>
+
+
+            <!-- CORPORATE -->
+            <label class="radio-option">
+
+              <input
+                type="radio"
+                name="userType"
+                value="corporate"
+                [(ngModel)]="userType">
+
+              <span class="custom-radio"></span>
+
+              <span>
+                Corporate User
+              </span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- CLAIM NUMBER -->
+        <div class="claim-input">
+
+          <input
+            type="text"
+            [(ngModel)]="claimNumber"
+            placeholder="Enter claim number">
+
+        </div>
+
+
+        <!-- PROCEED -->
+        <button
+          class="proceed-button"
+          (click)="proceed()">
+
+          Proceed
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+         BOTTOM PEACH AREA
+    ========================================= -->
+
+    <div class="hero-bottom">
+
+      <div class="bottom-decoration">
+
+        <div class="desk"></div>
+
+        <div class="monitor"></div>
+
+        <div class="chair-bottom"></div>
+
+        <div class="person-bottom"></div>
+
+        <div class="cat"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       ALL ABOUT HEALTH CLAIMS
+  =========================================== -->
+
+  <section class="all-about-section">
+
+    <h2>
+      All about Health Claims
+    </h2>
+
+  </section>
+
+</div>
+

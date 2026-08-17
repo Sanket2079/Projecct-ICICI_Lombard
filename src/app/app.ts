@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { ClaimsMainComp } from './Components/Claims_Component/claims-main-comp';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ClaimsMainComp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

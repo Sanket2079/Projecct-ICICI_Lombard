@@ -1,0 +1,367 @@
+
+<div class="travel-page">
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="travel-header">
+
+    <div class="travel-header-inner">
+
+      <!-- LOGO -->
+
+      <div class="travel-logo">
+
+        <div class="logo-circle">
+          i
+        </div>
+
+        <div class="logo-name">
+
+          <span class="icici">
+            ICICI
+          </span>
+
+          <span class="lombard">
+            Lombard
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- NAVIGATION -->
+
+      <nav class="travel-navigation">
+
+        <a class="nav-item">
+          Motor Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Health Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item active">
+          Travel Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          SME Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Corporate Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Other Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Renewals
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Claims
+          <span>⌄</span>
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       HERO SECTION
+  ====================================================== -->
+
+  <section class="travel-hero">
+
+    <div class="travel-hero-container">
+
+
+      <!-- =================================================
+           LEFT HERO TEXT
+      ================================================== -->
+
+      <div class="hero-content">
+
+        <h1>
+
+          <span class="heading-black">
+            File your claim in
+          </span>
+
+          <br>
+
+          <span class="heading-orange">
+            a few taps
+          </span>
+
+        </h1>
+
+
+        <p class="world-text">
+
+          from anywhere in the
+
+          <span class="globe">
+            🌎
+          </span>
+
+          world.
+
+        </p>
+
+      </div>
+
+
+      <!-- =================================================
+           TRAVEL IMAGE / ILLUSTRATION
+      ================================================== -->
+
+      <div class="travel-illustration">
+
+        <div class="sky"></div>
+
+
+        <!-- Monument -->
+
+        <div class="monument monument-left">
+
+          <div class="monument-top"></div>
+
+          <div class="monument-body"></div>
+
+          <div class="monument-base"></div>
+
+        </div>
+
+
+        <!-- Tower -->
+
+        <div class="tower">
+
+          <div class="tower-top"></div>
+
+          <div class="tower-body">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Ground -->
+
+        <div class="travel-ground"></div>
+
+
+        <!-- Couple -->
+
+        <div class="traveller traveller-man">
+
+          <div class="man-hat"></div>
+
+          <div class="man-head"></div>
+
+          <div class="man-hair"></div>
+
+          <div class="man-glasses"></div>
+
+          <div class="man-body"></div>
+
+          <div class="man-arm"></div>
+
+          <div class="man-backpack"></div>
+
+        </div>
+
+
+        <div class="traveller traveller-woman">
+
+          <div class="woman-head"></div>
+
+          <div class="woman-hair"></div>
+
+          <div class="woman-body"></div>
+
+          <div class="woman-arm"></div>
+
+          <div class="woman-hand"></div>
+
+        </div>
+
+
+        <!-- Camera -->
+
+        <div class="camera">
+
+          <div class="camera-body"></div>
+
+          <div class="camera-lens"></div>
+
+          <div class="camera-top"></div>
+
+        </div>
+
+
+        <!-- Hand / selfie stick -->
+
+        <div class="selfie-stick"></div>
+
+      </div>
+
+
+      <!-- =================================================
+           CLAIM CARD
+      ================================================== -->
+
+      <div class="claim-card">
+
+        <h2>
+          Please enter your details
+        </h2>
+
+
+        <!-- POLICY NUMBER -->
+
+        <div class="form-group">
+
+          <label>
+            Policy number / Passport number
+          </label>
+
+          <input
+            type="text"
+            [(ngModel)]="policyNumber"
+            placeholder="">
+
+        </div>
+
+
+        <!-- CONTINUE -->
+
+        <button
+          class="continue-button"
+          (click)="continueClaim()">
+
+          Continue
+
+        </button>
+
+
+        <!-- LINKS -->
+
+        <div class="claim-links">
+
+          <button
+            (click)="claimForm()">
+
+            Claim Form
+
+          </button>
+
+
+          <span></span>
+
+
+          <button
+            (click)="policyWordings()">
+
+            Policy wordings
+
+          </button>
+
+
+          <span></span>
+
+
+          <button
+            (click)="claimsTAT()">
+
+            Claims TAT
+
+          </button>
+
+        </div>
+
+
+        <!-- TERMS -->
+
+        <label class="terms-row">
+
+          <input
+            type="checkbox"
+            [(ngModel)]="acceptedTerms">
+
+          <span class="custom-checkbox">
+            ✓
+          </span>
+
+          <span class="terms-text">
+
+            By clicking, I accept the
+
+            <a>
+              privacy policy
+            </a>
+
+            &amp;
+
+            <a>
+              terms and conditions.
+            </a>
+
+          </span>
+
+        </label>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CHAT BUTTON
+    ====================================================== -->
+
+    <div class="chat-button">
+
+      <div class="chat-person">
+        R
+      </div>
+
+      <div class="chat-text">
+
+        <strong>
+          ASK RIA
+        </strong>
+
+        <span>
+          LIVE CHAT
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div>

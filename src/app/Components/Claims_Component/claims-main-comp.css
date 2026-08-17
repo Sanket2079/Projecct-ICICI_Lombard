@@ -1,0 +1,292 @@
+/* ================================
+   CLAIMS MENU
+================================ */
+
+.claims-menu {
+  position: relative;
+}
+
+
+/* Claims text */
+
+.claims-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+/* Arrow */
+
+.arrow {
+  font-size: 16px;
+  transition: transform 0.25s ease;
+}
+
+
+/* ================================
+   MEGA MENU
+================================ */
+
+.claims-mega-menu {
+
+  position: absolute;
+
+  top: 100%;
+  right: 0;
+
+  width: 640px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.18);
+
+  display: flex;
+
+  overflow: hidden;
+
+  z-index: 9999;
+
+  /* Hidden initially */
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(10px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+}
+
+
+/* ================================
+   SHOW MENU ON HOVER
+================================ */
+
+.claims-menu:hover .claims-mega-menu {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+
+}
+
+
+.claims-menu:hover .arrow {
+
+  transform: rotate(180deg);
+
+}
+
+
+/* ================================
+   LEFT SIDE
+================================ */
+
+.claims-section {
+
+  width: 52%;
+
+  padding: 25px 25px;
+
+  background: #ffffff;
+
+}
+
+
+/* Individual claim */
+
+.claim-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  height: 82px;
+
+  padding: 10px 15px;
+
+  text-decoration: none;
+
+  color: #333;
+
+  border-radius: 8px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+
+}
+
+
+/* Hover on individual claim */
+
+.claim-item:hover {
+
+  background: #fff4ed;
+
+  transform: translateX(4px);
+
+  color: #333;
+
+}
+
+
+/* Icon */
+
+.claim-icon {
+
+  width: 48px;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 25px;
+
+  border-radius: 50%;
+
+}
+
+
+/* Different icon backgrounds */
+
+.health-icon {
+
+  background: #fff1e8;
+
+  color: #f36c21;
+
+}
+
+
+.motor-icon {
+
+  background: #eef6ff;
+
+}
+
+
+.travel-icon {
+
+  background: #f1f7ff;
+
+}
+
+
+.home-icon {
+
+  background: #fff4e9;
+
+}
+
+
+/* Text */
+
+.claim-item span {
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+}
+
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.other-products {
+
+  width: 48%;
+
+  background: #fafafa;
+
+  padding: 25px 25px;
+
+  border-left: 1px solid #eeeeee;
+
+}
+
+
+.other-products h3 {
+
+  margin: 0 0 20px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: #333;
+
+}
+
+
+/* Other product */
+
+.other-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 5px;
+
+  text-decoration: none;
+
+  color: #333;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+
+}
+
+
+.other-item:hover {
+
+  color: #f26522;
+
+}
+
+
+/* Right arrow */
+
+.right-arrow {
+
+  font-size: 25px;
+
+  line-height: 15px;
+
+  color: #333;
+
+  transition: transform 0.2s ease;
+
+}
+
+
+.other-item:hover .right-arrow {
+
+  transform: translateX(3px);
+
+  color: #f26522;
+
+}

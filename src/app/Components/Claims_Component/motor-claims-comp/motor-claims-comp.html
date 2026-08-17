@@ -1,0 +1,439 @@
+
+<div class="motor-page">
+
+  <!-- =====================================================
+       TOP NAVIGATION
+  ====================================================== -->
+
+  <header class="motor-header">
+
+    <div class="motor-header-inner">
+
+      <!-- LOGO -->
+      <div class="motor-logo">
+
+        <div class="logo-circle">
+          i
+        </div>
+
+        <div class="logo-name">
+          <span class="icici">ICICI</span>
+          <span class="lombard">Lombard</span>
+        </div>
+
+      </div>
+
+
+      <!-- NAVIGATION -->
+      <nav class="motor-navigation">
+
+        <a class="nav-item">
+          Motor Insurance
+          <span class="down-arrow">⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Health Insurance
+          <span class="down-arrow">⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Travel Insurance
+          <span class="down-arrow">⌄</span>
+        </a>
+
+        <a class="nav-item">
+          SME Insurance
+          <span class="down-arrow">⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Corporate Insurance
+          <span class="down-arrow">⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Other Insurance
+          <span class="down-arrow">⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Renewals
+          <span class="down-arrow">⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Claims
+          <span class="down-arrow">⌄</span>
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       HERO SECTION
+  ====================================================== -->
+
+  <section class="motor-hero">
+
+    <div class="hero-container">
+
+
+      <!-- =================================================
+           LEFT CONTENT
+      ================================================== -->
+
+      <div class="hero-content">
+
+        <h1>
+          Quick &amp; easy claim processing at
+          <br>
+          your fingertips
+        </h1>
+
+
+        <!-- BUTTONS -->
+
+        <div class="claim-buttons">
+
+          <button
+            class="raise-button"
+            (click)="raiseClaim()">
+
+            Raise a claim
+
+          </button>
+
+
+          <button
+            class="eclaim-button"
+            (click)="submitEClaim()">
+
+            Submit an e-claim
+
+          </button>
+
+        </div>
+
+
+        <!-- =================================================
+             CHECK CLAIM STATUS
+        ================================================== -->
+
+        <button
+          class="claim-status-button"
+          (click)="checkClaimStatus()">
+
+          <span class="document-icon">
+
+            <svg
+              width="27"
+              height="30"
+              viewBox="0 0 27 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+
+              <path
+                d="M5 1.5H17L25.5 10V28.5H5C3.34315 28.5 2 27.1569 2 25.5V4.5C2 2.84315 3.34315 1.5 5 1.5Z"
+                stroke="white"
+                stroke-width="2"/>
+
+              <path
+                d="M17 1.5V10H25.5"
+                stroke="white"
+                stroke-width="2"/>
+
+              <path
+                d="M7 16H20"
+                stroke="white"
+                stroke-width="2"/>
+
+              <path
+                d="M7 21H20"
+                stroke="white"
+                stroke-width="2"/>
+
+            </svg>
+
+          </span>
+
+
+          <span class="status-text">
+            Check claim status and upload docs
+          </span>
+
+
+          <span class="status-arrow">
+            ›
+          </span>
+
+        </button>
+
+
+        <!-- =================================================
+             DOORSTEP CASHLESS PANEL
+        ================================================== -->
+
+        <div class="doorstep-card">
+
+          <!-- NEW TAG -->
+
+          <div class="new-tag">
+            NEW
+          </div>
+
+
+          <h2>
+            For doorstep cashless claims,
+            call 1800 2666
+          </h2>
+
+
+          <div class="doorstep-features">
+
+
+            <!-- LEFT -->
+
+            <div class="feature-column">
+
+              <div class="feature-item">
+
+                <span class="orange-arrow">
+                  ›
+                </span>
+
+                <span>
+                  Car pick-up &amp; drop
+                </span>
+
+              </div>
+
+
+              <div class="feature-item">
+
+                <span class="orange-arrow">
+                  ›
+                </span>
+
+                <span>
+                  Service quality assurance
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+
+            <div class="feature-column">
+
+              <div class="feature-item">
+
+                <span class="orange-arrow">
+                  ›
+                </span>
+
+                <span>
+                  Dedicated claim manager
+                </span>
+
+              </div>
+
+
+              <div class="feature-item">
+
+                <span class="orange-arrow">
+                  ›
+                </span>
+
+                <span>
+                  Regular WhatsApp updates &amp; tracking
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="doorstep-footer">
+
+            <button
+              class="know-more"
+              (click)="knowMore()">
+
+              Know more
+
+            </button>
+
+
+            <span class="terms">
+              T&amp;C apply
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           RIGHT ILLUSTRATION
+      ================================================== -->
+
+      <div class="hero-illustration">
+
+        <!-- Background street lights -->
+
+        <div class="street-light light-one">
+
+          <div class="light-head"></div>
+
+          <div class="light-pole"></div>
+
+        </div>
+
+
+        <div class="street-light light-two">
+
+          <div class="light-head"></div>
+
+          <div class="light-pole"></div>
+
+        </div>
+
+
+        <!-- Person -->
+
+        <div class="person">
+
+          <div class="person-hair"></div>
+
+          <div class="person-face"></div>
+
+          <div class="person-neck"></div>
+
+          <div class="person-body"></div>
+
+          <div class="person-arm"></div>
+
+          <div class="person-hand"></div>
+
+          <div class="person-jeans"></div>
+
+        </div>
+
+
+        <!-- Car -->
+
+        <div class="car">
+
+          <div class="car-body">
+
+            <div class="car-window"></div>
+
+            <div class="car-window-two"></div>
+
+            <div class="car-front"></div>
+
+          </div>
+
+
+          <div class="car-wheel wheel-one"></div>
+
+          <div class="car-wheel wheel-two"></div>
+
+          <div class="car-headlight"></div>
+
+        </div>
+
+
+        <!-- Bike -->
+
+        <div class="bike">
+
+          <div class="bike-body"></div>
+
+          <div class="bike-seat"></div>
+
+          <div class="bike-handle"></div>
+
+          <div class="bike-wheel bike-wheel-one"></div>
+
+          <div class="bike-wheel bike-wheel-two"></div>
+
+          <div class="bike-light"></div>
+
+        </div>
+
+
+        <!-- Ground -->
+
+        <div class="ground">
+
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       NEXT SECTION
+  ====================================================== -->
+
+  <section class="motor-content-section">
+
+    <h2>
+      Why you’ll love our motor claims process
+    </h2>
+
+
+    <div class="benefits">
+
+      <div class="benefit-card">
+
+        <strong>
+          80%
+        </strong>
+
+        <span>
+          Claims processed by
+          live video inspection
+        </span>
+
+      </div>
+
+
+      <div class="benefit-card">
+
+        <strong>
+          15,200+
+        </strong>
+
+        <span>
+          Cashless garages
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div>

@@ -1,0 +1,109 @@
+<!-- <p>claims-main-comp works!</p> -->
+<div class="container mt-4">
+
+  <ul class="nav nav-tabs nav-fill mb-3">
+
+    <!-- Header -->
+    <li class="nav-item">
+      <a
+        routerLink="/Header"
+        class="nav-link"
+        routerLinkActive="active">
+        Header Comp
+      </a>
+    </li>
+
+    <!-- Claims Mega Menu -->
+    <li class="nav-item claims-menu">
+
+      <a class="nav-link claims-link">
+        Claims
+        <span class="arrow">⌃</span>
+      </a>
+
+      <!-- Mega Menu -->
+      <div class="claims-mega-menu">
+
+        <!-- Left Section -->
+        <div class="claims-section">
+
+          <a
+            routerLink="/Claims/Health"
+            class="claim-item">
+
+            <div class="claim-icon health-icon">
+              ♡
+            </div>
+
+            <span>Health Claims</span>
+
+          </a>
+
+
+          <a
+            routerLink="/Claims/Motor"
+            class="claim-item">
+
+            <div class="claim-icon motor-icon">
+              🚗
+            </div>
+
+            <span>Motor Claims</span>
+
+          </a>
+
+
+          <a
+            routerLink="/Claims/Travel"
+            class="claim-item">
+
+            <div class="claim-icon travel-icon">
+              ✈
+            </div>
+
+            <span>Travel Claims</span>
+
+          </a>
+
+
+          <a
+            routerLink="/Claims/Home"
+            class="claim-item">
+
+            <div class="claim-icon home-icon">
+              🏠
+            </div>
+
+            <span>Home Claims</span>
+
+          </a>
+
+        </div>
+
+
+        <!-- Right Section -->
+        <div class="other-products">
+
+          <h3>Other Products</h3>
+
+          <a class="other-item">
+            <span class="right-arrow">›</span>
+            Cyber Insurance Claims
+          </a>
+
+          <a class="other-item">
+            <span class="right-arrow">›</span>
+            Corporate Claims
+          </a>
+
+        </div>
+
+      </div>
+
+    </li>
+
+  </ul>
+
+</div>
+
+<router-outlet></router-outlet>

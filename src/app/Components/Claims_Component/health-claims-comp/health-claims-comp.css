@@ -1,0 +1,1256 @@
+
+/* =========================================================
+   HEALTH CLAIM PAGE
+========================================================= */
+
+.health-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292929;
+  overflow-x: hidden;
+}
+
+.health-page * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.health-header {
+  width: 100%;
+  height: 60px;
+
+  background: linear-gradient(
+    90deg,
+    #ed6b19 0%,
+    #e95720 100%
+  );
+
+  color: #ffffff;
+}
+
+.health-header-inner {
+  width: 1440px;
+  max-width: 94%;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.health-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  min-width: 250px;
+}
+
+.logo-mark {
+  width: 31px;
+  height: 31px;
+
+  border: 3px solid #ffffff;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  font-style: italic;
+
+  line-height: 1;
+}
+
+.logo-text {
+  display: flex;
+  align-items: baseline;
+
+  gap: 5px;
+
+  color: #ffffff;
+}
+
+.logo-text .icici {
+  font-family: Georgia, serif;
+
+  font-size: 26px;
+
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+.logo-text .lombard {
+  font-family: Georgia, serif;
+
+  font-size: 23px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.health-navigation {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 48px;
+}
+
+.health-navigation a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.health-navigation a:hover {
+  opacity: 0.75;
+}
+
+.health-navigation a.active {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.health-hero {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 570px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.hero-container {
+  width: 1440px;
+
+  max-width: 94%;
+
+  margin: 0 auto;
+
+  min-height: 510px;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+
+/* =========================================================
+   HERO LEFT
+========================================================= */
+
+.hero-left {
+  position: relative;
+
+  z-index: 5;
+
+  width: 55%;
+
+  padding-top: 47px;
+}
+
+.small-heading {
+  font-size: 28px;
+
+  line-height: 1.2;
+
+  color: #242424;
+
+  margin-bottom: 12px;
+
+  font-weight: 400;
+}
+
+.hero-left h1 {
+  margin: 0;
+
+  font-size: 52px;
+
+  line-height: 1.06;
+
+  font-weight: 300;
+
+  letter-spacing: -1.4px;
+
+  color: #292929;
+}
+
+.hero-left h1 strong {
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   APP DOWNLOAD
+========================================================= */
+
+.app-download {
+  margin-top: 27px;
+}
+
+.app-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 16px;
+
+  color: #252525;
+}
+
+.takecare-icon {
+  width: 42px;
+  height: 42px;
+
+  background: #f36b21;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  font-style: italic;
+
+  border: 2px solid #ffffff;
+
+  box-shadow:
+    0 0 0 1px #e85d16;
+}
+
+.app-title strong {
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   APP STORE BUTTONS
+========================================================= */
+
+.app-buttons {
+  display: flex;
+
+  gap: 33px;
+
+  margin-top: 13px;
+}
+
+.store-button {
+  height: 56px;
+
+  min-width: 157px;
+
+  padding: 6px 15px;
+
+  background: #000000;
+
+  border: none;
+
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  gap: 9px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.store-button:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.9;
+}
+
+.play-icon {
+  font-size: 26px;
+
+  color: #32c5f4;
+}
+
+.apple-icon {
+  font-size: 23px;
+
+  color: #ffffff;
+}
+
+.store-text {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  line-height: 1;
+}
+
+.store-text small {
+  font-size: 9px;
+
+  margin-bottom: 4px;
+
+  color: #ffffff;
+}
+
+.store-text strong {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   HERO ILLUSTRATION
+========================================================= */
+
+.hero-illustration {
+  position: absolute;
+
+  left: 28%;
+
+  top: 235px;
+
+  width: 570px;
+
+  height: 300px;
+
+  opacity: 0.75;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   SIMPLE ILLUSTRATION
+========================================================= */
+
+.illustration-person {
+  position: absolute;
+
+  left: 110px;
+
+  top: 5px;
+
+  width: 260px;
+
+  height: 210px;
+}
+
+
+/* Head */
+
+.person-head {
+  position: absolute;
+
+  width: 48px;
+  height: 48px;
+
+  background: #ffd2bd;
+
+  border-radius: 50%;
+
+  left: 88px;
+  top: 7px;
+}
+
+
+/* Body */
+
+.person-body {
+  position: absolute;
+
+  width: 72px;
+  height: 105px;
+
+  background: #f36b21;
+
+  border-radius: 40px 40px 25px 25px;
+
+  left: 76px;
+  top: 48px;
+
+  transform: rotate(-20deg);
+}
+
+
+/* Legs */
+
+.person-leg {
+  position: absolute;
+
+  height: 22px;
+
+  background: #072b5a;
+
+  border-radius: 20px;
+
+  transform-origin: left center;
+}
+
+.leg-one {
+  width: 165px;
+
+  left: 125px;
+  top: 118px;
+
+  transform: rotate(20deg);
+}
+
+.leg-two {
+  width: 150px;
+
+  left: 120px;
+  top: 136px;
+
+  transform: rotate(2deg);
+}
+
+
+/* Arms */
+
+.person-arm {
+  position: absolute;
+
+  width: 105px;
+  height: 15px;
+
+  background: #f36b21;
+
+  border-radius: 20px;
+
+  transform-origin: left center;
+}
+
+.arm-one {
+  left: 93px;
+  top: 61px;
+
+  transform: rotate(-62deg);
+}
+
+.arm-two {
+  left: 98px;
+  top: 65px;
+
+  transform: rotate(-40deg);
+}
+
+
+/* =========================================================
+   CHAIR
+========================================================= */
+
+.chair {
+  position: absolute;
+
+  left: 55px;
+
+  top: 75px;
+
+  width: 210px;
+
+  height: 200px;
+}
+
+.chair-back {
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 125px;
+
+  height: 155px;
+
+  border: 7px solid #f7cfc3;
+
+  border-right: none;
+
+  border-radius: 65% 0 0 65%;
+
+  transform: rotate(8deg);
+}
+
+.chair-seat {
+  position: absolute;
+
+  left: 45px;
+
+  top: 125px;
+
+  width: 135px;
+
+  height: 28px;
+
+  background: #f7cfc3;
+
+  border-radius: 20px;
+
+  transform: rotate(8deg);
+}
+
+.chair-leg {
+  position: absolute;
+
+  width: 5px;
+
+  height: 110px;
+
+  background: #f7cfc3;
+
+  top: 140px;
+}
+
+.chair-leg.left {
+  left: 55px;
+
+  transform: rotate(16deg);
+}
+
+.chair-leg.right {
+  left: 165px;
+
+  transform: rotate(-8deg);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table {
+  position: absolute;
+
+  right: 20px;
+
+  top: 35px;
+
+  width: 260px;
+
+  height: 170px;
+}
+
+.table-top {
+  position: absolute;
+
+  top: 65px;
+
+  left: 0;
+
+  width: 260px;
+
+  height: 8px;
+
+  background: #f7d3c7;
+
+  border-radius: 5px;
+}
+
+.table-leg {
+  position: absolute;
+
+  top: 69px;
+
+  right: 30px;
+
+  width: 6px;
+
+  height: 105px;
+
+  background: #f7d3c7;
+
+  transform: rotate(-9deg);
+}
+
+
+/* =========================================================
+   DECORATION
+========================================================= */
+
+.decor {
+  position: absolute;
+
+  background: #f9d5c9;
+
+  opacity: 0.7;
+}
+
+.decor-one {
+  width: 34px;
+  height: 45px;
+
+  border-radius: 0 0 50% 50%;
+
+  right: 190px;
+
+  top: 90px;
+}
+
+.decor-two {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  right: 80px;
+
+  top: 120px;
+}
+
+
+/* =========================================================
+   CLAIM STATUS CARD
+========================================================= */
+
+.claim-status-card {
+  position: absolute;
+
+  right: 5px;
+
+  top: 34px;
+
+  width: 435px;
+
+  min-height: 390px;
+
+  background: #ffffff;
+
+  border-radius: 13px;
+
+  padding: 35px 34px;
+
+  z-index: 10;
+
+  box-shadow:
+    0 9px 30px rgba(0, 0, 0, 0.10);
+}
+
+.claim-status-card h2 {
+  margin: 0 0 34px;
+
+  font-size: 26px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: #303030;
+}
+
+
+/* =========================================================
+   USER TYPE
+========================================================= */
+
+.field-label {
+  display: block;
+
+  font-size: 16px;
+
+  color: #484848;
+
+  margin-bottom: 17px;
+}
+
+.radio-group {
+  display: flex;
+
+  align-items: center;
+
+  gap: 45px;
+
+  margin-bottom: 40px;
+}
+
+.radio-option {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  font-size: 17px;
+
+  color: #333333;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.radio-option input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.custom-radio {
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #8c8c8c;
+
+  border-radius: 50%;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ffffff;
+}
+
+.radio-option input:checked + .custom-radio {
+  border-color: #ff6500;
+}
+
+.radio-option input:checked + .custom-radio::after {
+  content: "";
+
+  width: 9px;
+  height: 9px;
+
+  background: #ff6500;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   CLAIM INPUT
+========================================================= */
+
+.claim-input {
+  width: 100%;
+
+  height: 60px;
+
+  margin-bottom: 42px;
+}
+
+.claim-input input {
+  width: 100%;
+
+  height: 100%;
+
+  border: 1px solid #cfcfcf;
+
+  border-radius: 6px;
+
+  padding: 0 16px;
+
+  font-size: 16px;
+
+  color: #333333;
+
+  outline: none;
+
+  font-family: inherit;
+
+  transition: border-color 0.2s ease;
+}
+
+.claim-input input::placeholder {
+  color: #8d8d8d;
+}
+
+.claim-input input:focus {
+  border-color: #f26522;
+}
+
+
+/* =========================================================
+   PROCEED BUTTON
+========================================================= */
+
+.proceed-button {
+  width: 100%;
+
+  height: 57px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #ff6500;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.proceed-button:hover {
+  background: #e95700;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PEACH BOTTOM SECTION
+========================================================= */
+
+.hero-bottom {
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  height: 154px;
+
+  background: #fff0e8;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   BOTTOM DECORATION
+========================================================= */
+
+.bottom-decoration {
+  position: relative;
+
+  width: 570px;
+
+  height: 154px;
+
+  margin-left: 30%;
+
+  opacity: 0.55;
+}
+
+
+/* Desk */
+
+.desk {
+  position: absolute;
+
+  width: 390px;
+
+  height: 6px;
+
+  background: #f6cec2;
+
+  left: 70px;
+
+  top: 58px;
+
+  border-radius: 4px;
+}
+
+
+/* Monitor */
+
+.monitor {
+  position: absolute;
+
+  width: 110px;
+
+  height: 75px;
+
+  border: 5px solid #f6cec2;
+
+  border-radius: 4px;
+
+  left: 275px;
+
+  top: 10px;
+}
+
+.monitor::after {
+  content: "";
+
+  position: absolute;
+
+  width: 55px;
+
+  height: 5px;
+
+  background: #f6cec2;
+
+  bottom: -15px;
+
+  left: 23px;
+}
+
+
+/* Chair */
+
+.chair-bottom {
+  position: absolute;
+
+  width: 120px;
+
+  height: 95px;
+
+  border: 6px solid #f6cec2;
+
+  border-radius: 50%;
+
+  left: 45px;
+
+  top: 38px;
+}
+
+
+/* Person */
+
+.person-bottom {
+  position: absolute;
+
+  width: 65px;
+
+  height: 85px;
+
+  background: #f6cec2;
+
+  border-radius: 50%;
+
+  left: 105px;
+
+  top: 10px;
+
+  opacity: 0.9;
+}
+
+
+/* Cat */
+
+.cat {
+  position: absolute;
+
+  width: 55px;
+
+  height: 28px;
+
+  background: #f6cec2;
+
+  border-radius: 50%;
+
+  right: 20px;
+
+  bottom: 18px;
+}
+
+.cat::before {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  background: #f6cec2;
+
+  border-radius: 50%;
+
+  left: -5px;
+
+  top: -12px;
+}
+
+
+/* =========================================================
+   ALL ABOUT HEALTH CLAIMS
+========================================================= */
+
+.all-about-section {
+  width: 100%;
+
+  min-height: 260px;
+
+  background: #ffffff;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  padding-top: 67px;
+}
+
+.all-about-section h2 {
+  margin: 0;
+
+  font-size: 38px;
+
+  line-height: 1.2;
+
+  font-weight: 400;
+
+  color: #102c48;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1250px) {
+
+  .health-navigation {
+    gap: 25px;
+  }
+
+  .hero-left {
+    width: 54%;
+  }
+
+  .hero-left h1 {
+    font-size: 44px;
+  }
+
+  .claim-status-card {
+    right: 0;
+
+    width: 390px;
+  }
+
+  .hero-illustration {
+    left: 25%;
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+
+  .health-header {
+    height: auto;
+
+    padding: 15px 0;
+  }
+
+  .health-header-inner {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .health-navigation {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    height: auto;
+
+    gap: 20px;
+  }
+
+  .health-hero {
+    min-height: 850px;
+  }
+
+  .hero-container {
+    display: block;
+
+    min-height: 800px;
+  }
+
+  .hero-left {
+    width: 100%;
+
+    padding-top: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 43px;
+  }
+
+  .hero-illustration {
+    left: 15%;
+
+    top: 370px;
+  }
+
+  .claim-status-card {
+    top: 490px;
+
+    right: 50%;
+
+    transform: translateX(50%);
+
+    width: 440px;
+  }
+
+  .hero-bottom {
+    height: 210px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .health-header-inner {
+    max-width: 90%;
+  }
+
+  .health-logo {
+    min-width: auto;
+  }
+
+  .health-navigation {
+    gap: 15px;
+
+    font-size: 14px;
+  }
+
+  .health-navigation a {
+    font-size: 13px;
+  }
+
+  .hero-left {
+    padding-top: 30px;
+  }
+
+  .small-heading {
+    font-size: 22px;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .app-buttons {
+    gap: 10px;
+
+    flex-wrap: wrap;
+  }
+
+  .store-button {
+    min-width: 145px;
+  }
+
+  .hero-illustration {
+    display: none;
+  }
+
+  .claim-status-card {
+    width: 92%;
+
+    top: 390px;
+
+    padding: 27px 22px;
+  }
+
+  .claim-status-card h2 {
+    font-size: 23px;
+  }
+
+  .radio-group {
+    gap: 20px;
+
+    flex-wrap: wrap;
+  }
+
+  .hero-bottom {
+    height: 250px;
+  }
+
+  .all-about-section {
+    min-height: 180px;
+
+    padding-top: 45px;
+  }
+
+  .all-about-section h2 {
+    font-size: 28px;
+
+    text-align: center;
+  }
+
+}
