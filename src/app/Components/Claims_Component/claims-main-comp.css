@@ -1,6 +1,6 @@
 /* ================================
    CLAIMS MENU
-================================ */
+================================ 
 
 .claims-menu {
   position: relative;
@@ -28,7 +28,7 @@
 
 /* ================================
    MEGA MENU
-================================ */
+================================ 
 
 .claims-mega-menu {
 
@@ -52,7 +52,7 @@
 
   z-index: 9999;
 
-  /* Hidden initially */
+  /* Hidden initially 
   opacity: 0;
   visibility: hidden;
 
@@ -67,7 +67,7 @@
 
 /* ================================
    SHOW MENU ON HOVER
-================================ */
+================================ 
 
 .claims-menu:hover .claims-mega-menu {
 
@@ -89,7 +89,7 @@
 
 /* ================================
    LEFT SIDE
-================================ */
+================================ 
 
 .claims-section {
 
@@ -102,7 +102,7 @@
 }
 
 
-/* Individual claim */
+/* Individual claim 
 
 .claim-item {
 
@@ -129,7 +129,7 @@
 }
 
 
-/* Hover on individual claim */
+/* Hover on individual claim 
 
 .claim-item:hover {
 
@@ -142,7 +142,7 @@
 }
 
 
-/* Icon */
+/* Icon 
 
 .claim-icon {
 
@@ -163,7 +163,7 @@
 }
 
 
-/* Different icon backgrounds */
+/* Different icon backgrounds 
 
 .health-icon {
 
@@ -195,7 +195,7 @@
 }
 
 
-/* Text */
+/* Text 
 
 .claim-item span {
 
@@ -208,7 +208,7 @@
 
 /* ================================
    RIGHT SIDE
-================================ */
+================================ 
 
 .other-products {
 
@@ -236,7 +236,7 @@
 }
 
 
-/* Other product */
+/* Other product 
 
 .other-item {
 
@@ -268,7 +268,7 @@
 }
 
 
-/* Right arrow */
+/* Right arrow 
 
 .right-arrow {
 
@@ -290,3 +290,5 @@
   color: #f26522;
 
 }
+
+*/

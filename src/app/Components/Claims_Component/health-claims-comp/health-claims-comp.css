@@ -1,185 +1,47 @@
+:host {
+  display: block;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
 
-/* =========================================================
-   HEALTH CLAIM PAGE
-========================================================= */
-
-.health-page {
-  width: 100%;
-  min-height: 100vh;
-  background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #292929;
-  overflow-x: hidden;
+  --brand-orange: #f36f21;
+  --brand-orange-dark: #e95f12;
+  --text-dark: #252525;
+  --text-muted: #6b7280;
 }
 
-.health-page * {
+:host *,
+:host *::before,
+:host *::after {
   box-sizing: border-box;
 }
 
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-.health-header {
-  width: 100%;
-  height: 60px;
-
-  background: linear-gradient(
-    90deg,
-    #ed6b19 0%,
-    #e95720 100%
-  );
-
-  color: #ffffff;
-}
-
-.health-header-inner {
-  width: 1440px;
-  max-width: 94%;
-
-  height: 100%;
-
-  margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-/* =========================================================
-   LOGO
-========================================================= */
-
-.health-logo {
-  display: flex;
-  align-items: center;
-
-  gap: 7px;
-
-  min-width: 250px;
-}
-
-.logo-mark {
-  width: 31px;
-  height: 31px;
-
-  border: 3px solid #ffffff;
-
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-family: Georgia, serif;
-
-  font-size: 22px;
-  font-weight: bold;
-
-  font-style: italic;
-
-  line-height: 1;
-}
-
-.logo-text {
-  display: flex;
-  align-items: baseline;
-
-  gap: 5px;
-
-  color: #ffffff;
-}
-
-.logo-text .icici {
-  font-family: Georgia, serif;
-
-  font-size: 26px;
-
-  font-weight: 700;
-
-  letter-spacing: -1.5px;
-}
-
-.logo-text .lombard {
-  font-family: Georgia, serif;
-
-  font-size: 23px;
-
-  font-weight: 500;
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-.health-navigation {
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-
-  gap: 48px;
-}
-
-.health-navigation a {
-  color: #ffffff;
-
+a {
   text-decoration: none;
-
-  font-size: 16px;
-
-  font-weight: 500;
-
-  white-space: nowrap;
-
-  cursor: pointer;
-
-  transition: opacity 0.2s ease;
-}
-
-.health-navigation a:hover {
-  opacity: 0.75;
-}
-
-.health-navigation a.active {
-  font-weight: 600;
 }
 
 
 /* =========================================================
-   HERO
-========================================================= */
+   HERO SECTION
+   ========================================================= */
 
-.health-hero {
+.health-claim-hero {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 72%,
+    #fff1e9 72%,
+    #fff1e9 100%
+  );
+}
+
+.health-claim-container {
   position: relative;
 
-  width: 100%;
-
-  min-height: 570px;
-
-  background: #ffffff;
-
-  overflow: hidden;
-}
-
-
-/* =========================================================
-   HERO CONTAINER
-========================================================= */
-
-.hero-container {
-  width: 1440px;
-
-  max-width: 94%;
+  max-width: 1440px;
+  min-height: 545px;
 
   margin: 0 auto;
-
-  min-height: 510px;
-
-  position: relative;
+  padding: 25px 7.2% 0;
 
   display: flex;
   align-items: flex-start;
@@ -187,606 +49,223 @@
 
 
 /* =========================================================
-   HERO LEFT
-========================================================= */
+   LEFT SIDE
+   ========================================================= */
 
 .hero-left {
+  width: 56%;
   position: relative;
-
-  z-index: 5;
-
-  width: 55%;
-
-  padding-top: 47px;
+  z-index: 2;
 }
 
-.small-heading {
+.hero-small-title {
+  margin: 0 0 10px;
+
   font-size: 28px;
-
-  line-height: 1.2;
-
-  color: #242424;
-
-  margin-bottom: 12px;
-
   font-weight: 400;
+
+  color: #17202a;
 }
 
 .hero-left h1 {
   margin: 0;
 
-  font-size: 52px;
-
-  line-height: 1.06;
-
-  font-weight: 300;
-
-  letter-spacing: -1.4px;
+  font-size: clamp(42px, 4vw, 56px);
+  line-height: 1.02;
+  font-weight: 400;
 
   color: #292929;
+
+  letter-spacing: -1.5px;
 }
 
 .hero-left h1 strong {
-  font-weight: 800;
+  font-weight: 750;
 }
 
 
 /* =========================================================
    APP DOWNLOAD
-========================================================= */
+   ========================================================= */
 
 .app-download {
-  margin-top: 27px;
+  margin-top: 22px;
 }
 
 .app-title {
   display: flex;
-
   align-items: center;
+  gap: 10px;
 
-  gap: 12px;
-
-  font-size: 16px;
-
-  color: #252525;
+  font-size: 17px;
+  color: #222;
 }
 
-.takecare-icon {
-  width: 42px;
-  height: 42px;
+.app-title img {
+  width: 43px;
+  height: 43px;
 
-  background: #f36b21;
-
-  border-radius: 9px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: white;
-
-  font-size: 16px;
-
-  font-weight: 800;
-
-  font-style: italic;
-
-  border: 2px solid #ffffff;
-
-  box-shadow:
-    0 0 0 1px #e85d16;
+  object-fit: contain;
 }
 
 .app-title strong {
   font-weight: 700;
 }
 
-
-/* =========================================================
-   APP STORE BUTTONS
-========================================================= */
-
 .app-buttons {
   display: flex;
+  gap: 32px;
 
-  gap: 33px;
-
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 .store-button {
+  display: block;
+
+  width: 155px;
   height: 56px;
 
-  min-width: 157px;
-
-  padding: 6px 15px;
-
-  background: #000000;
-
-  border: none;
-
-  border-radius: 5px;
-
-  color: #ffffff;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: flex-start;
-
-  gap: 9px;
-
-  cursor: pointer;
-
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
-.store-button:hover {
-  transform: translateY(-2px);
+.store-button img {
+  width: 100%;
+  height: 100%;
 
-  opacity: 0.9;
-}
-
-.play-icon {
-  font-size: 26px;
-
-  color: #32c5f4;
-}
-
-.apple-icon {
-  font-size: 23px;
-
-  color: #ffffff;
-}
-
-.store-text {
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: flex-start;
-
-  line-height: 1;
-}
-
-.store-text small {
-  font-size: 9px;
-
-  margin-bottom: 4px;
-
-  color: #ffffff;
-}
-
-.store-text strong {
-  font-size: 16px;
-
-  font-weight: 600;
-
-  color: #ffffff;
+  display: block;
+  object-fit: contain;
 }
 
 
 /* =========================================================
    HERO ILLUSTRATION
-========================================================= */
+   ========================================================= */
 
 .hero-illustration {
   position: absolute;
 
   left: 28%;
+  bottom: 20px;
 
-  top: 235px;
+  width: 40%;
+  height: 310px;
 
-  width: 570px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
-  height: 300px;
-
-  opacity: 0.75;
-
-  z-index: 2;
+  z-index: 1;
 }
 
-
-/* =========================================================
-   SIMPLE ILLUSTRATION
-========================================================= */
-
-.illustration-person {
-  position: absolute;
-
-  left: 110px;
-
-  top: 5px;
-
-  width: 260px;
-
-  height: 210px;
-}
-
-
-/* Head */
-
-.person-head {
-  position: absolute;
-
-  width: 48px;
-  height: 48px;
-
-  background: #ffd2bd;
-
-  border-radius: 50%;
-
-  left: 88px;
-  top: 7px;
-}
-
-
-/* Body */
-
-.person-body {
-  position: absolute;
-
-  width: 72px;
-  height: 105px;
-
-  background: #f36b21;
-
-  border-radius: 40px 40px 25px 25px;
-
-  left: 76px;
-  top: 48px;
-
-  transform: rotate(-20deg);
-}
-
-
-/* Legs */
-
-.person-leg {
-  position: absolute;
-
-  height: 22px;
-
-  background: #072b5a;
-
-  border-radius: 20px;
-
-  transform-origin: left center;
-}
-
-.leg-one {
-  width: 165px;
-
-  left: 125px;
-  top: 118px;
-
-  transform: rotate(20deg);
-}
-
-.leg-two {
-  width: 150px;
-
-  left: 120px;
-  top: 136px;
-
-  transform: rotate(2deg);
-}
-
-
-/* Arms */
-
-.person-arm {
-  position: absolute;
-
-  width: 105px;
-  height: 15px;
-
-  background: #f36b21;
-
-  border-radius: 20px;
-
-  transform-origin: left center;
-}
-
-.arm-one {
-  left: 93px;
-  top: 61px;
-
-  transform: rotate(-62deg);
-}
-
-.arm-two {
-  left: 98px;
-  top: 65px;
-
-  transform: rotate(-40deg);
-}
-
-
-/* =========================================================
-   CHAIR
-========================================================= */
-
-.chair {
-  position: absolute;
-
-  left: 55px;
-
-  top: 75px;
-
-  width: 210px;
-
-  height: 200px;
-}
-
-.chair-back {
-  position: absolute;
-
-  left: 0;
-
-  top: 0;
-
-  width: 125px;
-
-  height: 155px;
-
-  border: 7px solid #f7cfc3;
-
-  border-right: none;
-
-  border-radius: 65% 0 0 65%;
-
-  transform: rotate(8deg);
-}
-
-.chair-seat {
-  position: absolute;
-
-  left: 45px;
-
-  top: 125px;
-
-  width: 135px;
-
-  height: 28px;
-
-  background: #f7cfc3;
-
-  border-radius: 20px;
-
-  transform: rotate(8deg);
-}
-
-.chair-leg {
-  position: absolute;
-
-  width: 5px;
-
-  height: 110px;
-
-  background: #f7cfc3;
-
-  top: 140px;
-}
-
-.chair-leg.left {
-  left: 55px;
-
-  transform: rotate(16deg);
-}
-
-.chair-leg.right {
-  left: 165px;
-
-  transform: rotate(-8deg);
-}
-
-
-/* =========================================================
-   TABLE
-========================================================= */
-
-.table {
-  position: absolute;
-
-  right: 20px;
-
-  top: 35px;
-
-  width: 260px;
-
-  height: 170px;
-}
-
-.table-top {
-  position: absolute;
-
-  top: 65px;
-
-  left: 0;
-
-  width: 260px;
-
-  height: 8px;
-
-  background: #f7d3c7;
-
-  border-radius: 5px;
-}
-
-.table-leg {
-  position: absolute;
-
-  top: 69px;
-
-  right: 30px;
-
-  width: 6px;
-
-  height: 105px;
-
-  background: #f7d3c7;
-
-  transform: rotate(-9deg);
-}
-
-
-/* =========================================================
-   DECORATION
-========================================================= */
-
-.decor {
-  position: absolute;
-
-  background: #f9d5c9;
-
-  opacity: 0.7;
-}
-
-.decor-one {
-  width: 34px;
-  height: 45px;
-
-  border-radius: 0 0 50% 50%;
-
-  right: 190px;
-
-  top: 90px;
-}
-
-.decor-two {
-  width: 45px;
-  height: 45px;
-
-  border-radius: 50%;
-
-  right: 80px;
-
-  top: 120px;
+.hero-illustration img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: bottom center;
 }
 
 
 /* =========================================================
    CLAIM STATUS CARD
-========================================================= */
+   ========================================================= */
 
 .claim-status-card {
   position: absolute;
 
-  right: 5px;
+  top: 0;
+  right: 7.2%;
 
-  top: 34px;
+  width: 430px;
+  min-height: 387px;
 
-  width: 435px;
-
-  min-height: 390px;
+  padding: 32px;
 
   background: #ffffff;
 
-  border-radius: 13px;
-
-  padding: 35px 34px;
-
-  z-index: 10;
+  border-radius: 12px;
 
   box-shadow:
-    0 9px 30px rgba(0, 0, 0, 0.10);
+    0 10px 35px rgba(0, 0, 0, 0.10);
+
+  z-index: 5;
 }
 
 .claim-status-card h2 {
-  margin: 0 0 34px;
+  margin: 0 0 35px;
 
-  font-size: 26px;
-
+  font-size: 25px;
   line-height: 1.2;
+  font-weight: 600;
 
-  font-weight: 700;
-
-  color: #303030;
+  color: #263238;
 }
 
 
 /* =========================================================
    USER TYPE
-========================================================= */
+   ========================================================= */
 
-.field-label {
-  display: block;
-
-  font-size: 16px;
-
-  color: #484848;
-
-  margin-bottom: 17px;
+.user-type {
+  margin-bottom: 34px;
 }
 
-.radio-group {
-  display: flex;
+.user-type > p {
+  margin: 0 0 14px;
 
-  align-items: center;
-
-  gap: 45px;
-
-  margin-bottom: 40px;
+  font-size: 16px;
+  color: #6b7280;
 }
 
 .radio-option {
   position: relative;
 
-  display: flex;
-
+  display: inline-flex;
   align-items: center;
 
-  gap: 11px;
+  margin-right: 45px;
 
-  font-size: 17px;
-
-  color: #333333;
+  font-size: 16px;
+  color: #303030;
 
   cursor: pointer;
-
-  white-space: nowrap;
 }
 
 .radio-option input {
   position: absolute;
-
   opacity: 0;
-
   pointer-events: none;
 }
 
 .custom-radio {
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
 
-  border: 2px solid #8c8c8c;
+  margin-right: 12px;
 
+  border: 2px solid #888;
   border-radius: 50%;
 
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  background: #ffffff;
+  position: relative;
 }
 
 .radio-option input:checked + .custom-radio {
-  border-color: #ff6500;
+  border-color: var(--brand-orange);
 }
 
 .radio-option input:checked + .custom-radio::after {
-  content: "";
+  content: '';
 
-  width: 9px;
-  height: 9px;
+  position: absolute;
 
-  background: #ff6500;
+  width: 10px;
+  height: 10px;
+
+  top: 4px;
+  left: 4px;
+
+  background: var(--brand-orange);
 
   border-radius: 50%;
 }
@@ -794,67 +273,57 @@
 
 /* =========================================================
    CLAIM INPUT
-========================================================= */
+   ========================================================= */
 
 .claim-input {
   width: 100%;
-
-  height: 60px;
-
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .claim-input input {
   width: 100%;
-
-  height: 100%;
-
-  border: 1px solid #cfcfcf;
-
-  border-radius: 6px;
+  height: 61px;
 
   padding: 0 16px;
 
-  font-size: 16px;
-
-  color: #333333;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
 
   outline: none;
 
   font-family: inherit;
+  font-size: 16px;
 
-  transition: border-color 0.2s ease;
+  color: #333;
 }
 
 .claim-input input::placeholder {
-  color: #8d8d8d;
+  color: #7b8490;
 }
 
 .claim-input input:focus {
-  border-color: #f26522;
+  border-color: var(--brand-orange);
 }
 
 
 /* =========================================================
    PROCEED BUTTON
-========================================================= */
+   ========================================================= */
 
 .proceed-button {
   width: 100%;
-
-  height: 57px;
+  height: 56px;
 
   border: none;
-
   border-radius: 5px;
 
-  background: #ff6500;
+  background: #ff6800;
 
   color: #ffffff;
 
+  font-family: inherit;
   font-size: 17px;
-
-  font-weight: 700;
+  font-weight: 600;
 
   cursor: pointer;
 
@@ -864,308 +333,160 @@
 }
 
 .proceed-button:hover {
-  background: #e95700;
-
-  transform: translateY(-1px);
+  background: var(--brand-orange-dark);
 }
 
-
-/* =========================================================
-   PEACH BOTTOM SECTION
-========================================================= */
-
-.hero-bottom {
-  position: absolute;
-
-  left: 0;
-
-  right: 0;
-
-  bottom: 0;
-
-  height: 154px;
-
-  background: #fff0e8;
-
-  z-index: 1;
-}
-
-
-/* =========================================================
-   BOTTOM DECORATION
-========================================================= */
-
-.bottom-decoration {
-  position: relative;
-
-  width: 570px;
-
-  height: 154px;
-
-  margin-left: 30%;
-
-  opacity: 0.55;
-}
-
-
-/* Desk */
-
-.desk {
-  position: absolute;
-
-  width: 390px;
-
-  height: 6px;
-
-  background: #f6cec2;
-
-  left: 70px;
-
-  top: 58px;
-
-  border-radius: 4px;
-}
-
-
-/* Monitor */
-
-.monitor {
-  position: absolute;
-
-  width: 110px;
-
-  height: 75px;
-
-  border: 5px solid #f6cec2;
-
-  border-radius: 4px;
-
-  left: 275px;
-
-  top: 10px;
-}
-
-.monitor::after {
-  content: "";
-
-  position: absolute;
-
-  width: 55px;
-
-  height: 5px;
-
-  background: #f6cec2;
-
-  bottom: -15px;
-
-  left: 23px;
-}
-
-
-/* Chair */
-
-.chair-bottom {
-  position: absolute;
-
-  width: 120px;
-
-  height: 95px;
-
-  border: 6px solid #f6cec2;
-
-  border-radius: 50%;
-
-  left: 45px;
-
-  top: 38px;
-}
-
-
-/* Person */
-
-.person-bottom {
-  position: absolute;
-
-  width: 65px;
-
-  height: 85px;
-
-  background: #f6cec2;
-
-  border-radius: 50%;
-
-  left: 105px;
-
-  top: 10px;
-
-  opacity: 0.9;
-}
-
-
-/* Cat */
-
-.cat {
-  position: absolute;
-
-  width: 55px;
-
-  height: 28px;
-
-  background: #f6cec2;
-
-  border-radius: 50%;
-
-  right: 20px;
-
-  bottom: 18px;
-}
-
-.cat::before {
-  content: "";
-
-  position: absolute;
-
-  width: 20px;
-  height: 20px;
-
-  background: #f6cec2;
-
-  border-radius: 50%;
-
-  left: -5px;
-
-  top: -12px;
+.proceed-button:active {
+  transform: scale(0.99);
 }
 
 
 /* =========================================================
    ALL ABOUT HEALTH CLAIMS
-========================================================= */
+   ========================================================= */
 
-.all-about-section {
-  width: 100%;
+.health-claims-info {
+  background: #ffffff;
 
-  min-height: 260px;
+  padding: 65px 0 80px;
+}
+
+.health-claims-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.health-claims-container > h2 {
+  margin: 0 0 32px;
+
+  text-align: center;
+
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+
+  color: #002855;
+}
+
+
+/* =========================================================
+   CLAIM CARDS
+   ========================================================= */
+
+.claim-cards {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.claim-card {
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 14px;
 
   background: #ffffff;
 
-  display: flex;
-
-  align-items: flex-start;
-
-  justify-content: center;
-
-  padding-top: 67px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.all-about-section h2 {
-  margin: 0;
+.claim-card:hover {
+  transform: translateY(-4px);
 
-  font-size: 38px;
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+}
 
-  line-height: 1.2;
+.claim-card img {
+  display: block;
 
-  font-weight: 400;
+  width: 100%;
+  height: auto;
 
-  color: #102c48;
-
-  letter-spacing: 0.2px;
+  object-fit: cover;
 }
 
 
 /* =========================================================
    RESPONSIVE
-========================================================= */
+   ========================================================= */
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
 
-  .health-navigation {
-    gap: 25px;
+  .health-claim-container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .claim-status-card {
+    right: 4%;
+    width: 390px;
+  }
+
+  .hero-illustration {
+    left: 28%;
+    width: 40%;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+
+  .health-claim-container {
+    min-height: auto;
+
+    padding:
+      40px 30px 60px;
+
+    display: block;
+  }
+
+  .health-claim-hero {
+    background: #fff1e9;
   }
 
   .hero-left {
-    width: 54%;
+    width: 100%;
   }
 
   .hero-left h1 {
     font-size: 44px;
   }
 
-  .claim-status-card {
-    right: 0;
-
-    width: 390px;
-  }
-
   .hero-illustration {
-    left: 25%;
+    position: relative;
+
+    left: auto;
+    bottom: auto;
+
+    width: 70%;
+    height: 280px;
+
+    margin: 20px auto;
   }
 
-}
+  .claim-status-card {
+    position: relative;
 
+    top: auto;
+    right: auto;
 
-@media (max-width: 1000px) {
-
-  .health-header {
-    height: auto;
-
-    padding: 15px 0;
-  }
-
-  .health-header-inner {
-    flex-direction: column;
-
-    gap: 18px;
-  }
-
-  .health-navigation {
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    height: auto;
-
-    gap: 20px;
-  }
-
-  .health-hero {
-    min-height: 850px;
-  }
-
-  .hero-container {
-    display: block;
-
-    min-height: 800px;
-  }
-
-  .hero-left {
     width: 100%;
+    max-width: 500px;
 
-    padding-top: 40px;
+    margin: 20px auto 0;
   }
 
-  .hero-left h1 {
-    font-size: 43px;
-  }
-
-  .hero-illustration {
-    left: 15%;
-
-    top: 370px;
-  }
-
-  .claim-status-card {
-    top: 490px;
-
-    right: 50%;
-
-    transform: translateX(50%);
-
-    width: 440px;
-  }
-
-  .hero-bottom {
-    height: 210px;
+  .claim-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
@@ -1173,84 +494,60 @@
 
 @media (max-width: 600px) {
 
-  .health-header-inner {
-    max-width: 90%;
+  .health-claim-container {
+    padding: 30px 18px 40px;
   }
 
-  .health-logo {
-    min-width: auto;
-  }
-
-  .health-navigation {
-    gap: 15px;
-
-    font-size: 14px;
-  }
-
-  .health-navigation a {
-    font-size: 13px;
-  }
-
-  .hero-left {
-    padding-top: 30px;
-  }
-
-  .small-heading {
-    font-size: 22px;
+  .hero-small-title {
+    font-size: 21px;
   }
 
   .hero-left h1 {
-    font-size: 32px;
-
+    font-size: 35px;
     letter-spacing: -0.5px;
+  }
+
+  .app-title {
+    font-size: 15px;
   }
 
   .app-buttons {
     gap: 10px;
-
-    flex-wrap: wrap;
   }
 
   .store-button {
-    min-width: 145px;
+    width: 140px;
+    height: 50px;
   }
 
   .hero-illustration {
-    display: none;
+    width: 100%;
+    height: 220px;
   }
 
   .claim-status-card {
-    width: 92%;
-
-    top: 390px;
-
-    padding: 27px 22px;
+    padding: 24px;
   }
 
   .claim-status-card h2 {
-    font-size: 23px;
+    font-size: 22px;
   }
 
-  .radio-group {
-    gap: 20px;
-
-    flex-wrap: wrap;
+  .radio-option {
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
 
-  .hero-bottom {
-    height: 250px;
-  }
-
-  .all-about-section {
-    min-height: 180px;
-
+  .health-claims-info {
     padding-top: 45px;
   }
 
-  .all-about-section h2 {
-    font-size: 28px;
+  .health-claims-container > h2 {
+    font-size: 30px;
+  }
 
-    text-align: center;
+  .claim-cards {
+    grid-template-columns: 1fr;
   }
 
 }

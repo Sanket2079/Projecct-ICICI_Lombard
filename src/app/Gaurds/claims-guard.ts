@@ -6,5 +6,5 @@ export const claimsGuard: CanActivateChildFn = (childRoute, state) => {
   
   // const authService = inject(AuthService);
   // return (authService.isAdmin == true )? true : false;
-  return true
+  return true;
 };

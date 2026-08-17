@@ -1,345 +1,179 @@
+<!-- ==================== HEALTH CLAIMS HERO ==================== -->
+<section class="health-claim-hero mt-4">
 
-<div class="health-page">
+  <div class="health-claim-container">
 
-  <!-- ==========================================
-       HEALTH CLAIM HEADER
-  =========================================== -->
+    <!-- LEFT CONTENT -->
+    <div class="hero-left">
 
-  <header class="health-header">
+      <p class="hero-small-title">Health insurance claim</p>
 
-    <div class="health-header-inner">
+      <h1>
+        We’re committed to providing a
+        <br />
+        <strong>worry-free</strong> claim
+        <br />
+        experience
+      </h1>
 
-      <!-- LOGO -->
-      <div class="health-logo">
+      <!-- App Download -->
+      <div class="app-download">
 
-        <div class="logo-mark">
-          i
+        <div class="app-title">
+          <img
+            src="/assets/health-insurance-icon/Tack_care_logo.svg"
+            alt="IL TakeCare"
+          />
+
+          <span>
+            Download the <strong>IL TakeCare</strong> App
+          </span>
         </div>
 
-        <div class="logo-text">
-          <span class="icici">ICICI</span>
-          <span class="lombard">Lombard</span>
+        <div class="app-buttons">
+
+          <a href="#" class="store-button">
+            <img
+              src="/assets/health-insurance-icon/Play_Store_logo.svg"
+              alt="Get it on Google Play"
+            />
+          </a>
+
+          <a href="#" class="store-button">
+            <img
+              src="/assets/health-insurance-icon/App_Store_logo.svg"
+              alt="Download on the App Store"
+            />
+          </a>
+
         </div>
 
       </div>
-
-
-      <!-- NAVIGATION -->
-      <nav class="health-navigation">
-
-        <a class="active">
-          Health Claims
-        </a>
-
-        <a (click)="fileClaim()">
-          File a claim
-        </a>
-
-        <a (click)="partnerHospital()">
-          Partner Hospital
-        </a>
-
-        <a (click)="downloads()">
-          Downloads
-        </a>
-
-        <a (click)="hospitalLogin()">
-          Hospital Login
-        </a>
-
-        <a (click)="support()">
-          Support
-        </a>
-
-      </nav>
 
     </div>
 
-  </header>
 
+    <!-- HERO ILLUSTRATION -->
+    <div class="hero-illustration">
 
-  <!-- ==========================================
-       HERO SECTION
-  =========================================== -->
+      <img
+        src="/assets/health-insurance-icon/health_comp_img.svg"
+        alt="Health insurance claim"
+      />
 
-  <section class="health-hero">
+    </div>
 
-    <div class="hero-container">
 
+    <!-- RIGHT CLAIM STATUS CARD -->
+    <div class="claim-status-card">
 
-      <!-- ======================================
-           LEFT HERO CONTENT
-      ======================================= -->
+      <h2>Check health claim status</h2>
 
-      <div class="hero-left">
+      <div class="user-type">
 
-        <div class="small-heading">
-          Health insurance claim
-        </div>
+        <p>Type of user</p>
 
-
-        <h1>
-
-          We’re committed to providing a
-
-          <br>
-
-          <strong>worry-free</strong> claim
-
-          <br>
-
-          experience
-
-        </h1>
-
-
-        <!-- APP DOWNLOAD -->
-        <div class="app-download">
-
-          <div class="app-title">
-
-            <div class="takecare-icon">
-              IL
-            </div>
-
-            <span>
-              Download the
-              <strong>IL TakeCare</strong> App
-            </span>
-
-          </div>
-
-
-          <div class="app-buttons">
-
-            <!-- Google Play -->
-            <button class="store-button">
-
-              <span class="play-icon">
-                ▶
-              </span>
-
-              <span class="store-text">
-
-                <small>
-                  Get it On
-                </small>
-
-                <strong>
-                  Google Play
-                </strong>
-
-              </span>
-
-            </button>
-
-
-            <!-- App Store -->
-            <button class="store-button">
-
-              <span class="apple-icon">
-                ●
-              </span>
-
-              <span class="store-text">
-
-                <small>
-                  Download on the
-                </small>
-
-                <strong>
-                  App Store
-                </strong>
-
-              </span>
-
-            </button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- ======================================
-           HERO ILLUSTRATION
-      ======================================= -->
-
-      <div class="hero-illustration">
-
-        <div class="illustration-person">
-
-          <div class="person-head"></div>
-
-          <div class="person-body"></div>
-
-          <div class="person-leg leg-one"></div>
-
-          <div class="person-leg leg-two"></div>
-
-          <div class="person-arm arm-one"></div>
-
-          <div class="person-arm arm-two"></div>
-
-        </div>
-
-
-        <!-- Chair -->
-        <div class="chair">
-
-          <div class="chair-back"></div>
-
-          <div class="chair-seat"></div>
-
-          <div class="chair-leg left"></div>
-
-          <div class="chair-leg right"></div>
-
-        </div>
-
-
-        <!-- Table -->
-        <div class="table">
-
-          <div class="table-top"></div>
-
-          <div class="table-leg"></div>
-
-        </div>
-
-
-        <!-- Plant / decorative shapes -->
-        <div class="decor decor-one"></div>
-
-        <div class="decor decor-two"></div>
-
-      </div>
-
-
-      <!-- ======================================
-           CLAIM STATUS CARD
-      ======================================= -->
-
-      <div class="claim-status-card">
-
-        <h2>
-          Check health claim status
-        </h2>
-
-
-        <!-- USER TYPE -->
-        <div class="user-type">
-
-          <label class="field-label">
-            Type of user
-          </label>
-
-
-          <div class="radio-group">
-
-
-            <!-- RETAIL -->
-            <label class="radio-option">
-
-              <input
-                type="radio"
-                name="userType"
-                value="retail"
-                [(ngModel)]="userType">
-
-              <span class="custom-radio"></span>
-
-              <span>
-                Retail User
-              </span>
-
-            </label>
-
-
-            <!-- CORPORATE -->
-            <label class="radio-option">
-
-              <input
-                type="radio"
-                name="userType"
-                value="corporate"
-                [(ngModel)]="userType">
-
-              <span class="custom-radio"></span>
-
-              <span>
-                Corporate User
-              </span>
-
-            </label>
-
-          </div>
-
-        </div>
-
-
-        <!-- CLAIM NUMBER -->
-        <div class="claim-input">
-
+        <label class="radio-option">
           <input
-            type="text"
-            [(ngModel)]="claimNumber"
-            placeholder="Enter claim number">
+            type="radio"
+            name="userType"
+            value="retail"
+            checked
+          />
+          <span class="custom-radio"></span>
+          Retail User
+        </label>
 
-        </div>
-
-
-        <!-- PROCEED -->
-        <button
-          class="proceed-button"
-          (click)="proceed()">
-
-          Proceed
-
-        </button>
-
-      </div>
-
-    </div>
-
-
-    <!-- ========================================
-         BOTTOM PEACH AREA
-    ========================================= -->
-
-    <div class="hero-bottom">
-
-      <div class="bottom-decoration">
-
-        <div class="desk"></div>
-
-        <div class="monitor"></div>
-
-        <div class="chair-bottom"></div>
-
-        <div class="person-bottom"></div>
-
-        <div class="cat"></div>
+        <label class="radio-option">
+          <input
+            type="radio"
+            name="userType"
+            value="corporate"
+          />
+          <span class="custom-radio"></span>
+          Corporate User
+        </label>
 
       </div>
 
+
+      <div class="claim-input">
+
+        <input
+          type="text"
+          placeholder="Enter claim number"
+        />
+
+      </div>
+
+
+      <button class="proceed-button">
+        Proceed
+      </button>
+
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- ==========================================
-       ALL ABOUT HEALTH CLAIMS
-  =========================================== -->
+<!-- ==================== ALL ABOUT HEALTH CLAIMS ==================== -->
 
-  <section class="all-about-section">
+<section class="health-claims-info">
 
-    <h2>
-      All about Health Claims
-    </h2>
+  <div class="health-claims-container">
 
-  </section>
+    <h2>All about Health Claims</h2>
 
-</div>
 
+    <div class="claim-cards">
+
+      <!-- CARD 1 -->
+      <a href="#" class="claim-card">
+
+        <img
+          src="/assets/health-insurance-icon/health_comp_img_2.svg"
+          alt="Cashless Health Claim"
+        />
+
+      </a>
+
+
+      <!-- CARD 2 -->
+      <a href="#" class="claim-card">
+
+        <img
+          src="/assets/health-insurance-icon/health_comp_img_3.svg"
+          alt="Cashless Claim Process"
+        />
+
+      </a>
+
+
+      <!-- CARD 3 -->
+      <a href="#" class="claim-card">
+
+        <img
+          src="/assets/health-insurance-icon/health_comp_img_4.svg"
+          alt="Reimbursement Claim"
+        />
+
+      </a>
+
+
+      <!-- CARD 4 -->
+      <a href="#" class="claim-card">
+
+        <img
+          src="/assets/health-insurance-icon/Track_Claims_img.jpg"
+          alt="Track Claim"
+        />
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
