@@ -1,0 +1,205 @@
+<div class="container mb-5">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-7 p-4">
+      <h1 class="headerfontsize">Your passport to travelling with peace of mind</h1>
+      <h4 class="fst-normal mt-3 fs-2">Travel insurance starting at ₹20/dayS, 0% GSTT</h4>
+      <div class="row justify-content-between">
+        <div class="col-md-4 border rounded-2 row p-0">
+          <div class="col-md-4 justify-content-center mt-3">
+            <img src="/travel-insurance-assets/dental-treat.webp" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-8 fs-6 p-0 m-0">
+            <p class="fontsize mt-3">Cashless medical/dental treatment</p>
+          </div>
+        </div>
+        <div class="col-md-4 row border rounded-2 p-0">
+          <div class="col-md-4 mt-3 m-0">
+            <img src="/travel-insurance-assets/covers-loss.webp" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md-8 p-0 m-0">
+            <p class="fontsize mt-3">Covers loss of passport & baggage</p>
+          </div>
+        </div>
+        <div class="col-md-4 row border rounded-2 p-0">
+          <div class="col-md-4 mt-3">
+            <img src="/travel-insurance-assets/support-all.webp" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md-8 p-0 m-0">
+            <p class="fontsize mt-3">24x7 instant support</p>
+          </div>
+        </div>
+      </div>
+      <div class="banner-image">
+        <img
+          src="/travel-insurance-assets/revamp-landing-banner.svg"
+          alt=""
+          class="img-fluid homeimg"
+        />
+      </div>
+    </div>
+    <div class="col-md-5 p-5">
+      <div class="card p-3">
+        <mat-tab-group>
+          <mat-tab label="Single Trip ">
+            <div class="row m-0 p-3">
+              <div class="col-md-6 form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioDefault"
+                  id="radioDefault1"
+                />
+                <label class="form-check-label" for="radioDefault1"> Select geography </label>
+              </div>
+              <div class="col-md-6 form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioDefault"
+                  id="radioDefault2"
+                  checked
+                />
+                <label class="form-check-label" for="radioDefault2"> Select country </label>
+              </div>
+            </div>
+
+            <div class="row m-0 justify-content-between">
+              <div class="col-md-3">
+                <div class="">
+                  <img
+                    src="/travel-insurance-assets/usa-or-canada.svg"
+                    class="img-fluid border p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="fontsize">USA or Canada</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 p-0">
+                <div class="">
+                  <img src="/travel-insurance-assets/asia.svg" class="border p-3" alt="..." />
+                  <div class="card-body">
+                    <p class="fontsize">Asia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 p-0">
+                <div class="">
+                  <img src="/travel-insurance-assets/schengen.svg" class="border p-3" alt="..." />
+                  <div class="card-body">
+                    <p class="fontsize">Schengen</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 p-0">
+                <div class="">
+                  <img
+                    src="/travel-insurance-assets/rest-of-the-world.svg"
+                    class="border p-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="fontsize">Rest of the world</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <p class="fw-lighter text-decoration-underline text-center">
+              Know more about geographical scope
+            </p>
+            <div class="col-md-12">
+              <div class="row m-0  ">
+                <div class="col-md-5 ">
+                  
+                  <mat-form-field appearance="outline" class="w-100 ">
+                    <mat-label >Travel Date</mat-label>
+    
+                    <input matInput [matDatepicker]="picker" />
+                    <mat-datepicker-toggle matSuffix [for]="picker">
+                      <img
+                        matDatepickerToggleIcon
+                        src="/travel-insurance-assets/calendar-date.png"
+                        width="20"
+                        height="20"
+                        alt="Calendar"
+                      />
+                    </mat-datepicker-toggle>
+    
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-5 ">
+                  <mat-form-field appearance="outline" class="w-100  ">
+                    <mat-label>Return Date</mat-label>
+    
+                    <input matInput [matDatepicker]="picker1" class="p-0" />
+                    <mat-datepicker-toggle matSuffix [for]="picker1">
+                      <img
+                        matDatepickerToggleIcon
+                        src="/travel-insurance-assets/calendar-date.png"
+                        width="20"
+                        height="20"
+                        alt="Calendar"
+                      />
+                    </mat-datepicker-toggle>
+    
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+
+                </div>
+              </div>
+
+              <!-- <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkCheckedDisabled"
+                  checked
+                  disabled
+                />
+                <label class="form-check-label" for="checkCheckedDisabled">
+                  I agree to the terms and conditions
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="checkCheckedDisabled"
+                  checked
+                  disabled
+                />
+                <label class="form-check-label" for="checkCheckedDisabled">
+                  All the travellers have a non-immigrant visa
+                </label>
+              </div> -->
+              <!-- <p>
+                All the travelling members are Indian residents and will be travelling from India
+              </p> -->
+              <!-- <div >
+                <button class="btn  btn-orange w-100">Continue</button>
+              </div> -->
+            </div>
+          </mat-tab>
+          <mat-tab label="Second">
+            One policy, one trip
+            <p>One policy, Multiple trips</p>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-5">
+  <div class="mt-5">
+
+    <app-whatis-travel-insurance></app-whatis-travel-insurance>
+  </div>
+</div>
