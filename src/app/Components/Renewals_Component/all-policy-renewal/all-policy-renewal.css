@@ -1,0 +1,114 @@
+div{
+background-color: #00305a;
+color: white;
+padding-left: 30px;
+}
+
+/* left side col */
+
+.heading{
+    color:white;
+    font-size:55px;
+    font-weight:280;
+    line-height:1;
+    margin-bottom:50px;
+}
+
+.heading span{
+    font-weight:450;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    color:rgb(244, 243, 243);
+    font-size:18px;
+}
+
+.feature i{
+    font-size:34px;
+    margin-right:20px;
+}
+
+
+/* right side col */
+
+.form-select,
+.form-control{
+    max-width: 70%;
+    background:transparent;
+    color:white;
+    border:none;
+    border-bottom:1px solid #7da5d2;
+    border-radius:0;
+    box-shadow:none;
+}
+
+.form-select:focus,
+.form-control:focus{
+    background:transparent;
+    color:white;
+    border-bottom:1px solid #7da5d2;
+    box-shadow:none;
+}
+
+.form-control::placeholder{
+    color:#9ebddd;
+}
+
+small{
+    color:#8eb2dc;
+}
+
+.required{
+color:#ff4d4d;
+font-size:18px;
+}
+
+.proceed-btn{
+    background:#ff6b00;
+    color:white;
+    width:100px;
+    height:50px;
+    border-radius:40px;
+    font-size:20px;
+    border:none;
+}
+
+.proceed-btn:hover{
+    background:#ff7d1f;
+}
+
+
+
+
+  .renewal-card {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .left-section {
+
+    padding: 40px 30px;
+
+  }
+
+
+  .left-section h1 {
+
+    font-size: 30px;
+
+  }
+
+
+  .right-section {
+
+    padding: 40px 30px;
+
+  }
+
+
+
+
