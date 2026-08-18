@@ -1,0 +1,881 @@
+
+/* ============================================================
+   HOME CLAIMS PAGE
+============================================================ */
+
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  background: #ffffff;
+
+  color: #202020;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  overflow-x: hidden;
+}
+
+.home-page * {
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.home-header {
+  width: 100%;
+
+  height: 65px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ed6a19 0%,
+      #df4e20 100%
+    );
+
+  border-bottom: 2px solid #ffffff;
+}
+
+.home-header-inner {
+  width: 1450px;
+
+  max-width: 94%;
+
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* ============================================================
+   LOGO
+============================================================ */
+
+.home-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  min-width: 245px;
+}
+
+.logo-circle {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #ffffff;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  font-style: italic;
+}
+
+.logo-name {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 4px;
+
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+}
+
+.logo-name .icici {
+  font-size: 26px;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+}
+
+.logo-name .lombard {
+  font-size: 22px;
+
+  font-weight: 500;
+}
+
+
+/* ============================================================
+   NAVIGATION
+============================================================ */
+
+.home-navigation {
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 29px;
+}
+
+.nav-item {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav-item span {
+  margin-left: 4px;
+
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  opacity: 0.75;
+}
+
+
+/* ============================================================
+   HOME BANNER
+============================================================ */
+
+.home-banner {
+  width: 100%;
+
+  height: 350px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      #e9e8e5 0%,
+      #f6eee2 45%,
+      #f6f4ef 100%
+    );
+}
+
+
+/* ============================================================
+   BANNER PLACEHOLDER
+============================================================ */
+
+.banner-placeholder {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.25),
+      rgba(255,245,230,0.55)
+    );
+}
+
+
+/* ============================================================
+   HOUSE ILLUSTRATION
+============================================================ */
+
+.banner-house {
+  position: absolute;
+
+  right: 22%;
+
+  bottom: 0;
+
+  width: 280px;
+
+  height: 310px;
+
+  opacity: 0.55;
+}
+
+.house-roof {
+  position: absolute;
+
+  left: 10px;
+
+  top: 15px;
+
+  width: 250px;
+
+  height: 110px;
+
+  background: #d52c24;
+
+  clip-path:
+    polygon(
+      50% 0,
+      100% 100%,
+      0 100%
+    );
+}
+
+.house-body {
+  position: absolute;
+
+  left: 40px;
+
+  top: 100px;
+
+  width: 200px;
+
+  height: 210px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c6a66d,
+      #e0c28c
+    );
+}
+
+.house-window {
+  position: absolute;
+
+  left: 25px;
+
+  top: 40px;
+
+  width: 65px;
+
+  height: 65px;
+
+  background: #d9e6e8;
+
+  border: 6px solid #aa8753;
+}
+
+.house-door {
+  position: absolute;
+
+  right: 30px;
+
+  bottom: 0;
+
+  width: 60px;
+
+  height: 120px;
+
+  background: #8b5b35;
+}
+
+
+/* ============================================================
+   WRITING HAND
+============================================================ */
+
+.writing-hand {
+  position: absolute;
+
+  left: 17%;
+
+  top: 35px;
+
+  width: 480px;
+
+  height: 250px;
+
+  opacity: 0.45;
+}
+
+.hand {
+  position: absolute;
+
+  left: 30px;
+
+  top: 20px;
+
+  width: 330px;
+
+  height: 145px;
+
+  background: #dcae8e;
+
+  border-radius:
+    50% 45% 40% 50%;
+
+  transform: rotate(8deg);
+}
+
+.pen {
+  position: absolute;
+
+  left: 300px;
+
+  top: 155px;
+
+  width: 110px;
+
+  height: 10px;
+
+  background: #5e554f;
+
+  transform: rotate(50deg);
+
+  border-radius: 5px;
+}
+
+
+/* ============================================================
+   MAIN CONTENT
+============================================================ */
+
+.home-content {
+  width: 1260px;
+
+  max-width: 88%;
+
+  margin: auto;
+}
+
+
+/* ============================================================
+   BREADCRUMB
+============================================================ */
+
+.breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding-top: 20px;
+
+  color: #101010;
+
+  font-size: 17px;
+
+  line-height: 1.4;
+}
+
+.breadcrumb-arrow {
+  font-size: 27px;
+
+  color: #333;
+
+  line-height: 1;
+}
+
+
+/* ============================================================
+   CONTENT GRID
+============================================================ */
+
+.content-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    360px;
+
+  gap: 55px;
+
+  margin-top: 57px;
+
+  padding-bottom: 80px;
+}
+
+
+/* ============================================================
+   MAIN CLAIM CONTENT
+============================================================ */
+
+.main-claims-content h1 {
+  margin: 0 0 30px;
+
+  color: #074274;
+
+  font-size: 42px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* ============================================================
+   ACCORDION
+============================================================ */
+
+.claim-accordion {
+  width: 100%;
+
+  border: 1px solid #dddddd;
+}
+
+.accordion-header {
+  width: 100%;
+
+  min-height: 66px;
+
+  padding: 10px 14px;
+
+  border: none;
+
+  background: #074274;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+.accordion-header > span:first-child {
+  max-width: 90%;
+
+  font-size: 18px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+}
+
+.plus-icon {
+  width: 30px;
+
+  font-size: 32px;
+
+  font-weight: 300;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   ACCORDION BODY
+============================================================ */
+
+.accordion-body {
+  background: #eeeeee;
+
+  padding: 20px 34px 25px;
+
+  color: #333333;
+}
+
+.accordion-body p {
+  margin: 8px 0 18px;
+
+  font-size: 17px;
+
+  line-height: 1.55;
+}
+
+.accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================================
+   QUICK LINKS
+============================================================ */
+
+.quick-links {
+  width: 100%;
+
+  margin-top: 74px;
+}
+
+.quick-links-title {
+  width: 100%;
+
+  height: 49px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #ed7015;
+
+  color: #ffffff;
+
+  border-radius:
+    6px 6px 0 0;
+
+  font-size: 22px;
+
+  font-weight: 500;
+}
+
+.quick-links-body {
+  width: 100%;
+
+  background: #eeeeee;
+
+  padding: 14px 34px 20px;
+}
+
+.quick-links-body button {
+  display: block;
+
+  width: 100%;
+
+  padding: 13px 0;
+
+  border: none;
+
+  border-bottom: 1px solid #c6c6c6;
+
+  background: transparent;
+
+  color: #52606b;
+
+  text-align: left;
+
+  font-size: 16px;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition: color 0.2s ease;
+}
+
+.quick-links-body button:last-child {
+  border-bottom: none;
+}
+
+.quick-links-body button:hover {
+  color: #ed5d0c;
+}
+
+
+/* ============================================================
+   CLAIM PROCESS
+============================================================ */
+
+.claim-process {
+  margin-top: 55px;
+
+  color: #173f61;
+}
+
+.claim-process h2 {
+  margin: 0 0 25px;
+
+  font-size: 30px;
+
+  font-weight: 500;
+}
+
+.process-step {
+  display: flex;
+
+  gap: 20px;
+
+  padding: 22px 20px;
+
+  margin-bottom: 14px;
+
+  background: #f6f6f6;
+
+  border-left: 4px solid #ed7015;
+
+  border-radius: 4px;
+}
+
+.step-number {
+  min-width: 38px;
+
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: #ed7015;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.step-content h3 {
+  margin: 0 0 7px;
+
+  color: #074274;
+
+  font-size: 18px;
+}
+
+.step-content p {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   RIA CHAT
+============================================================ */
+
+.ria-chat {
+  position: fixed;
+
+  right: 45px;
+
+  bottom: 35px;
+
+  width: 158px;
+
+  height: 61px;
+
+  background: #00518a;
+
+  border-radius: 35px;
+
+  z-index: 100;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 5px;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.18);
+
+  cursor: pointer;
+}
+
+.ria-person {
+  width: 51px;
+
+  height: 51px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f0b391,
+      #df7858
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.ria-text {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  line-height: 1.1;
+}
+
+.ria-text strong {
+  font-size: 14px;
+}
+
+.ria-text span {
+  margin-top: 3px;
+
+  font-size: 10px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 1350px) {
+
+  .home-navigation {
+    gap: 18px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .content-grid {
+    grid-template-columns:
+      1fr
+      320px;
+
+    gap: 30px;
+  }
+
+}
+
+
+@media (max-width: 1050px) {
+
+  .home-header {
+    height: auto;
+
+    padding: 14px 0;
+  }
+
+  .home-header-inner {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .home-navigation {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    height: auto;
+  }
+
+  .home-banner {
+    height: 280px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    margin-top: 40px;
+  }
+
+  .quick-links {
+    margin-top: 0;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .home-navigation {
+    gap: 10px;
+  }
+
+  .nav-item {
+    font-size: 11px;
+  }
+
+  .home-banner {
+    height: 200px;
+  }
+
+  .home-content {
+    max-width: 92%;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+
+    flex-wrap: wrap;
+  }
+
+  .main-claims-content h1 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+  }
+
+  .accordion-header > span:first-child {
+    font-size: 15px;
+  }
+
+  .accordion-body {
+    padding: 18px;
+  }
+
+  .accordion-body p {
+    font-size: 14px;
+  }
+
+  .quick-links-title {
+    font-size: 20px;
+  }
+
+  .ria-chat {
+    right: 15px;
+
+    bottom: 20px;
+
+    transform: scale(0.9);
+
+    transform-origin: bottom right;
+  }
+
+}

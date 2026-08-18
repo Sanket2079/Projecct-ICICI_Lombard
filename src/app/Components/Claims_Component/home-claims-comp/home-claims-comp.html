@@ -1,0 +1,427 @@
+
+<div class="home-page">
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <!-- <header class="home-header">
+
+    <div class="home-header-inner"> -->
+
+      <!-- LOGO -->
+
+      <!-- <div class="home-logo">
+
+        <div class="logo-circle">
+          i
+        </div>
+
+        <div class="logo-name">
+
+          <span class="icici">
+            ICICI
+          </span>
+
+          <span class="lombard">
+            Lombard
+          </span>
+
+        </div>
+
+      </div> -->
+
+
+      <!-- NAVIGATION -->
+
+      <!-- <nav class="home-navigation">
+
+        <a class="nav-item">
+          Motor Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Health Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Travel Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          SME Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Corporate Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Other Insurance
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Renewals
+          <span>⌄</span>
+        </a>
+
+        <a class="nav-item">
+          Claims
+          <span>⌄</span>
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header> -->
+
+
+  <!-- =====================================================
+       HERO IMAGE
+  ====================================================== -->
+
+  <section class="home-banner">
+
+    <!--
+      Put your permitted/local banner image here if you have it.
+
+      Example:
+
+      <img
+        src="assets/home-claims-banner.jpg"
+        alt="Home Insurance Claims">
+
+    -->
+
+    <div class="banner-placeholder">
+
+      <div class="banner-house">
+
+        <div class="house-roof"></div>
+
+        <div class="house-body">
+
+          <div class="house-window"></div>
+
+          <div class="house-door"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="writing-hand">
+
+        <div class="hand"></div>
+
+        <div class="pen"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       MAIN CONTENT
+  ====================================================== -->
+
+  <main class="home-content">
+
+    <!-- =================================================
+         BREADCRUMB
+    ================================================== -->
+
+    <div class="breadcrumb">
+
+      <span>
+        General Insurance By ICICI Lombard
+      </span>
+
+      <span class="breadcrumb-arrow">
+        ›
+      </span>
+
+      <span>
+        Home Insurance Claims
+      </span>
+
+    </div>
+
+
+    <!-- =================================================
+         CONTENT GRID
+    ================================================== -->
+
+    <div class="content-grid">
+
+
+      <!-- ===============================================
+           LEFT CONTENT
+      ================================================ -->
+
+      <section class="main-claims-content">
+
+        <h1>
+          Home Insurance Claims
+        </h1>
+
+
+        <!-- ACCORDION -->
+
+        <div class="claim-accordion">
+
+          <button
+            class="accordion-header"
+            (click)="toggleClaimInfo()">
+
+            <span>
+              In case of an unforeseen loss/damage to your home,
+              be assured of complete assistance from us
+            </span>
+
+            <span class="plus-icon">
+
+              {{ isClaimInfoOpen ? '−' : '+' }}
+
+            </span>
+
+          </button>
+
+
+          <div
+            class="accordion-body"
+            *ngIf="isClaimInfoOpen">
+
+            <p>
+              When in an emergency, call us on our 24x7 toll free
+              insurance helpline, 1800 2666, and leave the rest to us
+            </p>
+
+            <p>
+              Provide relevant information, which includes your
+              policy and other details regarding your claim
+            </p>
+
+            <p>
+              Keep all the necessary documents related to the
+              loss or damage ready for claim processing.
+            </p>
+
+            <p>
+              Our claims team will guide you through the claim
+              registration and settlement process.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CLAIM PROCESS
+        ================================================== -->
+
+        <section class="claim-process">
+
+          <h2>
+            Home Insurance Claim Process
+          </h2>
+
+
+          <div class="process-step">
+
+            <div class="step-number">
+              1
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                Intimate the claim
+              </h3>
+
+              <p>
+                Inform us about the loss or damage to your
+                insured home as soon as possible.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="step-number">
+              2
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                Submit documents
+              </h3>
+
+              <p>
+                Submit the required documents and relevant
+                information related to your claim.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="step-number">
+              3
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                Claim assessment
+              </h3>
+
+              <p>
+                Our team assesses the claim based on the
+                policy terms and submitted documents.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="step-number">
+              4
+            </div>
+
+            <div class="step-content">
+
+              <h3>
+                Claim settlement
+              </h3>
+
+              <p>
+                Once the claim is approved, the admissible
+                amount is settled according to the policy.
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+
+
+      <!-- ===============================================
+           RIGHT QUICK LINKS
+      ================================================ -->
+
+      <aside class="quick-links">
+
+        <div class="quick-links-title">
+          Quick Links
+        </div>
+
+
+        <div class="quick-links-body">
+
+
+          <button
+            (click)="policyWording()">
+
+            Policy Wordings
+
+          </button>
+
+
+          <button
+            (click)="downloadClaimForm()">
+
+            Download Claim Form
+
+          </button>
+
+
+          <button
+            (click)="claimIntimation()">
+
+            Claim Intimation
+
+          </button>
+
+
+          <button
+            (click)="claimProcess()">
+
+            Claim Process
+
+          </button>
+
+
+          <button
+            (click)="claimStatus()">
+
+            Claim Status
+
+          </button>
+
+
+          <button
+            (click)="support()">
+
+            Support
+
+          </button>
+
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+
+  <!-- =====================================================
+       RIA CHAT
+  ====================================================== -->
+
+  <div class="ria-chat">
+
+    <div class="ria-person">
+      R
+    </div>
+
+    <div class="ria-text">
+
+      <strong>
+        ASK RIA
+      </strong>
+
+      <span>
+        LIVE CHAT
+      </span>
+
+    </div>
+
+  </div>
+
+</div>

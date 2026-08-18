@@ -1,0 +1,553 @@
+:host {
+  display: block;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+
+  --brand-orange: #f36f21;
+  --brand-orange-dark: #e95f12;
+  --text-dark: #252525;
+  --text-muted: #6b7280;
+}
+
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.health-claim-hero {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 72%,
+    #fff1e9 72%,
+    #fff1e9 100%
+  );
+}
+
+.health-claim-container {
+  position: relative;
+
+  max-width: 1440px;
+  min-height: 545px;
+
+  margin: 0 auto;
+  padding: 25px 7.2% 0;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.hero-left {
+  width: 56%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-small-title {
+  margin: 0 0 10px;
+
+  font-size: 28px;
+  font-weight: 400;
+
+  color: #17202a;
+}
+
+.hero-left h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 4vw, 56px);
+  line-height: 1.02;
+  font-weight: 400;
+
+  color: #292929;
+
+  letter-spacing: -1.5px;
+}
+
+.hero-left h1 strong {
+  font-weight: 750;
+}
+
+
+/* =========================================================
+   APP DOWNLOAD
+   ========================================================= */
+
+.app-download {
+  margin-top: 22px;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 17px;
+  color: #222;
+}
+
+.app-title img {
+  width: 43px;
+  height: 43px;
+
+  object-fit: contain;
+}
+
+.app-title strong {
+  font-weight: 700;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 32px;
+
+  margin-top: 10px;
+}
+
+.store-button {
+  display: block;
+
+  width: 155px;
+  height: 56px;
+
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.store-button img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   HERO ILLUSTRATION
+   ========================================================= */
+
+.hero-illustration {
+  position: absolute;
+
+  left: 28%;
+  bottom: 20px;
+
+  width: 40%;
+  height: 310px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  z-index: 1;
+}
+
+.hero-illustration img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+
+/* =========================================================
+   CLAIM STATUS CARD
+   ========================================================= */
+
+.claim-status-card {
+  position: absolute;
+
+  top: 0;
+  right: 7.2%;
+
+  width: 430px;
+  min-height: 387px;
+
+  padding: 32px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.10);
+
+  z-index: 5;
+}
+
+.claim-status-card h2 {
+  margin: 0 0 35px;
+
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  color: #263238;
+}
+
+
+/* =========================================================
+   USER TYPE
+   ========================================================= */
+
+.user-type {
+  margin-bottom: 34px;
+}
+
+.user-type > p {
+  margin: 0 0 14px;
+
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.radio-option {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  margin-right: 45px;
+
+  font-size: 16px;
+  color: #303030;
+
+  cursor: pointer;
+}
+
+.radio-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.custom-radio {
+  width: 22px;
+  height: 22px;
+
+  margin-right: 12px;
+
+  border: 2px solid #888;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.radio-option input:checked + .custom-radio {
+  border-color: var(--brand-orange);
+}
+
+.radio-option input:checked + .custom-radio::after {
+  content: '';
+
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  top: 4px;
+  left: 4px;
+
+  background: var(--brand-orange);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   CLAIM INPUT
+   ========================================================= */
+
+.claim-input {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.claim-input input {
+  width: 100%;
+  height: 61px;
+
+  padding: 0 16px;
+
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  color: #333;
+}
+
+.claim-input input::placeholder {
+  color: #7b8490;
+}
+
+.claim-input input:focus {
+  border-color: var(--brand-orange);
+}
+
+
+/* =========================================================
+   PROCEED BUTTON
+   ========================================================= */
+
+.proceed-button {
+  width: 100%;
+  height: 56px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #ff6800;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.proceed-button:hover {
+  background: var(--brand-orange-dark);
+}
+
+.proceed-button:active {
+  transform: scale(0.99);
+}
+
+
+/* =========================================================
+   ALL ABOUT HEALTH CLAIMS
+   ========================================================= */
+
+.health-claims-info {
+  background: #ffffff;
+
+  padding: 65px 0 80px;
+}
+
+.health-claims-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.health-claims-container > h2 {
+  margin: 0 0 32px;
+
+  text-align: center;
+
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+
+  color: #002855;
+}
+
+
+/* =========================================================
+   CLAIM CARDS
+   ========================================================= */
+
+.claim-cards {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.claim-card {
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.claim-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.claim-card img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .health-claim-container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .claim-status-card {
+    right: 4%;
+    width: 390px;
+  }
+
+  .hero-illustration {
+    left: 28%;
+    width: 40%;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+
+  .health-claim-container {
+    min-height: auto;
+
+    padding:
+      40px 30px 60px;
+
+    display: block;
+  }
+
+  .health-claim-hero {
+    background: #fff1e9;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 44px;
+  }
+
+  .hero-illustration {
+    position: relative;
+
+    left: auto;
+    bottom: auto;
+
+    width: 70%;
+    height: 280px;
+
+    margin: 20px auto;
+  }
+
+  .claim-status-card {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 20px auto 0;
+  }
+
+  .claim-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .health-claim-container {
+    padding: 30px 18px 40px;
+  }
+
+  .hero-small-title {
+    font-size: 21px;
+  }
+
+  .hero-left h1 {
+    font-size: 35px;
+    letter-spacing: -0.5px;
+  }
+
+  .app-title {
+    font-size: 15px;
+  }
+
+  .app-buttons {
+    gap: 10px;
+  }
+
+  .store-button {
+    width: 140px;
+    height: 50px;
+  }
+
+  .hero-illustration {
+    width: 100%;
+    height: 220px;
+  }
+
+  .claim-status-card {
+    padding: 24px;
+  }
+
+  .claim-status-card h2 {
+    font-size: 22px;
+  }
+
+  .radio-option {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .health-claims-info {
+    padding-top: 45px;
+  }
+
+  .health-claims-container > h2 {
+    font-size: 30px;
+  }
+
+  .claim-cards {
+    grid-template-columns: 1fr;
+  }
+
+}
