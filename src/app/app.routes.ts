@@ -24,11 +24,10 @@ export const routes: Routes = [
     //     component : ClaimsMainComp,
     //     canActivate : [claimsGuard],
     //     children : [
-    //         {path : 'Health' , component : HealthClaimsComp},
-    //         {path : 'Motor' , component : MotorClaimsComp},
-    //         {path : 'Travel' , component : TravelClaimsComp},
-    //         {path : 'Home' , component : HomeClaimsComp},
-
+    //         {path : 'Claims/Health' , component : HealthClaimsComp},
+    //         {path : 'Claims/Motor' , component : MotorClaimsComp},
+    //         {path : 'Claims/Travel' , component : TravelClaimsComp},
+    //         {path : 'Claims/Home' , component : HomeClaimsComp},
     //     ]
     // },
 
