@@ -390,3 +390,79 @@ ul {
     font-size: 13px;
   }
 }
+
+
+
+
+
+/* ===================== CLAIMS DROPDOWN ===================== */
+
+/* Make only the Claims dropdown two-column */
+.main-nav__item:last-child .main-nav__dropdown {
+  min-width: 700px;
+  display: none;
+}
+
+/* Show Claims dropdown on hover */
+.main-nav__item:last-child:hover .main-nav__dropdown {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left side */
+.main-nav__item:last-child .claims-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.main-nav__item:last-child .claims-left > h3 {
+  margin: 5px 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Keep the existing claim cards vertical */
+.main-nav__item:last-child .claims-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Right side */
+.main-nav__item:last-child .other-products {
+  width: 230px;
+  flex: 0 0 230px;
+  padding-left: 25px;
+  border-left: 1px solid var(--border-light);
+}
+
+.main-nav__item:last-child .other-products h3 {
+  margin: 5px 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Other Products links */
+.main-nav__item:last-child .other-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 5px;
+  color: var(--text-dark);
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.main-nav__item:last-child .other-item:hover {
+  background: #fff4ec;
+}
+
+/* Arrow */
+.main-nav__item:last-child .right-arrow {
+  font-size: 22px;
+  line-height: 1;
+  color: var(--brand-orange);
+}

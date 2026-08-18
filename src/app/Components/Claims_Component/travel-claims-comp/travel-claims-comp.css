@@ -1,0 +1,1417 @@
+
+/* ============================================================
+   TRAVEL CLAIMS PAGE
+============================================================ */
+
+.travel-page {
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  color: #202020;
+
+  background: #ffffff;
+
+  overflow-x: hidden;
+}
+
+.travel-page * {
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.travel-header {
+  width: 100%;
+
+  height: 66px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ed6a19 0%,
+      #e34e20 100%
+    );
+
+  border-bottom: 2px solid #ffffff;
+}
+
+.travel-header-inner {
+  width: 1450px;
+
+  max-width: 94%;
+
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* ============================================================
+   LOGO
+============================================================ */
+
+.travel-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  min-width: 245px;
+}
+
+.logo-circle {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #ffffff;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  font-style: italic;
+}
+
+.logo-name {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 4px;
+
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+}
+
+.logo-name .icici {
+  font-size: 26px;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+}
+
+.logo-name .lombard {
+  font-size: 22px;
+
+  font-weight: 500;
+}
+
+
+/* ============================================================
+   NAVIGATION
+============================================================ */
+
+.travel-navigation {
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 29px;
+}
+
+.nav-item {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav-item span {
+  margin-left: 4px;
+
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  opacity: 0.75;
+}
+
+.nav-item.active {
+  font-weight: 700;
+}
+
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.travel-hero {
+  position: relative;
+
+  width: 100%;
+
+  height: 790px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   HERO CONTAINER
+============================================================ */
+
+.travel-hero-container {
+  position: relative;
+
+  width: 1450px;
+
+  max-width: 94%;
+
+  height: 100%;
+
+  margin: auto;
+}
+
+
+/* ============================================================
+   HERO TEXT
+============================================================ */
+
+.hero-content {
+  position: absolute;
+
+  left: 0;
+
+  top: 27px;
+
+  z-index: 20;
+
+  width: 760px;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: 79px;
+
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+
+  font-weight: 800;
+}
+
+.heading-black {
+  color: #242424;
+}
+
+.heading-orange {
+  color: #ea5410;
+}
+
+.world-text {
+  margin: 23px 0 0;
+
+  color: #202020;
+
+  font-size: 27px;
+
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  letter-spacing: -0.3px;
+}
+
+.globe {
+  display: inline-block;
+
+  margin-left: 7px;
+
+  margin-right: 4px;
+
+  font-size: 29px;
+}
+
+
+/* ============================================================
+   CLAIM CARD
+============================================================ */
+
+.claim-card {
+  position: absolute;
+
+  z-index: 50;
+
+  top: 20px;
+
+  right: 0;
+
+  width: 490px;
+
+  min-height: 407px;
+
+  padding: 35px 33px;
+
+  background: #ffffff;
+
+  border: 1px solid #d2d2d2;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.claim-card h2 {
+  margin: 0 0 28px;
+
+  font-size: 22px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  color: #242424;
+}
+
+
+/* ============================================================
+   FORM GROUP
+============================================================ */
+
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #222222;
+}
+
+.form-group input {
+  width: 100%;
+
+  height: 49px;
+
+  padding: 0 13px;
+
+  border: 1px solid #f02d2d;
+
+  border-radius: 5px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  color: #333333;
+
+  background: #ffffff;
+
+  font-family: inherit;
+}
+
+.form-group input:focus {
+  border-color: #e84d0a;
+
+  box-shadow:
+    0 0 0 1px #e84d0a;
+}
+
+
+/* ============================================================
+   CONTINUE BUTTON
+============================================================ */
+
+.continue-button {
+  width: 100%;
+
+  height: 49px;
+
+  margin-top: 32px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #ed570e;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.continue-button:hover {
+  background: #d94b09;
+
+  transform: translateY(-1px);
+}
+
+
+/* ============================================================
+   CLAIM LINKS
+============================================================ */
+
+.claim-links {
+  width: 100%;
+
+  height: 57px;
+
+  margin-top: 24px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1px
+    1fr
+    1px
+    1fr;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.claim-links button {
+  border: none;
+
+  background: transparent;
+
+  color: #ed570e;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 8px 4px;
+}
+
+.claim-links button:hover {
+  text-decoration: underline;
+}
+
+.claim-links span {
+  width: 1px;
+
+  height: 38px;
+
+  background: #d4d4d4;
+}
+
+
+/* ============================================================
+   TERMS
+============================================================ */
+
+.terms-row {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 17px;
+
+  cursor: pointer;
+}
+
+.terms-row input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.custom-checkbox {
+  width: 21px;
+  height: 21px;
+
+  min-width: 21px;
+
+  border-radius: 3px;
+
+  background: #ed6928;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.terms-text {
+  color: #444444;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+.terms-text a {
+  color: #ed570e;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================================================
+   TRAVEL ILLUSTRATION
+============================================================ */
+
+.travel-illustration {
+  position: absolute;
+
+  left: -15px;
+
+  bottom: 0;
+
+  width: 1100px;
+
+  height: 610px;
+
+  overflow: hidden;
+
+  z-index: 3;
+}
+
+
+/* ============================================================
+   SKY
+============================================================ */
+
+.sky {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  height: 570px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f9fcff 0%,
+      #e7f3fb 45%,
+      #ffffff 100%
+    );
+
+  opacity: 0.95;
+}
+
+
+/* ============================================================
+   MONUMENT
+============================================================ */
+
+.monument-left {
+  position: absolute;
+
+  left: -50px;
+
+  bottom: 35px;
+
+  width: 310px;
+
+  height: 410px;
+
+  opacity: 0.35;
+
+  filter: blur(1px);
+}
+
+.monument-top {
+  position: absolute;
+
+  top: 0;
+
+  left: 55px;
+
+  width: 180px;
+
+  height: 65px;
+
+  background: #d4b68c;
+
+  border-radius: 50% 50% 0 0;
+}
+
+.monument-body {
+  position: absolute;
+
+  left: 35px;
+
+  top: 45px;
+
+  width: 225px;
+
+  height: 300px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c6a87c,
+      #e0c397,
+      #b99465
+    );
+
+  clip-path:
+    polygon(
+      15% 0,
+      85% 0,
+      100% 100%,
+      0 100%
+    );
+}
+
+.monument-base {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 300px;
+
+  height: 70px;
+
+  background: #b89567;
+}
+
+
+/* ============================================================
+   TOWER
+============================================================ */
+
+.tower {
+  position: absolute;
+
+  right: 255px;
+
+  bottom: 110px;
+
+  width: 90px;
+
+  height: 300px;
+
+  opacity: 0.42;
+
+  filter: blur(2px);
+}
+
+.tower-top {
+  position: absolute;
+
+  top: 0;
+
+  left: 17px;
+
+  width: 55px;
+
+  height: 25px;
+
+  border-radius: 50%;
+
+  background: #c5b69e;
+}
+
+.tower-body {
+  position: absolute;
+
+  left: 10px;
+
+  top: 18px;
+
+  width: 70px;
+
+  height: 275px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c6b8a1,
+      #e0d5c0,
+      #b8a98e
+    );
+
+  border-radius:
+    40% 40% 5% 5%;
+}
+
+.tower-body span {
+  display: block;
+
+  width: 25px;
+
+  height: 8px;
+
+  margin: 35px auto 0;
+
+  background: #a89a83;
+
+  border-radius: 50%;
+}
+
+
+/* ============================================================
+   GROUND
+============================================================ */
+
+.travel-ground {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  height: 145px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #d7dfcf 0%,
+      #aeb99f 100%
+    );
+
+  opacity: 0.45;
+}
+
+
+/* ============================================================
+   TRAVELLER MAN
+============================================================ */
+
+.traveller-man {
+  position: absolute;
+
+  left: 305px;
+
+  bottom: 45px;
+
+  width: 270px;
+
+  height: 380px;
+
+  z-index: 20;
+}
+
+
+/* Hat */
+
+.man-hat {
+  position: absolute;
+
+  left: 50px;
+
+  top: 0;
+
+  width: 155px;
+
+  height: 42px;
+
+  background: #a66c2c;
+
+  border-radius: 50%;
+
+  transform: rotate(-3deg);
+}
+
+.man-hat::after {
+  content: "";
+
+  position: absolute;
+
+  left: 35px;
+
+  top: -25px;
+
+  width: 85px;
+
+  height: 55px;
+
+  background: #b77b34;
+
+  border-radius: 50%;
+}
+
+
+/* Head */
+
+.man-head {
+  position: absolute;
+
+  left: 75px;
+
+  top: 34px;
+
+  width: 130px;
+
+  height: 130px;
+
+  background: #d99068;
+
+  border-radius:
+    45% 45% 50% 50%;
+
+  z-index: 5;
+}
+
+
+/* Hair */
+
+.man-hair {
+  position: absolute;
+
+  left: 70px;
+
+  top: 35px;
+
+  width: 135px;
+
+  height: 70px;
+
+  background: #392316;
+
+  border-radius:
+    50% 50% 20% 20%;
+
+  z-index: 6;
+}
+
+
+/* Glasses */
+
+.man-glasses {
+  position: absolute;
+
+  left: 77px;
+
+  top: 77px;
+
+  width: 125px;
+
+  height: 42px;
+
+  border: 7px solid #211d1a;
+
+  border-radius: 20px;
+
+  z-index: 10;
+}
+
+
+/* Body */
+
+.man-body {
+  position: absolute;
+
+  left: 40px;
+
+  top: 150px;
+
+  width: 190px;
+
+  height: 200px;
+
+  background: #f47717;
+
+  border-radius:
+    50px 50px 30px 30px;
+
+  transform: rotate(2deg);
+}
+
+
+/* Backpack */
+
+.man-backpack {
+  position: absolute;
+
+  left: 7px;
+
+  top: 160px;
+
+  width: 80px;
+
+  height: 150px;
+
+  background: #30485c;
+
+  border-radius: 35px;
+
+  z-index: -1;
+}
+
+
+/* Arm */
+
+.man-arm {
+  position: absolute;
+
+  right: -15px;
+
+  top: 185px;
+
+  width: 180px;
+
+  height: 32px;
+
+  background: #d99068;
+
+  border-radius: 30px;
+
+  transform: rotate(-8deg);
+
+  transform-origin: left center;
+
+  z-index: 8;
+}
+
+
+/* ============================================================
+   TRAVELLER WOMAN
+============================================================ */
+
+.traveller-woman {
+  position: absolute;
+
+  left: 470px;
+
+  bottom: 35px;
+
+  width: 270px;
+
+  height: 350px;
+
+  z-index: 22;
+}
+
+
+/* Head */
+
+.woman-head {
+  position: absolute;
+
+  left: 55px;
+
+  top: 30px;
+
+  width: 120px;
+
+  height: 125px;
+
+  background: #efb28d;
+
+  border-radius: 50%;
+
+  z-index: 5;
+}
+
+
+/* Hair */
+
+.woman-hair {
+  position: absolute;
+
+  left: 45px;
+
+  top: 20px;
+
+  width: 145px;
+
+  height: 180px;
+
+  background: #211b1b;
+
+  border-radius:
+    50% 50% 45% 45%;
+
+  z-index: 4;
+}
+
+
+/* Body */
+
+.woman-body {
+  position: absolute;
+
+  left: 55px;
+
+  top: 145px;
+
+  width: 150px;
+
+  height: 180px;
+
+  background: #e4482b;
+
+  border-radius:
+    45px 45px 30px 30px;
+
+  z-index: 3;
+}
+
+
+/* Arm */
+
+.woman-arm {
+  position: absolute;
+
+  left: 155px;
+
+  top: 175px;
+
+  width: 180px;
+
+  height: 28px;
+
+  background: #efb28d;
+
+  border-radius: 30px;
+
+  transform: rotate(-4deg);
+
+  transform-origin: left center;
+
+  z-index: 8;
+}
+
+
+/* Hand */
+
+.woman-hand {
+  position: absolute;
+
+  right: -20px;
+
+  top: 150px;
+
+  width: 38px;
+
+  height: 38px;
+
+  background: #efb28d;
+
+  border-radius: 50%;
+
+  z-index: 9;
+}
+
+
+/* ============================================================
+   CAMERA
+============================================================ */
+
+.camera {
+  position: absolute;
+
+  left: 590px;
+
+  bottom: 145px;
+
+  width: 80px;
+
+  height: 65px;
+
+  z-index: 30;
+
+  transform: rotate(-10deg);
+}
+
+.camera-body {
+  position: absolute;
+
+  left: 0;
+
+  top: 10px;
+
+  width: 70px;
+
+  height: 45px;
+
+  background: #222b2d;
+
+  border-radius: 8px;
+}
+
+.camera-lens {
+  position: absolute;
+
+  left: 24px;
+
+  top: 17px;
+
+  width: 30px;
+
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #101010;
+
+  border: 5px solid #777;
+}
+
+.camera-top {
+  position: absolute;
+
+  left: 45px;
+
+  top: 0;
+
+  width: 18px;
+
+  height: 10px;
+
+  background: #222b2d;
+
+  border-radius: 4px;
+}
+
+
+/* ============================================================
+   SELFIE STICK
+============================================================ */
+
+.selfie-stick {
+  position: absolute;
+
+  left: 670px;
+
+  bottom: 175px;
+
+  width: 180px;
+
+  height: 5px;
+
+  background: #777;
+
+  transform: rotate(-18deg);
+
+  transform-origin: left;
+}
+
+
+/* ============================================================
+   CHAT BUTTON
+============================================================ */
+
+.chat-button {
+  position: fixed;
+
+  right: 45px;
+
+  bottom: 40px;
+
+  z-index: 100;
+
+  width: 160px;
+
+  height: 62px;
+
+  background: #00518a;
+
+  border-radius: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 5px;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.18);
+
+  cursor: pointer;
+}
+
+.chat-person {
+  width: 51px;
+  height: 51px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f1b495,
+      #e47956
+    );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.chat-text {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 1;
+
+  color: #ffffff;
+
+  line-height: 1.1;
+}
+
+.chat-text strong {
+  font-size: 14px;
+}
+
+.chat-text span {
+  font-size: 11px;
+
+  margin-top: 3px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 1400px) {
+
+  .travel-navigation {
+    gap: 18px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .hero-content h1 {
+    font-size: 68px;
+  }
+
+  .claim-card {
+    width: 450px;
+  }
+
+  .travel-illustration {
+    left: -90px;
+
+    transform: scale(0.9);
+
+    transform-origin: bottom left;
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+
+  .travel-header {
+    height: auto;
+
+    padding: 14px 0;
+  }
+
+  .travel-header-inner {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .travel-navigation {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    height: auto;
+
+    gap: 15px;
+  }
+
+  .travel-hero {
+    height: 1050px;
+  }
+
+  .travel-hero-container {
+    height: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+
+    left: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 58px;
+  }
+
+  .claim-card {
+    top: 300px;
+
+    right: 50%;
+
+    transform: translateX(50%);
+
+    width: 470px;
+  }
+
+  .travel-illustration {
+    left: 50%;
+
+    bottom: 0;
+
+    transform:
+      translateX(-50%)
+      scale(0.8);
+
+    transform-origin: bottom center;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .travel-navigation {
+    gap: 10px;
+  }
+
+  .nav-item {
+    font-size: 11px;
+  }
+
+  .travel-hero {
+    height: 950px;
+  }
+
+  .hero-content {
+    top: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 43px;
+
+    letter-spacing: -1px;
+  }
+
+  .world-text {
+    font-size: 20px;
+  }
+
+  .claim-card {
+    top: 270px;
+
+    width: 92%;
+
+    padding: 27px 22px;
+  }
+
+  .claim-card h2 {
+    font-size: 21px;
+  }
+
+  .claim-links button {
+    font-size: 11px;
+  }
+
+  .terms-text {
+    font-size: 11px;
+  }
+
+  .travel-illustration {
+    display: none;
+  }
+
+  .chat-button {
+    right: 15px;
+
+    bottom: 20px;
+
+    transform: scale(0.9);
+
+    transform-origin: bottom right;
+  }
+
+}

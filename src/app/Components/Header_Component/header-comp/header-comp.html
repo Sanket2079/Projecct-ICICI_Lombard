@@ -486,52 +486,100 @@
         </li>
 
         <!-- ---------- Claims ---------- -->
-        <li class="main-nav__item">
-          <a routerLink="/claims" class="main-nav__link">
-            Claims
-            <span class="icon icon-chevron-down" aria-hidden="true"></span>
+        <!-- ---------- Claims ---------- -->
+<li class="main-nav__item">
+  <a routerLink="/Claims" class="main-nav__link">
+    Claims
+    <span class="icon icon-chevron-down" aria-hidden="true"></span>
+  </a>
+
+  <div class="main-nav__dropdown">
+
+    <!-- LEFT SECTION -->
+    <div class="claims-left">
+
+      <h3>Claims</h3>
+
+      <ul>
+        <li>
+          <a routerLink="Claims/Health" class="dropdown-card">
+            <span class="dropdown-card__icon" aria-hidden="true">
+              <img src="assets/corporate-product-icon/healthcare.svg" alt="" />
+            </span>
+            <span class="dropdown-card__text">
+              <span class="dropdown-card__title">Health Claims</span>
+              <span class="dropdown-card__desc">
+                File and track health insurance claims
+              </span>
+            </span>
           </a>
-          <div class="main-nav__dropdown">
-            <ul>
-              <li>
-                <a routerLink="/claims/health" class="dropdown-card">
-                  <span class="dropdown-card__icon" aria-hidden="true"><img src="assets/corporate-product-icon/healthcare.svg" alt="" /></span>
-                  <span class="dropdown-card__text">
-                    <span class="dropdown-card__title">Health Claims</span>
-                    <span class="dropdown-card__desc">File and track health insurance claims</span>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a routerLink="/claims/motor" class="dropdown-card">
-                  <span class="dropdown-card__icon" aria-hidden="true"><img src="assets/motor-insurance-icon/motor-nav-logo.svg" alt="" /></span>
-                  <span class="dropdown-card__text">
-                    <span class="dropdown-card__title">Motor Claims</span>
-                    <span class="dropdown-card__desc">File and track motor insurance claims</span>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a routerLink="/claims/travel" class="dropdown-card">
-                  <span class="dropdown-card__icon" aria-hidden="true"><img src="assets/travel-icon/travel-insurance-nav-logo.svg" alt="" /></span>
-                  <span class="dropdown-card__text">
-                    <span class="dropdown-card__title">Travel Claims</span>
-                    <span class="dropdown-card__desc">File and track travel insurance claims</span>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a routerLink="/claims/home" class="dropdown-card">
-                  <span class="dropdown-card__icon" aria-hidden="true"><img src="assets/other-icon/home-protect-nav-logo.svg" alt="" /></span>
-                  <span class="dropdown-card__text">
-                    <span class="dropdown-card__title">Home Claims</span>
-                    <span class="dropdown-card__desc">File and track home insurance claims</span>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </li>
+
+        <li>
+          <a routerLink="Claims/Motor" class="dropdown-card">
+            <span class="dropdown-card__icon" aria-hidden="true">
+              <img src="assets/motor-insurance-icon/motor-nav-logo.svg" alt="" />
+            </span>
+            <span class="dropdown-card__text">
+              <span class="dropdown-card__title">Motor Claims</span>
+              <span class="dropdown-card__desc">
+                File and track motor insurance claims
+              </span>
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="Claims/Travel" class="dropdown-card">
+            <span class="dropdown-card__icon" aria-hidden="true">
+              <img src="assets/travel-icon/travel-insurance-nav-logo.svg" alt="" />
+            </span>
+            <span class="dropdown-card__text">
+              <span class="dropdown-card__title">Travel Claims</span>
+              <span class="dropdown-card__desc">
+                File and track travel insurance claims
+              </span>
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="Claims/Home" class="dropdown-card">
+            <span class="dropdown-card__icon" aria-hidden="true">
+              <img src="assets/other-icon/home-protect-nav-logo.svg" alt="" />
+            </span>
+            <span class="dropdown-card__text">
+              <span class="dropdown-card__title">Home Claims</span>
+              <span class="dropdown-card__desc">
+                File and track home insurance claims
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!-- RIGHT SECTION -->
+    <div class="other-products">
+
+      <h3>Other Products</h3>
+
+      <a class="other-item">
+        <span class="right-arrow">›</span>
+        Cyber Insurance Claims
+      </a>
+
+      <a class="other-item">
+        <span class="right-arrow">›</span>
+        Corporate Claims
+      </a>
+
+    </div>
+
+  </div>
+</li>
 
       </ul>
     </div>
