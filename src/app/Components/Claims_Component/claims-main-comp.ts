@@ -3,7 +3,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-claims-main-comp',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet],
   templateUrl: './claims-main-comp.html',
   styleUrl: './claims-main-comp.css',
 })
