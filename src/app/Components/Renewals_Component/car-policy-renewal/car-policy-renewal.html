@@ -425,7 +425,7 @@
 
         <!-- REQUIRED ERROR -->
         @if (
-          searchValue?.touched && searchValue.hasError('required')
+          searchValue?.touched && searchValue?.hasError('required')
         ) {
           <div class="error-message">
             Please enter
@@ -438,9 +438,10 @@
         <!-- REGISTRATION ERROR -->
 
         @if (
-          searchValue?.touched &&
-          searchValue.hasError('pattern') &&
-          carForm.get('searchType')?.value === 'registration'
+         searchValue?.touched &&
+  searchValue?.hasError('pattern') &&
+  carForm.get('searchType')?.value === 'registration'
+
         ) {
 
           <div class="error-message">
@@ -453,8 +454,9 @@
 
         @if (
           searchValue?.touched &&
-          searchValue.hasError('pattern') &&
-          carForm.get('searchType')?.value === 'policy'
+  searchValue?.hasError('pattern') &&
+  carForm.get('searchType')?.value === 'policy'
+
         ) {
 
           <div class="error-message">
