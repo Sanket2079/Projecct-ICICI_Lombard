@@ -1,0 +1,209 @@
+<div class="renewal-wrapper">
+
+  <div class="renewal-card">
+    <h1> Bike Insurance Renewal</h1>
+
+    <p class="subtitle">Choose below option to retrieve your policy</p>
+
+    <form [formGroup]="bikeForm" (ngSubmit)="onSubmit()">
+
+      <!-- RADIO BUTTONS -->
+
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" value="registration" formControlName="searchType">
+          <span>Registration No</span>
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" value="policy" formControlName="searchType">
+          <span>Policy No</span>
+        </label>
+
+      </div>
+
+      <!-- INPUT -->
+
+      <div class="input-group">
+        <label>
+          @if (bikeForm.get('searchType')?.value === 'registration') {
+            Registration No.
+          } @else {
+            Policy No.
+          }
+        </label>
+
+        <input type="text" class="form-control" formControlName="searchValue"
+          [placeholder]="
+            bikeForm.get('searchType')?.value === 'registration'? 'Enter Registration No.': 'Enter Policy No.'"
+
+          [attr.maxlength]="
+            bikeForm.get('searchType')?.value === 'registration'? 10 : 30 "
+          (input)="onInput($event)"   
+        >
+
+        <!-- REQUIRED ERROR -->
+        @if (
+          searchValue?.touched && searchValue.hasError('required')
+        ) {
+          <div class="error-message">
+            Please enter
+            {{
+              bikeForm.get('searchType')?.value === 'registration'? 'Registration No.' : 'Policy No.'
+            }}
+          </div>
+        }
+
+        <!-- REGISTRATION ERROR -->
+
+        @if (
+          searchValue?.touched &&
+          searchValue.hasError('pattern') &&
+          bikeForm.get('searchType')?.value === 'registration'
+        ) {
+
+          <div class="error-message">
+            Please enter a valid Registration number.<br>
+          </div>
+        }
+
+
+        <!-- POLICY ERROR -->
+
+        @if (
+          searchValue?.touched &&
+          searchValue.hasError('pattern') &&
+          bikeForm.get('searchType')?.value === 'policy'
+        ) {
+
+          <div class="error-message">
+            Please enter a valid Policy number.
+         </div>
+        }
+      </div>
+
+
+      <!-- BUTTON -->
+
+      <div class="button-section">
+        <button type="submit"class="proceed-btn">Proceed</button>
+        <a href="#">Click here to login for quicker renewal</a>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<!-- PRODUCT INFORMATION -->
+
+  <div class="product-table-wrapper">
+
+    <table class="product-table">
+
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Product Code</th>
+          <th>UIN no.</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>
+            Two Wheeler Vehicle Package Policy
+            (Tenure 1, 2 and 3 years)
+          </td>
+
+          <td>3005/P5</td>
+
+          <td>IRDAN115RP0015V05201415</td>
+        </tr>
+
+        <tr>
+          <td>
+            5 Years - Two Wheeler Liability Policy
+          </td>
+
+          <td>3005/A5</td>
+
+          <td>IRDAN115RP0003V01201819</td>
+        </tr>
+
+        <tr>
+          <td>
+            Standalone third party long term two wheeler
+            insurance policy
+          </td>
+
+          <td>3005/A</td>
+
+          <td>IRDAN115RP0016V01201415</td>
+        </tr>
+
+        <tr>
+          <td>
+            Two wheeler vehicle liability policy
+          </td>
+
+          <td>3005/A</td>
+
+          <td>IRDAN115RP0016V01200102</td>
+        </tr>
+
+        <tr>
+          <td>
+            Stand-alone own damage two wheeler
+            insurance policy
+          </td>
+
+          <td>3005/O</td>
+
+          <td>IRDAN115RP0002V02201920</td>
+        </tr>
+
+        <tr>
+          <td>
+            Bundled two wheeler policy
+          </td>
+
+          <td>3005/1B5</td>
+
+          <td>IRDAN115RP0019V01202122</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+  <!-- DISCLAIMER -->
+
+  <div class="disclaimer-section">
+    <p>
+      Disclaimers:
+      *If there is any revision in Motor Third Party (TP)
+      rates, the difference in premium due to the revised
+      rates will be payable by the policyholder immediately,
+      and if such revised premium is not paid then the motor
+      insurance policy will not be valid.
+    </p>
+
+    <p>
+      *We have masked your personal information for security.
+    </p>
+
+  </div>
+
+
+  <!-- DISCLAIMER LINK -->
+
+  <div class="disclaimer-link">
+    Disclaimers
+  </div>
+
