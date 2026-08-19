@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { HomePageComp } from './Components/home-page-comp/home-page-comp';
 import { CorporateLayout } from './layout/corporate-layout/corporate-layout';
 import { MainLayout } from './layout/main-layout/main-layout';
+import { BikePolicyRenewal } from './Components/Renewals_Component/bike-policy-renewal/bike-policy-renewal';
+import { CarPolicyRenewal } from './Components/Renewals_Component/car-policy-renewal/car-policy-renewal';
 
 export const routes: Routes = [
     // {path: '', component: HomePageComp},
@@ -12,7 +14,14 @@ export const routes: Routes = [
         children: [
             {
                 path: '', component: HomePageComp
+            
             },
+            {
+                path: 'bike_policy', component: BikePolicyRenewal
+            },
+            {
+                path: 'car_policy', component: CarPolicyRenewal
+            }
         ]
     },
     // Corporate Pages
@@ -35,4 +44,7 @@ export const routes: Routes = [
 
         ]
     },
+
+
+
 ];
