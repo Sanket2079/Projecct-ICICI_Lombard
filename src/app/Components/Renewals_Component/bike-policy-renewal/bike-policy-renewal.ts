@@ -29,6 +29,10 @@ export class BikePolicyRenewal {
 
   }
 
+  get searchValue() {
+    return this.bikeForm.get('searchValue')!;
+  }
+
 
   // Dynamic validation
   setValidation(type: string): void {
@@ -118,8 +122,6 @@ export class BikePolicyRenewal {
   }
 
 
-  get searchValue() {
-    return this.bikeForm.get('searchValue');
-  }
+  
 
 }

@@ -44,7 +44,7 @@
 
         <!-- REQUIRED ERROR -->
         @if (
-            searchValue?.touched && searchValue?.hasError('required')
+          searchValue.touched && searchValue.hasError('required')
         ) {
           <div class="error-message">
             Please enter
@@ -56,10 +56,11 @@
 
         <!-- REGISTRATION ERROR -->
 
-       @if (
-  searchValue?.hasError('pattern') &&
-  searchValue?.touched
-) {
+        @if (
+          searchValue.touched &&
+          searchValue.hasError('pattern') &&
+          bikeForm.get('searchType')?.value === 'registration'
+        ) {
 
           <div class="error-message">
             Please enter a valid Registration number.<br>
@@ -70,9 +71,10 @@
         <!-- POLICY ERROR -->
 
         @if (
-  searchValue?.hasError('pattern') &&
-  searchValue?.touched
-) {
+          searchValue.touched &&
+          searchValue.hasError('pattern') &&
+          bikeForm.get('searchType')?.value === 'policy'
+        ) {
 
           <div class="error-message">
             Please enter a valid Policy number.

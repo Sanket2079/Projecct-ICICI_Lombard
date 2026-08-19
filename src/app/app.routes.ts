@@ -9,10 +9,8 @@ import { HeaderComp } from './Components/Header_Component/header-comp/header-com
 import { HomePageComp } from './Components/home-page-comp/home-page-comp';
 import { CorporateLayout } from './layout/corporate-layout/corporate-layout';
 import { MainLayout } from './layout/main-layout/main-layout';
-import { AllPolicyRenewal } from './Components/Renewals_Component/all-policy-renewal/all-policy-renewal';
 import { BikePolicyRenewal } from './Components/Renewals_Component/bike-policy-renewal/bike-policy-renewal';
 import { CarPolicyRenewal } from './Components/Renewals_Component/car-policy-renewal/car-policy-renewal';
-
 
 export const routes: Routes = [
 
@@ -28,7 +26,14 @@ export const routes: Routes = [
         children: [
             {
                 path: '', component: HomePageComp
+            
             },
+            {
+                path: 'bike_policy', component: BikePolicyRenewal
+            },
+            {
+                path: 'car_policy', component: CarPolicyRenewal
+            }
         ]
     },
 
@@ -81,4 +86,7 @@ export const routes: Routes = [
 
         ]
     },
+
+
+
 ];

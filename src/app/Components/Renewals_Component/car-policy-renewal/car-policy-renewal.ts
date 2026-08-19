@@ -29,6 +29,10 @@ carForm: FormGroup;
 
   }
 
+   get searchValue() {
+    return this.carForm.get('searchValue')!;
+  }
+
 
   // Dynamic validation
   setValidation(type: string): void {
@@ -118,7 +122,5 @@ carForm: FormGroup;
   }
 
 
-  get searchValue() {
-    return this.carForm.get('searchValue');
-  }
+ 
 }
