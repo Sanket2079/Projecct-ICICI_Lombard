@@ -1,0 +1,468 @@
+:host {
+  --brand-orange: #f36f21;
+  --brand-orange-dark: #e0531a;
+  --brand-navy: #002855;
+  --text-dark: #1f2933;
+  --text-muted: #6b7280;
+  --border-light: #e5e7eb;
+  --bg-topbar: #f4f5f6;
+  display: block;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Without this, elements that use "width: 100%" together with padding
+   (like .top-bar__inner and .main-nav__inner below) end up WIDER than
+   the screen - padding gets added on top of the 100% width instead of
+   being included inside it. That extra width is what was causing the
+   horizontal scrollbar at the bottom of the page. */
+:host,
+:host *,
+:host *::before,
+:host *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+/* ===================== TOP BAR ===================== */
+.top-bar {
+  background: var(--bg-topbar);
+  border-bottom: 1px solid var(--border-light);
+  font-size: 13px;
+  color: var(--text-dark);
+}
+
+.top-bar__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar__left,
+.top-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-bar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-dark);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.top-bar__phone strong {
+  font-weight: 700;
+}
+
+.top-bar__availability {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+.top-bar__divider {
+  width: 1px;
+  height: 14px;
+  background: var(--border-light);
+}
+
+.top-bar__pill {
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  padding: 4px 12px;
+  background: #fff;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-live {
+  background: #23b26d;
+}
+
+/* ---- Help / Info Centre / Investor Relations dropdowns (CSS :hover only) ---- */
+.top-bar__menu {
+  position: relative;
+}
+
+.top-bar__dropdown-trigger .icon-chevron {
+  transition: transform 0.15s ease;
+}
+
+/* Rotate the chevron and show the panel just by hovering the parent .top-bar__menu */
+.top-bar__menu:hover .icon-chevron {
+  transform: rotate(180deg);
+}
+
+.top-bar__panel {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  min-width: 220px;
+  padding: 8px 0;
+  z-index: 60;
+}
+
+.top-bar__menu:hover .top-bar__panel {
+  display: block; /* shown while hovering the menu */
+}
+
+.top-bar__panel ul li a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: var(--text-dark);
+}
+
+.top-bar__panel ul li a:hover {
+  background: #f7f7f8;
+  color: var(--brand-orange-dark);
+}
+
+/* ---- top-bar buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline-dark {
+  background: var(--brand-navy);
+  color: #fff;
+}
+
+.btn-solid {
+  background: var(--brand-orange);
+  color: #fff;
+}
+
+.btn-solid:hover {
+  background: var(--brand-orange-dark);
+}
+
+/* ===================== MAIN NAV ===================== */
+.main-nav {
+  /* Simple two-stop gradient across the FULL bar width - stays smooth
+     and consistent no matter how wide the screen is. */
+  background: linear-gradient(90deg, var(--brand-orange-dark) 0%, var(--brand-orange) 100%);
+}
+
+.main-nav__inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-nav__logo {
+  flex: 0 0 auto;
+}
+
+.main-nav__logo img {
+  height: 46px;
+  padding: 8px 0;
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: stretch;
+  /* Take up the rest of the bar and spread items evenly across it,
+     the same way the real site's nav fills the full width. */
+  flex: 1;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  position: relative;
+}
+
+/* The last 3 buttons (Other Insurance, Renewals, Claims) sit close to the
+   right edge of the screen. Anchoring their dropdown to the right instead
+   of the left keeps the panel from spilling off-screen. */
+.main-nav__item:nth-last-child(-n + 3) .main-nav__dropdown {
+  left: auto;
+  right: 0;
+}
+
+.main-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  padding: 16px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.main-nav__link .icon-chevron-down {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+  margin-left: 2px;
+}
+
+/* Hovering the whole <li> highlights the link and flips its chevron -
+   this is what opens the dropdown too (see .main-nav__dropdown below). */
+.main-nav__item:hover .main-nav__link {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.main-nav__item:hover .icon-chevron-down {
+  transform: rotate(225deg);
+}
+
+/* ---- Simple single-column dropdown panel under each nav item ---- */
+.main-nav__dropdown {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+  min-width: 340px;
+  padding: 12px;
+  z-index: 60;
+}
+
+/* Hovering the <li> (button + dropdown together) reveals the dropdown */
+.main-nav__item:hover .main-nav__dropdown {
+  display: block;
+}
+
+.main-nav__dropdown ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdown-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px;
+  border-radius: 6px;
+  color: var(--text-dark);
+}
+
+.dropdown-card:hover {
+  background: #fff4ec;
+}
+
+.dropdown-card__icon {
+  width: 34px;
+  height: 34px;
+
+  flex: 0 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-card__icon img {
+  max-width: 48px;
+  max-height: 48px;
+  object-fit: contain; /* keeps the icon's own proportions - your files
+                           are 50x40, not square, so this avoids stretching */
+}
+
+.dropdown-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dropdown-card__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.dropdown-card__desc {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Small label like "Bestseller" */
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background: var(--brand-orange);
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* ===================== MARQUEE ===================== */
+.marquee-strip {
+  background: #fff;
+  border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.marquee-strip__track {
+  display: inline-block;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.marquee-strip__text {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  padding-left: 100%;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause on hover for accessibility/readability */
+.marquee-strip:hover .marquee-strip__track {
+  animation-play-state: paused;
+}
+
+/* ===================== RESPONSIVE (basic) ===================== */
+@media (max-width: 1024px) {
+  .top-bar__availability {
+    display: none;
+  }
+  .main-nav__link {
+    padding: 14px 8px;
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+/* ===================== CLAIMS DROPDOWN ===================== */
+
+/* Make only the Claims dropdown two-column */
+.main-nav__item:last-child .main-nav__dropdown {
+  min-width: 700px;
+  display: none;
+}
+
+/* Show Claims dropdown on hover */
+.main-nav__item:last-child:hover .main-nav__dropdown {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left side */
+.main-nav__item:last-child .claims-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.main-nav__item:last-child .claims-left > h3 {
+  margin: 5px 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Keep the existing claim cards vertical */
+.main-nav__item:last-child .claims-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Right side */
+.main-nav__item:last-child .other-products {
+  width: 230px;
+  flex: 0 0 230px;
+  padding-left: 25px;
+  border-left: 1px solid var(--border-light);
+}
+
+.main-nav__item:last-child .other-products h3 {
+  margin: 5px 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* Other Products links */
+.main-nav__item:last-child .other-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 5px;
+  color: var(--text-dark);
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.main-nav__item:last-child .other-item:hover {
+  background: #fff4ec;
+}
+
+/* Arrow */
+.main-nav__item:last-child .right-arrow {
+  font-size: 22px;
+  line-height: 1;
+  color: var(--brand-orange);
+}

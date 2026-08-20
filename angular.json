@@ -3,7 +3,7 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "7861845c-ff43-4262-8689-3ac14a828cc2"
+    "analytics": "0efa2fd8-9c09-4c99-b60f-5246a439569f"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -25,9 +25,18 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
+              "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {

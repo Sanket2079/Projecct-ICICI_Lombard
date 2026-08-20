@@ -1,0 +1,198 @@
+
+<div class="renewal-wrapper">
+
+  <div class="renewal-card">
+    <h1> Car Insurance Renewal</h1>
+
+    <p class="subtitle">Choose below option to retrieve your policy</p>
+
+    <form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+
+      <!-- RADIO BUTTONS -->
+
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" value="registration" formControlName="searchType">
+          <span>Registration No</span>
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" value="policy" formControlName="searchType">
+          <span>Policy No</span>
+        </label>
+
+      </div>
+
+      <!-- INPUT -->
+
+      <div class="input-group">
+        <label>
+          @if (carForm.get('searchType')?.value === 'registration') {
+            Registration No.
+          } @else {
+            Policy No.
+          }
+        </label>
+
+        <input type="text" class="form-control" formControlName="searchValue"
+          [placeholder]="
+          carForm.get('searchType')?.value === 'registration'? 'Enter Registration No.': 'Enter Policy No.' "
+
+          [attr.maxlength]="
+            carForm.get('searchType')?.value === 'registration'? 10 : 30 "
+          (input)="onInput($event)"   
+        >
+
+        <!-- REQUIRED ERROR -->
+        @if (
+          searchValue.touched && searchValue.hasError('required')
+        ) {
+          <div class="error-message">
+            Please enter
+            {{
+              carForm.get('searchType')?.value === 'registration'? 'Registration No.' : 'Policy No.'
+            }}
+          </div>
+        }
+
+        <!-- REGISTRATION ERROR -->
+
+        @if (
+          searchValue.touched &&
+          searchValue.hasError('pattern') &&
+          carForm.get('searchType')?.value === 'registration'
+        ) {
+
+          <div class="error-message">
+            Please enter a valid Registration number.<br>
+          </div>
+        }
+
+
+        <!-- POLICY ERROR -->
+
+        @if (
+          searchValue.touched &&
+          searchValue.hasError('pattern') &&
+          carForm.get('searchType')?.value === 'policy'
+        ) {
+
+          <div class="error-message">
+            Please enter a valid Policy number.
+         </div>
+        }
+      </div>
+
+
+      <!-- BUTTON -->
+
+      <div class="button-section">
+        <button type="submit"class="proceed-btn">Proceed</button>
+        <a href="#">Click here to login for quicker renewal</a>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<!-- PRODUCT INFORMATION -->
+
+  <div class="product-table-wrapper">
+
+    <table class="product-table">
+
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Product Code</th>
+          <th>UIN no.</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>
+            3 Years - Private Car Liability Policy
+          </td>
+
+          <td>3001/A3</td>
+
+          <td>IRDAN115RP0002V01201819</td>
+        </tr>
+
+        <tr>
+          <td>
+            Private car liability policy
+          </td>
+
+          <td>3001/A</td>
+
+          <td>IRDAN115RP0012V01200102</td>
+        </tr>
+
+        <tr>
+          <td>
+            Private car package policy
+          </td>
+
+          <td>3001</td>
+
+          <td>IRDAN115RP0017V01200102</td>
+        </tr>
+
+        <tr>
+          <td>
+            Stand-alone own damage 
+            private car insurance policy
+          </td>
+
+          <td>3001/O</td>
+
+          <td>IRDAN115RP0001V02201920</td>
+        </tr>
+
+        <tr>
+          <td>
+            Bundled - Private Car Policy
+          </td>
+
+          <td>3001/1B3</td>
+
+          <td>IRDAN115RP0021V02202122</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+  <!-- DISCLAIMER -->
+
+  <div class="disclaimer-section">
+    <p>
+      Disclaimers:
+      *If there is any revision in Motor Third Party (TP)
+      rates, the difference in premium due to the revised
+      rates will be payable by the policyholder immediately,
+      and if such revised premium is not paid then the motor
+      insurance policy will not be valid.
+    </p>
+
+    <p>
+      *We have masked your personal information for security.
+    </p>
+
+  </div>
+
+
+  <!-- DISCLAIMER LINK -->
+
+  <div class="disclaimer-link">
+    Disclaimers
+  </div>
+

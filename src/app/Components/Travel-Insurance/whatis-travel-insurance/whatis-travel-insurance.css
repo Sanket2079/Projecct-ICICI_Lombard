@@ -1,0 +1,94 @@
+.startcomponent{
+    margin-top: 19rem;
+
+}
+a{
+    color: #ec6625 !important;
+}
+/* li{
+    list-style: none;
+} */
+.sectionSummary{
+    background-image: url("/travel-insurance-assets/summary/gradient-blue.png");
+    background-size: cover;
+    
+}
+.keyfeaturebackgroundcolor{
+    background-color:  #FFF2ED;
+}
+.table,
+.table,
+.table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: 1px solid #9E9E9E !important;
+  border-radius: 30px;
+  overflow: hidden;
+  table-layout: fixed;
+  ;
+}
+
+.table th:first-child,
+.table td:first-child {
+  border-right: 1px solid #9E9E9E;
+}
+.thcolor{
+    color: #903501;
+}
+/* Types of Travel Insurance */
+.example-drag-tabs.cdk-drop-list-dragging {
+  pointer-events: none;
+}
+
+.example-drag-tabs-preview.cdk-drag-animating {
+  transition: all 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.mat-mdc-tab.example-drag-tabs-preview {
+  outline: dashed 1px #ccc;
+  outline-offset: 4px;
+}
+
+.example-drag-tabs .cdk-drag-placeholder {
+  opacity: 0.5;
+}
+.btn-orange {
+  background-color: #ec6625;
+  border-color: #ec6625;
+  color: #fff;
+  
+}
+.btn-orange:hover{
+  background-color: #f38a55;
+    color: #fff;
+}
+
+.card{
+ min-height: 550px !important;
+ overflow: auto;
+ 
+}
+.sectiontype{
+  background: linear-gradient(180deg, #FFF 0%, #F5F5F5 100%);
+}
+
+.linear-red-bg {
+     background: linear-gradient(270deg, #e3530f -.66%, #af050c 100%); 
+    padding: 3.5rem;
+}
+.bg-pink-linear {
+    background: linear-gradient(180deg, #FFF2ED 0%, #FFF 100%);
+}
+
+.cardborder{
+  border-color:  #ec6625;
+  border:  1px solid  #ec6625;
+  border-radius: 10px;
+}
+
+.bg-sec-blue
+ {
+    background: #e1f4fd;
+}
+
+

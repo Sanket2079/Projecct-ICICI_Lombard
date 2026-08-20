@@ -1,0 +1,274 @@
+<section class="section-color">
+    <div class="container ">
+        <div class="">
+            <img src="assets/contact-img/Contact-banner.jpg" alt="" class="contact-img">
+        </div>
+        <h2>Contact Us</h2>
+    </div>
+</section>
+<!-- second section -->
+<section class="contact-section py-5">
+    <div class="container">
+        <form [formGroup]="userForm">
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+                    <label class="form-label">
+                        First Name <span>*</span>
+                    </label>
+                    <input type="text" formControlName="firstname" class="form-control custom-input"
+                        placeholder="Enter Your First name">
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="form-label">
+                        Last Name <span>*</span>
+                    </label>
+                    <input type="text" formControlName="lastname" class="form-control custom-input"
+                        placeholder="Enter Your Last name">
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="form-label">
+                        Organizational Email ID <span>*</span>
+                    </label>
+                    <input type="email" formControlName="email" class="form-control custom-input"
+                        placeholder="Enter Your Email ID" [class.is-invalid]="f['email'].invalid && f['email'].touched">
+                    @if(f['email'].touched){
+
+                    @if(f['email'].errors?.['required']){
+                    <div class="invalid-feedback d-block">
+                        Please enter email id
+                    </div>
+                    }
+
+                    @if(f['email'].errors?.['email']){
+                    <div class="invalid-feedback d-block">
+                        Please enter valid email id
+                    </div>
+                    }
+
+                    }
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="form-label">
+                        Phone <span>*</span>
+                    </label>
+                    <input type="text" formControlName="phone" class="form-control custom-input"
+                        placeholder="Enter your mobile number" maxlength="10" inputmode="numeric"
+                        [class.is-invalid]="f['phone'].invalid && f['phone'].touched">
+                    @if(f['phone'].touched){
+
+                    @if(f['phone'].errors?.['required']){
+                    <div class="invalid-feedback d-block">
+                        Please enter phone number
+                    </div>
+                    }
+
+                    @if(f['phone'].errors?.['pattern']){
+                    <div class="invalid-feedback d-block">
+                        Please enter correct phone number
+                    </div>
+                    }
+
+                    }
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="form-label">
+                        Company Name <span>*</span>
+                    </label>
+                    <input type="text" formControlName="company" class="form-control custom-input"
+                        placeholder="Enter your company name">
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="form-label">
+                        Designation <span>*</span>
+                    </label>
+                    <input type="text" formControlName="designation" class="form-control custom-input"
+                        placeholder="Enter your Designation">
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">
+                        Your Message/Query <span>*</span>
+                    </label>
+                    <textarea formControlName="message" class="form-control custom-input custom-textarea"
+                        placeholder="Please enter your message/query"></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <button type="button" class="btn submit-btn" (click)="submitContact()">
+                        Submit
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<!-- Overlay -->
+@if(showhide){
+<div class="custom-modal-backdrop">
+    <!-- Modal -->
+    <div class="custom-modal">
+        <!-- Header -->
+        <div class="modal-header border-0">
+            <p>{{titlemodal}}</p>
+            <button class="close-btn" (click)="closeModal()">
+                ×
+            </button>
+        </div>
+        <!-- Body -->
+        <div class="modal-body">
+            <p>{{alertMessage}}</p>
+        </div>
+        <!-- Footer -->
+        <div class="modal-footer border-0">
+            <button class="btn close-button" (click)="closeModal()">
+                CLOSE
+            </button>
+        </div>
+    </div>
+</div>
+}
+
+<!-- third section -->
+<section class="contact-info-section py-5">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <p class="sub-title">Reach Out To Us</p>
+
+            <h2>Our experts would be more than happy to assist you</h2>
+
+        </div>
+
+        <div class="contact-box">
+
+            <div class="row g-0 align-items-start">
+
+                <!-- Left -->
+                <div class="col-lg-3 col-md-4">
+
+                    <div class="contact-item">
+
+                        <h4>Registered Address</h4>
+
+                        <p>ICICI Lombard House</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Middle -->
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="contact-item">
+
+                        <p>
+                            414, P. Balu Marg,
+                            Off Veer Savarkar Marg,<br>
+                            Near Siddhivinayak Temple,<br>
+                            Prabhadevi,
+                            Mumbai - 400025
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-5 col-md-4">
+
+                    <div class="contact-item border-start-custom">
+
+                        <h5>Email us Here</h5>
+
+                        <a href="mailto:cpcontactus@icicilombard.com">
+                            cpcontactus@icicilombard.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- fourth section -->
+<section class="contact-section">
+
+    <div class="container-fluid px-0">
+
+        <div class="map-bg">
+
+            <div class="container">
+
+                <div class="row g-4 justify-content-center" style="margin-top: -4%;">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-6">
+
+                        <div class="contact-card">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-8">
+
+                                    <i class="bi bi-geo-alt contact-icon"></i>
+
+                                    <h2 style="padding-bottom: 20px;">
+                                        Visit us at any of our Branches!
+                                    </h2>
+
+                                    <p>
+                                        Connect with us now!
+                                    </p>
+
+                                </div>
+
+                                <div class="col-4 text-end">
+
+                                    <a href="#" class="contact-btn">
+                                        Locate Us
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- section five -->
+<section class=" section-n-img">
+<div class="container-fluid footer-img">
+    <img src="assets/cor-products-sec4-img/section9-property-footer.jpg" alt="">
+    <h2 class="img-text">Leading The Way To A Secured Future</h2>
+
+</div>    
+</section>
